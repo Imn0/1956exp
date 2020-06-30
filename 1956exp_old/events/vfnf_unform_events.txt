@@ -1,0 +1,714 @@
+# Commonwealth unform event
+country_event = {
+	id = vfnf_commonwealth.1
+	
+	trigger = {
+		tag = POL
+		AND = {
+			OR = {
+				AND = {	
+					country_exists = LIT
+					has_war = no
+				}
+				AND = {
+					NOT = { controls_state = 784 } #Wilno/Vilnus
+					has_war = no
+				}
+			}
+			has_global_flag = form_commonwealth_flag
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = form_commonwealth_flag
+		every_state = {
+			if = {
+				limit = { is_core_of = POL }
+				remove_core_of = POL
+			}
+		}
+		5 = { add_core_of = ROOT }
+		63 = { add_core_of = ROOT }
+		68 = { add_core_of = ROOT }
+		66 = { add_core_of = ROOT }
+		67 = { add_core_of = ROOT }
+		85 = { add_core_of = ROOT }
+		86 = { add_core_of = ROOT }
+		98 = { add_core_of = ROOT }
+		87 = { add_core_of = ROOT }
+		10 = { add_core_of = ROOT }
+		97 = { add_core_of = ROOT }
+		92 = { add_core_of = ROOT }
+		90 = { add_core_of = ROOT }
+		762 = { add_core_of = ROOT }
+		88 = { add_core_of = ROOT }
+		set_global_flag = pol_loses_EP #If Poland reformed into Commonwealth, but later lost Vilnus it will never be able to reform Commonwealth again
+	}
+}
+
+# Roman Empire unform event
+country_event = {
+	id = vfnf_rome.1
+	
+	trigger = {
+		tag = ITA
+		AND = {
+			OR = {
+				AND = {	
+					country_exists = GRE #independent Greece
+					has_war = no
+				}
+				AND = {
+					NOT = { controls_state = 47 } #Athens slipped out
+					has_war = no
+				}
+			}
+			has_global_flag = form_roman_empire_flag
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = form_roman_empire_flag
+		every_state = {
+			if = {
+				limit = { is_core_of = ITA }
+				remove_core_of = ITA
+			}
+		}
+		2 = { add_core_of = ROOT }
+		114 = { add_core_of = ROOT }
+		115 = { add_core_of = ROOT }
+		156 = { add_core_of = ROOT }
+		117 = { add_core_of = ROOT }
+		157 = { add_core_of = ROOT }
+		162 = { add_core_of = ROOT }
+		161 = { add_core_of = ROOT }
+		158 = { add_core_of = ROOT }
+		159 = { add_core_of = ROOT }
+		39 = { add_core_of = ROOT }
+		160 = { add_core_of = ROOT }
+		if = {
+			limit = {
+				has_country_leader = { ruling_only = yes name = "Augustus Mussolini" }
+			}
+			kill_country_leader = yes
+		}
+	}
+}
+
+# Rattanakosin Kingdom unform event
+country_event = {
+	id = vfnf_ratta.1
+	
+	trigger = {
+		tag = SIA
+		AND = {
+			NOT = { controls_state = 741 } #Cambodia			
+			NOT = { controls_state = 670 } #Laos
+			has_war = no
+			has_global_flag = form_rattanakosin_kingdom_flag
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = form_rattanakosin_kingdom_flag
+		every_state = {
+			if = {
+				limit = { is_core_of = SIA }
+				remove_core_of = SIA
+			}
+		}
+		289 = { add_core_of = ROOT }
+		724 = { add_core_of = ROOT }
+	}
+}
+
+# Persian Empire unform event
+country_event = {
+	id = vfnf_persiaunf.1
+	
+	trigger = {
+		tag = PER
+		AND = {
+			OR = {
+				AND = {	
+					country_exists = IRQ #lost Iraq
+					has_war = no
+				}
+				AND = {
+					NOT = { controls_state = 291 } #lost Baghdad to another country
+					has_war = no
+				}
+			}
+			has_global_flag = form_persian_empire_flag
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = form_persian_empire_flag
+		every_state = {
+			if = {
+				limit = { is_core_of = PER }
+				remove_core_of = PER
+			}
+		}
+		419 = { add_core_of = ROOT }
+		421 = { add_core_of = ROOT }
+		420 = { add_core_of = ROOT }
+		417 = { add_core_of = ROOT }
+		413 = { add_core_of = ROOT }
+		266 = { add_core_of = ROOT }
+		418 = { add_core_of = ROOT }
+		411 = { add_core_of = ROOT }
+		412 = { add_core_of = ROOT }
+		416 = { add_core_of = ROOT }
+		414 = { add_core_of = ROOT }
+		410 = { add_core_of = ROOT }
+	}
+}
+
+# Ottoman Empire unform event
+country_event = {
+	id = vfnf_ottomanempire.1
+	
+	trigger = {
+		tag = TUR
+		AND = {
+			OR = {
+				AND = {	
+					country_exists = SYR #lost Syria
+					has_war = no
+				}
+				AND = {
+					NOT = { controls_state = 554 } #lost Damascus to another country
+					has_war = no
+				}
+			}
+			has_global_flag = form_ottoman_empire_flag
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = form_ottoman_empire_flag
+		every_state = {
+			if = {
+				limit = { is_core_of = TUR }
+				remove_core_of = TUR
+			}
+		}
+		341 = { add_core_of = ROOT } 
+		340 = { add_core_of = ROOT }
+		339 = { add_core_of = ROOT }
+		342 = { add_core_of = ROOT }
+		343 = { add_core_of = ROOT }
+		49 = { add_core_of = ROOT }
+		347 = { add_core_of = ROOT }
+		345 = { add_core_of = ROOT }
+		346 = { add_core_of = ROOT }
+		354 = { add_core_of = ROOT }
+		355 = { add_core_of = ROOT }
+		356 = { add_core_of = ROOT }
+		348 = { add_core_of = ROOT }
+		349 = { add_core_of = ROOT }
+		350 = { add_core_of = ROOT }
+		344 = { add_core_of = ROOT }
+		353 = { add_core_of = ROOT }
+		352 = { add_core_of = ROOT }
+	}
+}
+
+# Greater German Reich unform event
+country_event = {
+	id = vfnf_greatergermany.1
+	
+	trigger = {
+		tag = GER
+		AND = {
+			OR = {
+				AND = {	
+					country_exists = AUS #lost Austria
+					has_war = no
+				}
+				AND = {
+					NOT = { controls_state = 4 } #lost Vienna to another country
+					has_war = no
+				}
+			}
+			has_global_flag = form_greater_german_reich_flag
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = form_greater_german_reich_flag
+		every_state = {
+			if = {
+				limit = { is_core_of = GER }
+				remove_core_of = GER
+			}
+		}
+		#West Germany
+		51 = { add_core_of = ROOT }
+		42 = { add_core_of = ROOT }
+		56 = { add_core_of = ROOT }
+		57 = { add_core_of = ROOT }
+		55 = { add_core_of = ROOT }
+		50 = { add_core_of = ROOT }
+		59 = { add_core_of = ROOT }
+		58 = { add_core_of = ROOT }
+		54 = { add_core_of = ROOT }
+		52 = { add_core_of = ROOT }
+		53 = { add_core_of = ROOT }
+		#DDR
+		60 = { add_core_of = ROOT }
+		61 = { add_core_of = ROOT }
+		64 = { add_core_of = ROOT }
+		65 = { add_core_of = ROOT }
+		62 = { add_core_of = ROOT }
+		#Germany/Poland
+		5 = { add_core_of = ROOT }
+		63 = { add_core_of = ROOT }
+		68 = { add_core_of = ROOT }
+		66 = { add_core_of = ROOT }
+		67 = { add_core_of = ROOT }
+		#Konigsberg
+		763 = { add_core_of = ROOT }
+	}
+}
+
+# HRE unform event
+country_event = {
+	id = vfnf_hre.1
+	
+	trigger = {
+		tag = GER
+		AND = {
+			OR = {
+				AND = {	
+					country_exists = AUS #lost Austria
+					has_war = no
+				}
+				AND = {
+					NOT = { controls_state = 4 } #lost Vienna to another country
+					has_war = no
+				}
+			}
+			has_global_flag = form_hre_flag
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = form_hre_flag
+		every_state = {
+			if = {
+				limit = { is_core_of = GER }
+				remove_core_of = GER
+			}
+		}
+		#West Germany
+		51 = { add_core_of = ROOT }
+		42 = { add_core_of = ROOT }
+		56 = { add_core_of = ROOT }
+		57 = { add_core_of = ROOT }
+		55 = { add_core_of = ROOT }
+		50 = { add_core_of = ROOT }
+		59 = { add_core_of = ROOT }
+		58 = { add_core_of = ROOT }
+		54 = { add_core_of = ROOT }
+		52 = { add_core_of = ROOT }
+		53 = { add_core_of = ROOT }
+		#DDR
+		60 = { add_core_of = ROOT }
+		61 = { add_core_of = ROOT }
+		64 = { add_core_of = ROOT }
+		65 = { add_core_of = ROOT }
+		62 = { add_core_of = ROOT }
+		#Germany/Poland
+		5 = { add_core_of = ROOT }
+		63 = { add_core_of = ROOT }
+		68 = { add_core_of = ROOT }
+		66 = { add_core_of = ROOT }
+		67 = { add_core_of = ROOT }
+		#Konigsberg
+		763 = { add_core_of = ROOT }
+	}
+}
+
+# BYZ unform event
+country_event = {
+	id = vfnf_byzantium.1
+	
+	trigger = {
+		tag = GER
+		AND = {
+			OR = {
+				AND = {	
+					country_exists = TUR #lost Turkey
+					has_war = no
+				}
+				AND = {
+					NOT = { controls_state = 341 } #lost Byzantium
+					has_war = no
+				}
+			}
+			has_global_flag = form_byzantine_empire_flag
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = form_byzantine_empire_flag
+		clr_global_flag = triumph_for_italy
+		clr_global_flag = triumph_for_middle_east
+		clr_global_flag = triumph_for_egypt_and_tunis
+		every_state = {
+			if = {
+				limit = { is_core_of = GRE }
+				remove_core_of = GRE
+			}
+		}
+		182 = { add_core_of = ROOT }
+		164 = { add_core_of = ROOT }
+		187 = { add_core_of = ROOT }
+		184 = { add_core_of = ROOT }
+		185 = { add_core_of = ROOT }
+		731 = { add_core_of = ROOT }
+		47 = { add_core_of = ROOT }
+		186 = { add_core_of = ROOT }
+		set_capital = 47
+		hidden_effect = { 341 = { set_state_name = "Istanbul" } }
+		set_province_name = { id = 9833 name = "Istanbul" }
+	}
+}
+
+# AUS unform event
+country_event = {
+	id = vfnf_aushun.1
+	
+	trigger = {
+		tag = AUS
+		AND = {
+			OR = {
+				AND = {	
+					country_exists = HUN #lost Hungary
+					has_war = no
+				}
+				AND = {
+					NOT = { controls_state = 43 } #lost Budapest
+					has_war = no
+				}
+			}
+			has_global_flag = form_austria_hungary_flag
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = form_austria_hungary_flag
+		every_state = {
+			if = {
+				limit = { is_core_of = AUS }
+				remove_core_of = AUS
+			}
+		}
+		4 = { add_core_of = ROOT }
+		152 = { add_core_of = ROOT }
+		153 = { add_core_of = ROOT }
+	}
+}
+
+# HUN unform event
+country_event = {
+	id = vfnf_aushun.2
+	
+	trigger = {
+		tag = HUN
+		AND = {
+			OR = {
+				AND = {	
+					country_exists = AUS #lost Austria
+					has_war = no
+				}
+				AND = {
+					NOT = { controls_state = 4 } #lost Vienna
+					has_war = no
+				}
+			}
+			has_global_flag = reintegrate_the_empire_flag
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = reintegrate_the_empire_flag
+		set_global_flag = austria_hungary_as_hungary_was_unformed #you will never be able to form it again 
+		every_state = {
+			if = {
+				limit = { is_core_of = HUN }
+				remove_core_of = HUN
+			}
+		}
+		43 = { add_core_of = ROOT }
+		154 = { add_core_of = ROOT }
+		155 = { add_core_of = ROOT }
+	}
+}
+
+# CZE unform event
+country_event = {
+	id = vfnf_aushun.3
+	
+	trigger = {
+		tag = CZE
+		AND = {
+			OR = {
+				AND = {	
+					country_exists = AUS #lost Austria
+					has_war = no
+				}
+				AND = {
+					NOT = { controls_state = 4 } #lost Vienna
+					has_war = no
+				}
+				AND = {	
+					country_exists = HUN #lost Hungary
+					has_war = no
+				}
+				AND = {
+					NOT = { controls_state = 43 } #lost Budapest
+					has_war = no
+				}
+			}
+			has_global_flag = form_austria_hungary_as_czechoslovakia_flag
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = form_austria_hungary_as_czechoslovakia_flag
+		every_state = {
+			if = {
+				limit = { is_core_of = CZE }
+				remove_core_of = CZE
+			}
+		}
+		69 = { add_core_of = ROOT }
+		9 = { add_core_of = ROOT }
+		75 = { add_core_of = ROOT }
+		74 = { add_core_of = ROOT }
+		72 = { add_core_of = ROOT }
+		70 = { add_core_of = ROOT }
+		664 = { add_core_of = ROOT }
+		71 = { add_core_of = ROOT }
+		73 = { add_core_of = ROOT }
+	}
+}
+
+# HUN unform event
+country_event = {
+	id = vfnf_grehun.1
+	
+	trigger = {
+		tag = HUN
+		AND = {
+			NOT = { controls_state = 664 }
+			NOT = { controls_state = 73 }
+			NOT = { controls_state = 76 }
+			NOT = { controls_state = 84 }
+			NOT = { controls_state = 83 }
+			NOT = { controls_state = 82 }
+			NOT = { controls_state = 45 }					
+			has_war = no
+			has_cosmetic_tag = HUN_GREATER
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		every_state = {
+			if = {
+				limit = { is_core_of = HUN }
+				remove_core_of = HUN
+			}
+		}
+		every_state = {
+			remove_claim_by = HUN
+		}
+		43 = { add_core_of = ROOT }
+		154 = { add_core_of = ROOT }
+		155 = { add_core_of = ROOT }
+	}
+}
+
+# Austria loses the core in South Tyrol (to reduce border gore)
+country_event = {
+	id = vfnf_southtyrol.1
+	
+	trigger = {
+		tag = ITA
+		NOT = { country_exists = AUS }
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		39 = {
+			if = {
+				limit = { is_core_of = AUS }
+				remove_core_of = AUS
+			}
+		}
+	}
+}
+
+#Germany loses all claims when puppeted
+country_event = {
+	id = vfnf_gerpuppet.1
+	
+	trigger = {
+		tag = GER
+		is_puppet = yes
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		every_state = {	remove_claim_by = GER }
+	}
+}
+
+#Italy loses all claims and Istria core when puppeted
+country_event = {
+	id = vfnf_itapuppet.1
+	
+	trigger = {
+		tag = ITA
+		is_puppet = yes
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		every_state = {	remove_claim_by = ITA }
+		736 = {
+			if = {
+				limit = { is_core_of = ITA }
+				remove_core_of = ITA
+			}
+		}
+	}
+}
+
+#Japan loses all claims when puppeted
+country_event = {
+	id = vfnf_jappuppet.1
+	
+	trigger = {
+		tag = JAP
+		is_puppet = yes
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		every_state = {	remove_claim_by = JAP }
+	}
+}
+
+
+#Hungary loses all claims when puppeted
+country_event = {
+	id = vfnf_jappuppet.1
+	
+	trigger = {
+		tag = HUN
+		is_puppet = yes
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		every_state = {	remove_claim_by = HUN }
+	}
+}
+
+#			if = {
+#				limit = {
+#					NOT = { tag = AUS }
+#				}
+#				AUS = { set_cosmetic_tag = AUS_NOT_WHITE }
+#			}

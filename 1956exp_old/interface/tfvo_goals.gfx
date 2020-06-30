@@ -1,0 +1,68 @@
+spriteTypes = {	
+	###############
+	###Australia###
+	###############
+	SpriteType = { 
+		name = "GFX_focus_ast_czechmate"
+		texturefile = "gfx/interface/goals/focus_ast_czechmate.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ast_anzac_union"
+		texturefile = "gfx/interface/goals/focus_ast_anzac_union.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ast_the_weapons_of_the_third_emu_war"
+		texturefile = "gfx/interface/goals/focus_ast_the_weapons_of_the_third_emu_war.dds"
+	}
+	############
+	###Canada### #Credits to Canadian Redux MOD
+	############
+	SpriteType = { 
+		name = "GFX_focus_can_send_in_the_zombies"
+		texturefile = "gfx/interface/goals/focus_can_send_in_the_zombies.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_can_establish_monarchy"
+		texturefile = "gfx/interface/goals/focus_can_establish_monarchy.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_can_monarch_aggreement"
+		texturefile = "gfx/interface/goals/focus_can_monarch_aggreement.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_can_monarch_nationalists"
+		texturefile = "gfx/interface/goals/focus_can_monarch_nationalists.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_can_monarchy"
+		texturefile = "gfx/interface/goals/focus_can_monarchy.dds"
+	}
+	
+	############
+	###Malaya### #Credits to Pacific War Mod
+	############
+	SpriteType = {
+		name = "GFX_goal_pro_malay_policy"
+		texturefile = "gfx/interface/goals/goal_pro_malay_policy.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_mal_equal_policy"
+		texturefile = "gfx/interface/goals/goal_mal_equal_policy.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_mal_cooperate_with_communists"
+		texturefile = "gfx/interface/goals/goal_mal_cooperate_with_communists.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_mal_malayan_union"
+		texturefile = "gfx/interface/goals/goal_mal_malayan_union.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_mal_expel_singapore"
+		texturefile = "gfx/interface/goals/goal_mal_expel_singapore.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_mal_malayness"
+		texturefile = "gfx/interface/goals/goal_mal_malayness.dds"			
+	}
+}

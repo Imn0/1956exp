@@ -1,0 +1,45 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = ENG
+						OR = {
+							controls_state = 331
+							controls_state = 332
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							ROOT = {
+								controls_state = 331
+							}
+							any_country = {
+								original_tag = USA
+								controls_state = 331
+							}
+						}
+					}
+					CAN = {
+						transfer_state = 331
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							ROOT = {
+								controls_state = 332
+							}
+						}
+					}
+					CAN = {
+						transfer_state = 332
+					}
+				}
+			}
+		}
+	}
+}

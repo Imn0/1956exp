@@ -1,0 +1,2510 @@
+CAN_immigration = {
+	
+	CAN_post_war_european_immigration = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			has_government = democratic
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = CAN_does_not_have_national_spirit_great_depression_tt
+				NOT = {
+					has_idea = CAN_great_depression_1
+					has_idea = CAN_great_depression_2
+				}
+			}
+		}
+		
+		allowed = {
+			has_focus_tree = canadian_focus
+		}
+		
+		visible = {
+			date > 1942.1.1
+			has_government = democratic
+		}
+		
+		fire_only_once = yes
+		
+		cost = 10
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = CAN_post_war_refugees
+				days = 1460
+			}
+		}
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 100			
+		}
+	}
+}
+
+CAN_defence_of_canadian_sovereignty = {
+
+	CAN_defence_scheme_no_1 = {
+		
+		icon = infiltrate_state
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CAN_defence_scheme_no_1_tt
+				NOT = { has_country_flag = CAN_defence_scheme_no_2 }
+			}
+			has_completed_focus = CAN_defence_of_canadian_sovereignty
+			any_country = {
+				original_tag = USA
+				NOT = { 
+					has_government = democratic
+					is_in_faction_with = CAN
+				}
+			}
+		}
+		
+		allowed = {
+			has_focus_tree = canadian_focus
+		}
+		
+		visible = {
+			NOT = { has_country_flag = CAN_defence_scheme_no_2 }
+		}
+
+		highlight_states = {
+		
+		}
+		
+		fire_only_once = yes
+		
+		modifier = {
+			
+		}
+		
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = CAN_defence_scheme_no_1
+			add_ideas = CAN_defence_scheme_no_1
+			random_owned_controlled_state = {
+				prioritize = { 464 }
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 465 }
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 2
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 468 }
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 469 }
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 2
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 473 }
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_war_support = -0.1
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				random_country = {
+					limit = {
+						original_tag = USA
+						NOT = { has_government = democratic }
+					}
+					ROOT = {
+						declare_war_on = {
+							type = topple_government
+							target = PREV.THIS
+						}
+					}
+				}
+			}
+			else = {
+				random_country = {
+					limit = {
+						original_tag = USA
+						NOT = { has_government = democratic }
+					}
+					ROOT = {
+						create_wargoal = {
+							type = topple_government
+							target = PREV.THIS
+						}
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 2
+				USA = { 
+					has_completed_focus = USA_ally_with_the_silver_shirts
+				}
+			}
+		}
+	}
+	
+	CAN_defence_scheme_no_2 = {
+		
+		icon = border_war
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CAN_defence_scheme_no_2_tt
+				NOT = { has_country_flag = CAN_defence_scheme_no_1 }
+			}
+			has_completed_focus = CAN_defence_of_canadian_sovereignty
+			any_country = {
+				original_tag = USA
+				OR = {
+					democratic < 0.5
+					NOT = { has_government = democratic }
+				}
+				NOT = { is_in_faction_with = CAN }
+			}
+		}
+		
+		allowed = {
+			has_focus_tree = canadian_focus
+		}
+		
+		visible = {
+			NOT = { has_country_flag = CAN_defence_scheme_no_1 }
+		}
+
+		highlight_states = {
+		
+		}
+		
+		fire_only_once = yes
+		
+		modifier = {
+			
+		}
+		
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = CAN_defence_scheme_no_2
+			add_ideas = CAN_defence_scheme_no_2
+			custom_effect_tooltip = CAN_defence_behind_the_albany_river_tt
+			hidden_effect = {
+				add_building_construction = {
+					type = bunker
+					province = 10718
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 12701
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 9740
+					level = 3
+					instant_build = yes
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_owned_by = ROOT
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_coastal = yes
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 2
+				USA = { 
+					has_completed_focus = USA_union_representation_act
+				}
+			}
+		}
+	}
+	
+	CAN_seize_alaska = {
+		
+		icon = generic_prepare_civil_war
+		
+		available = {
+			any_country = {
+				original_tag = USA
+				has_civil_war = yes
+				NOT = { 
+					is_in_faction_with = CAN
+					has_government = democratic
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						original_tag = USA
+						has_government =  democratic
+					}
+				}
+				any_country = {
+					original_tag = USA
+					has_civil_war = yes
+					NOT = { 
+						is_in_faction_with = CAN
+					}
+					has_government =  democratic
+					surrender_progress > 0.4
+				}
+			}
+			any_country = {
+				original_tag = USA
+				controls_state = 463
+			}
+			NOT = { controls_state = 463 }
+		}
+		
+		allowed = {
+			has_focus_tree = canadian_focus
+		}
+		
+		visible = {
+		
+		}
+
+		highlight_states = {
+			state = 463
+		}
+		
+		fire_only_once = yes
+		
+		modifier = {
+			
+		}
+		
+		cost = 50
+
+		complete_effect = {
+			custom_effect_tooltip = CAN_this_may_lead_to_war_tt
+			random_country = {
+				limit = {
+					controls_state = 463
+					NOT = { 
+						TAG = CAN
+					}
+				}
+				country_event = { id = tfv_canada.73 hours = 6 }
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = CAN_seized_alaska
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						original_tag = USA
+						controls_state = 463
+					}
+				}
+				transfer_state = 463
+			}
+			if = {
+				limit = {
+					NOT = { controls_state = 650 }
+					any_country = {
+						original_tag = USA
+						controls_state = 650
+					}
+				}
+				transfer_state = 650
+			}
+		}
+		
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 2
+				any_country = {
+					original_tag = USA
+					NOT = { has_government = democratic }
+					controls_state = 463
+				}
+			}
+		}
+	}
+}
+
+CAN_support_america = {
+
+	CAN_support_america = {
+		
+		icon = generic_construction
+		
+		available = {
+			has_completed_focus = CAN_permanent_joint_defense_board
+			USA = {
+				has_government = democratic
+				custom_trigger_tooltip = {
+					tooltip = CAN_has_national_spirit_great_depression_tt
+					OR = {
+						has_idea = great_depression
+						has_idea = great_depression_2
+						has_idea = great_depression_3
+					}
+				}
+			}
+		}
+		
+		allowed = {
+			has_focus_tree = canadian_focus
+		}
+		
+		visible = {
+			USA = {
+				has_government = democratic
+			}
+			has_government = democratic
+			NOT = {
+				OR = {
+					has_completed_focus = CAN_swastika_clubs
+					has_completed_focus = CAN_burn_the_royal_portraits
+				}
+			}
+			has_completed_focus = CAN_patriation
+			USA = {
+				OR = {
+					has_idea = great_depression
+					has_idea = great_depression_2
+					has_idea = great_depression_3
+				}
+			}
+		}
+
+		highlight_states = {
+		
+		}
+		
+		fire_only_once = yes
+		
+		modifier = {
+			
+		}
+		
+		cost = 25
+
+		complete_effect = {
+			USA = {
+				country_event = { id = tfv_canada.80 hours = 6 }
+			}
+		}
+		
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				has_idea = CAN_great_depression_1
+			}
+			modifier = {
+				factor = 0.75
+				has_idea = CAN_great_depression_2
+			}
+			modifier = {
+				factor = 5
+				NOT = {
+					has_idea = CAN_great_depression_1
+					has_idea = CAN_great_depression_2
+				}
+			}
+			modifier = {
+				factor = 0
+				USA = { 
+					OR = {
+						has_completed_focus = USA_ally_with_the_silver_shirts
+						has_completed_focus = USA_union_representation_act
+					}
+				}
+			}
+		}
+	}
+}
+
+CAN_loan_payments = {
+
+	CAN_loan_payment_plan_no_1 = {
+		
+		icon = generic_construction
+		
+		available = {
+			USA = {
+				custom_trigger_tooltip = {
+					tooltip = CAN_does_not_have_national_spirit_great_depression_tt
+					NOT = {
+						has_idea = great_depression
+						has_idea = great_depression_2
+						has_idea = great_depression_3
+					}
+				}
+				has_full_control_of_state = 463
+				has_full_control_of_state = 727
+			}
+			is_in_faction_with = USA
+			NOT = {	has_country_flag = CAN_payment_selected }
+			custom_trigger_tooltip = {
+				NOT  = { has_idea = CAN_great_depression_1 }
+				tooltip = CAN_has_revived_the_canada_wheat_board_tt
+			}
+		}
+		
+		allowed = {
+			has_focus_tree = canadian_focus
+		}
+		
+		visible = {
+		#	date > 1939.1.01
+			NOT = { has_country_flag = CAN_loan_payment_plan_no_1 }
+			NOT = { has_country_flag = CAN_payment_accepted }
+			USA = {
+				NOT = {
+					has_idea = great_depression
+					has_idea = great_depression_2
+					has_idea = great_depression_3
+				}
+				has_country_flag = CAN_canadian_loans
+			}
+		}
+
+		highlight_states = {
+		
+		}
+		
+		fire_only_once = yes
+		
+		modifier = {
+			
+		}
+		
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = CAN_loan_payment_plan_no_1
+			set_country_flag = CAN_payment_selected
+			USA = {
+				country_event = { id = tfv_canada.90 hours = 6 }
+			}
+		}
+		
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				USA = { has_war_with = JAP }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_country_flag = CAN_loan_payment_plan_no_2
+					has_country_flag = CAN_loan_payment_plan_no_3
+				}
+			}
+		}
+	}
+	
+	CAN_loan_payment_plan_no_2 = {
+		
+		icon = generic_construction
+		
+		available = {
+			USA = {
+				custom_trigger_tooltip = {
+					tooltip = CAN_does_not_have_national_spirit_great_depression_tt
+					NOT = {
+						has_idea = great_depression
+						has_idea = great_depression_2
+						has_idea = great_depression_3
+					}
+				}
+			}
+			NOT = {	has_country_flag = CAN_payment_selected }
+			custom_trigger_tooltip = {
+				tooltip = CAN_has_revived_the_canada_wheat_board_tt
+				NOT = { has_idea = CAN_great_depression_1 }
+			}
+		}
+		
+		allowed = {
+			has_focus_tree = canadian_focus
+		}
+		
+		visible = {
+		#	date > 1939.1.01
+			NOT = { has_country_flag = CAN_loan_payment_plan_no_2 }
+			NOT = { has_country_flag = CAN_payment_accepted }
+			USA = {
+				NOT = {
+					has_idea = great_depression
+					has_idea = great_depression_2
+					has_idea = great_depression_3
+				}
+				has_country_flag = CAN_canadian_loans
+			}
+		}
+
+		highlight_states = {
+		
+		}
+		
+		fire_only_once = yes
+		
+		modifier = {
+			
+		}
+		
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = CAN_payment_selected
+			set_country_flag = CAN_loan_payment_plan_no_2
+			USA = {
+				country_event = { id = tfv_canada.93 hours = 6 }
+			}
+		}
+		
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				num_of_factories > 49
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_country_flag = CAN_loan_payment_plan_no_1
+					has_country_flag = CAN_loan_payment_plan_no_3
+				}
+			}
+		}
+	}
+	
+	CAN_loan_payment_plan_no_3 = {
+		
+		icon = generic_construction
+		
+		available = {
+			USA = {
+				custom_trigger_tooltip = {
+					tooltip = CAN_does_not_have_national_spirit_great_depression_tt
+					NOT = {
+						has_idea = great_depression
+						has_idea = great_depression_2
+						has_idea = great_depression_3
+					}
+				}
+			}
+			NOT = {	has_country_flag = CAN_payment_selected }
+			custom_trigger_tooltip = {
+				NOT  = { has_idea = CAN_great_depression_1 }
+				tooltip = CAN_has_revived_the_canada_wheat_board_tt
+			}
+		}
+		
+		allowed = {
+			has_focus_tree = canadian_focus
+		}
+		
+		visible = {
+		#	date > 1939.1.01
+			NOT = { has_country_flag = CAN_loan_payment_plan_no_3 }
+			NOT = { has_country_flag = CAN_payment_accepted }
+			USA = {
+				NOT = {
+					has_idea = great_depression
+					has_idea = great_depression_2
+					has_idea = great_depression_3
+				}
+				has_country_flag = CAN_canadian_loans
+			}
+		}
+
+		highlight_states = {
+		
+		}
+		
+		fire_only_once = yes
+		
+		modifier = {
+			
+		}
+		
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = CAN_payment_selected
+			set_country_flag = CAN_loan_payment_plan_no_3
+			USA = {
+				country_event = { id = tfv_canada.96 hours = 6 }
+			}
+		}
+		
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				has_manpower > 250000
+			}
+			modifier = {
+				factor = 0.5
+				has_army_manpower = { size > 500000 }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_country_flag = CAN_loan_payment_plan_no_2
+					has_country_flag = CAN_loan_payment_plan_no_1
+				}
+			}
+		}
+	}
+}
+
+CAN_canadian_industrial_development = {
+
+	CAN_develop_southern_ontario = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 276
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			276 = {
+				NOT = { has_state_flag = CAN_southern_ontario_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 276
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_national_steel_car
+			}
+		}
+		
+		highlight_states = {
+			state = 276
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+
+		cancel_trigger = {
+			NOT = { controls_state = 276 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			276 = {
+				set_state_flag = CAN_southern_ontario_developed
+				set_state_category = metropolis
+				add_resource = {
+					type = steel
+					amount = 9
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_saint_lawrence = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 468
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			468 = {
+				NOT = { has_state_flag = CAN_saint_lawrence_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 468
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_national_steel_car
+			}
+		}
+		
+		highlight_states = {
+			state = 468
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 468 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			468 = {
+				set_state_flag = CAN_saint_lawrence_developed
+				set_state_category = large_city
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+				add_resource = {
+					type = aluminium
+					amount = 20
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_new_brunswick = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 465
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			465 = {
+				NOT = { has_state_flag = CAN_new_brunswick_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 465
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_national_steel_car
+			}
+		}
+		
+		highlight_states = {
+			state = 465
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 465 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			465 = {
+				set_state_flag = CAN_new_brunswick_developed
+				set_state_category = large_town
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_nova_scotia = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 464
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			464 = {
+				NOT = { has_state_flag = CAN_nova_scotia_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 464
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_national_steel_car
+			}
+		}
+		
+		highlight_states = {
+			state = 464
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 464 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			464 = {
+				set_state_flag = CAN_nova_scotia_developed
+				set_state_category = large_town
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_northern_ontario = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 682
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			682 = {
+				NOT = { has_state_flag = CAN_northern_ontario_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 682
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_mine_the_shield
+			}
+		}
+		
+		highlight_states = {
+			state = 682
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 682 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			682 = {
+				set_state_flag = CAN_northern_ontario_developed
+				set_state_category = town
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_manitoba = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 467
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			467 = {
+				NOT = { has_state_flag = CAN_manitoba_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 467
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_maritime_colonial_railway
+			}
+		}
+		
+		highlight_states = {
+			state = 467
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 467 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			467 = {
+				set_state_flag = CAN_manitoba_developed
+				set_state_category = large_town
+				add_resource = {
+					type = oil
+					amount = 7
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_saskatchewan = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 469
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			469 = {
+				NOT = { has_state_flag = CAN_saskatchewan_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 469
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_maritime_colonial_railway
+			}
+		}
+		
+		highlight_states = {
+			state = 469
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 469 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			469 = {
+				set_state_flag = CAN_saskatchewan_developed
+				set_state_category = large_town
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+				add_resource = {
+					type = oil
+					amount = 21
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_alberta = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 470
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			470 = {
+				NOT = { has_state_flag = CAN_alberta_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 470
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_alberta_coal_towns
+			}
+		}
+		
+		highlight_states = {
+			state = 470
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 470 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			470 = {
+				set_state_flag = CAN_alberta_developed
+				set_state_category = large_town
+				add_resource = {
+					type = oil
+					amount = 15
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_british_columbia = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 473
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			473 = {
+				NOT = { has_state_flag = CAN_british_columbia_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 473
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_canada_pacific_railway
+			}
+		}
+		
+		highlight_states = {
+			state = 473
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 473 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			473 = {
+				set_state_flag = CAN_british_columbia_developed
+				set_state_category = city
+				add_resource = {
+					type = aluminium
+					amount = 29
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_vancouver_island = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 740
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			740 = {
+				NOT = { has_state_flag = CAN_vancouver_island_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 740
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_canada_pacific_railway
+			}
+		}
+		
+		highlight_states = {
+			state = 740
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 740 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			740 = {
+				set_state_flag = CAN_vancouver_island_developed
+				set_state_category = town
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_northwestern_canada = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 471
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			471 = {
+				NOT = { has_state_flag = CAN_northwestern_canada_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 471
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_canada_pacific_railway
+			}
+		}
+		
+		highlight_states = {
+			state = 471
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 471 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			471 = {
+				set_state_flag = CAN_northwestern_canada_developed
+				add_resource = {
+					type = tungsten
+					amount = 62
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_northern_canada = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 472
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			472 = {
+				NOT = { has_state_flag = CAN_northern_canada_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 472
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_mine_the_shield
+			}
+		}
+		
+		highlight_states = {
+			state = 472
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 472 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			472 = {
+				set_state_flag = CAN_northern_canada_developed
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_northeastern_canada = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 683
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			683 = {
+				NOT = { has_state_flag = CAN_northeastern_canada_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 683
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_mine_the_shield
+			}
+		}
+		
+		highlight_states = {
+			state = 683
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 683 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			683 = {
+				set_state_flag = CAN_northeastern_canada_developed
+				set_state_category = pastoral
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_quebec = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 466
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			466 = {
+				NOT = { has_state_flag = CAN_quebec_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 466
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_mine_the_shield
+			}
+		}
+		
+		highlight_states = {
+			state = 466
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 466 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			466 = {
+				set_state_flag = CAN_quebec_developed
+				set_state_category = town
+				add_resource = {
+					type = steel
+					amount = 31
+				}
+				add_resource = {
+					type = aluminium
+					amount = 68
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_labrador = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 332
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			332 = {
+				NOT = { has_state_flag = CAN_labrador_developed }
+			}
+			controls_state = 332
+		}
+		
+		highlight_states = {
+			state = 332
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 332 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			332 = {
+				set_state_flag = CAN_labrador_developed
+				set_state_category = rural
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_develop_newfoundland = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 331
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			331 = {
+				NOT = { has_state_flag = CAN_newfoundland_developed }
+			}
+			controls_state = 331
+		}
+		
+		highlight_states = {
+			state = 331
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 331 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			331 = {
+				set_state_flag = CAN_newfoundland_developed
+				set_state_category = town
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+}
+
+CAN_resource_extraction = {
+
+	CAN_develop_turner_valley_oilfiled = {
+		
+		icon = oil
+		
+		available = {
+			controls_state = 470
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			470 = {
+				NOT = { has_state_flag = CAN_turner_valley_oilfield_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 470
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_turner_valley_oilfield
+			}
+		}
+		
+		highlight_states = {
+			state = 470
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 60
+		
+		cancel_trigger = {
+			NOT = { controls_state = 470 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			470 = {
+				set_state_flag = CAN_turner_valley_oilfield_developed
+				add_resource = {
+					type = oil
+					amount = 55
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_western_canada_oil_excavation = {
+		
+		icon = oil
+		
+		available = {
+			OR = {
+				if = {
+					limit = {
+						470 = { NOT = { has_state_flag = CAN_alberta_oil_extracted } }
+					}
+					controls_state = 470
+				}
+				if = {
+					limit = {
+						471 = { NOT = { has_state_flag = CAN_northwestern_canada_oil_extracted } }
+					}
+					controls_state = 471
+				}
+				if = {
+					limit = {
+						473 = { NOT = { has_state_flag = CAN_british_columbia_oil_extracted } }
+					}
+					controls_state = 473
+				}
+			}
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			OR = {
+				470 = {
+					NOT = { has_state_flag = CAN_alberta_oil_extracted }
+				}
+				471 = {
+					NOT = { has_state_flag = CAN_northwestern_canada_oil_extracted }
+				}
+				473 = {
+					NOT = { has_state_flag = CAN_british_columbia_oil_extracted }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				OR = {
+					controls_state = 470
+					controls_state = 471
+					controls_state = 473
+				}
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_imperial_oil
+			}
+		}
+		
+		highlight_states = {
+		
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 60
+		
+		cancel_trigger = {
+			OR = {
+				if = {
+					limit = {
+						470 = { NOT = { has_state_flag = CAN_alberta_oil_extracted } }
+					}
+					NOT = {
+						controls_state = 470
+					}
+				}
+				if = {
+					limit = {
+						471 = { NOT = { has_state_flag = CAN_northwestern_canada_oil_extracted } }
+					}
+					NOT = {
+						controls_state = 471
+					}
+				}
+				if = {
+					limit = {
+						473 = { NOT = { has_state_flag = CAN_british_columbia_oil_extracted } }
+					}
+					NOT = {
+						controls_state = 473
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			if = {
+				limit = {
+					470 = {
+						is_controlled_by = ROOT
+						NOT = { has_state_flag = CAN_alberta_oil_extracted }
+					}
+				}
+				470 = {
+					set_state_flag = CAN_alberta_oil_extracted
+					add_resource = {
+						type = oil
+						amount = 15
+					}
+				}
+			}
+			if = {
+				limit = {
+					471 = {
+						is_controlled_by = ROOT
+						NOT = { has_state_flag = CAN_northwestern_canada_oil_extracted }
+					}
+				}
+				471 = {
+					set_state_flag = CAN_northwestern_canada_oil_extracted
+					add_resource = {
+						type = oil
+						amount = 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					473 = {
+						is_controlled_by = ROOT
+						NOT = { has_state_flag = CAN_british_columbia_oil_extracted }
+					}
+				}
+				473 = {
+					set_state_flag = CAN_british_columbia_oil_extracted
+					add_resource = {
+						type = oil
+						amount = 8
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	CAN_subsidize_aluminum_company_of_canada = {
+		
+		icon = aluminium
+		
+		available = {
+			controls_state = 468
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			468 = {
+				NOT = { has_state_flag = CAN_aluminum_company_of_canada_subsidized }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = canadian_focus }
+				}
+				controls_state = 468
+			}
+			if = {
+				limit = {
+					has_focus_tree = canadian_focus
+				}
+				has_completed_focus = CAN_aluminium_company_of_canada
+			}
+		}
+		
+		highlight_states = {
+			state = 468
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 60
+		
+		cancel_trigger = {
+			NOT = { controls_state = 468 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			468 = {
+				set_state_flag = CAN_aluminum_company_of_canada_subsidized
+				add_resource = {
+					type = aluminium
+					amount = 33
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = canadian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = usa_focus
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_canada_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_canada_focus
+				factor = 0.75
+			}
+		}
+	}
+}

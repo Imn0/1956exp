@@ -1,0 +1,9 @@
+ai_historical_focus_list_TUR = {
+	ai_national_focuses = {
+
+		TUR_finish_the_five_year_plan
+		TUR_montreux_straits_convention
+		TUR_ataturks_constitution
+		TUR_kemalism
+	}
+}

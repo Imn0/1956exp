@@ -1,0 +1,80 @@
+spriteTypes = {
+	
+		
+	SpriteType = {
+		name = "GFX_goal_TUR_nuri_demirag"
+		texturefile = "gfx/interface/goals/TUR_nuri_demirag.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_ataturk"
+		texturefile = "gfx/interface/goals/OTT_ataturk.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_ataturk_assassinate"
+		texturefile = "gfx/interface/goals/OTT_ataturk_assassinate.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_abdulmecid"
+		texturefile = "gfx/interface/goals/OTT_abdulmecid.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_coat_of_arms"
+		texturefile = "gfx/interface/goals/OTT_coat_of_arms.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_focus_red_constitution"
+		texturefile = "gfx/interface/goals/focus_red_constitution.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_ferman"
+		texturefile = "gfx/interface/goals/OTT_ferman.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_constitution"
+		texturefile = "gfx/interface/goals/OTT_constitution.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_reform"
+		texturefile = "gfx/interface/goals/OTT_reform.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_caliph"
+		texturefile = "gfx/interface/goals/OTT_caliph.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_opda"
+		texturefile = "gfx/interface/goals/OTT_opda.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_army"
+		texturefile = "gfx/interface/goals/OTT_army.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_camels"
+		texturefile = "gfx/interface/goals/OTT_camels.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_OTT_gendarmerie"
+		texturefile = "gfx/interface/goals/OTT_gendarmerie.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_goal_flag_ottoman"
+		texturefile = "gfx/interface/goals/goal_flag_ottoman.dds"
+
+	}
+
+}

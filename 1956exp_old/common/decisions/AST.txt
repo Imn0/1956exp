@@ -1,0 +1,2279 @@
+AST_immigration = {
+
+	AST_british_immigration = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			has_government = democratic
+			if = {
+				limit = {
+					has_idea = AST_great_depression_1
+				}
+				NOT = { has_idea = AST_great_depression_1 }
+			}
+			if = {
+				limit = {
+					has_idea = AST_great_depression_2
+				}
+				NOT = { has_idea = AST_great_depression_2 }
+			}
+			if = {
+				limit = {
+					has_idea = AST_great_depression_3
+				}
+				NOT = { has_idea = AST_great_depression_3 }
+			}
+		}
+		
+		allowed = {
+			has_focus_tree = australian_focus
+		}
+		
+		visible = {
+			has_government = democratic
+			any_country = {
+				original_tag = ENG
+				has_government = democratic
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 10
+
+		complete_effect = {
+			add_timed_idea = { 
+				idea = AST_british_immigration
+				days = 1825
+			}
+		}
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 2
+				manpower < 10000
+			}			
+		}
+	}
+	
+	AST_give_asylum_to_british_refugees = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+		
+		}
+		
+		activation = {
+#			OR = {
+#				has_completed_focus = AST_sever_ties_with_uk
+#				has_completed_focus = AST_support_the_policy_of_appeasement
+#			}
+			has_government = democratic
+			any_country = {
+				original_tag = ENG
+				NOT = { has_government = democratic }
+				has_civil_war = no
+			}
+		}
+		
+		allowed = {
+			has_focus_tree = australian_focus
+		}
+		
+		cancel_trigger = {
+		
+		}
+		
+		selectable_mission = yes
+		
+		days_mission_timeout = 30
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		timeout_effect = {
+		
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					any_owned_state = {	
+						state_population > 200000
+					}
+				}
+				capital_scope = {
+					add_manpower = 50000
+				}
+				random_owned_state = {
+					prioritize = { 517 }
+					limit = {
+						state_population > 200000
+					}
+					add_manpower = 30000
+				}
+				random_owned_state = {
+					prioritize = { 521 }
+					limit = {
+						state_population > 200000
+					}
+					add_manpower = 30000
+				}
+				random_owned_state = {
+					prioritize = { 522 }
+					limit = {
+						state_population > 200000
+					}
+					add_manpower = 50000
+				}
+			}
+			else = {
+				capital_scope = {
+					add_manpower = 50000
+				}
+				random_owned_state = {
+					prioritize = { 517 }
+					add_manpower = 30000
+				}
+				random_owned_state = {
+					prioritize = { 521 }
+					add_manpower = 30000
+				}
+				random_owned_state = {
+					prioritize = { 522 }
+					add_manpower = 50000
+				}
+			}
+			random_country = {
+				limit = {
+					original_tag = ENG
+				}
+				country_event = { id = tfv_australia.140 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100			
+		}
+	}
+	
+	AST_indonesian_migrants = {
+		
+		icon = generic_nationalism
+		
+		available = {
+		
+		}
+		
+		activation = {
+#			OR = {
+#				has_completed_focus = AST_sever_ties_with_uk
+#				has_completed_focus = AST_support_the_policy_of_appeasement
+#			}
+			has_government = democratic
+			INS = { has_capitulated = yes }
+			INS = { has_war = yes }
+		}
+		
+		allowed = {
+			has_focus_tree = australian_focus
+		}
+		
+		visible = {
+		
+		}
+		
+		cancel_trigger = {
+		
+		}
+		
+		selectable_mission = yes
+		
+		days_mission_timeout = 30
+		
+		fire_only_once = yes
+		
+		cost = 10
+		
+		timeout_effect = {
+		
+		}
+
+		complete_effect = {
+			if = {
+				limit = { 
+					controls_state = 522
+				}
+				522 = {
+					add_manpower = 10000
+				}
+			}
+			else = {
+				capital_scope = {
+					add_manpower = 10000
+				}
+			}
+			HOL = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = AST_accepted_indonesian_migrants
+				}
+			}
+			INS = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = AST_accepted_indonesian_migrants
+				}
+			}
+		}
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	AST_post_war_immigration_program = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			has_government = democratic
+			has_war = no
+		}
+		
+		allowed = {
+			has_focus_tree = australian_focus
+		}
+		
+		visible = {
+			date > 1942.1.1
+			has_government = democratic
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+
+		complete_effect = {
+			add_timed_idea = { 
+				idea = AST_ten_pound_poms
+				days = 1460
+			}
+			set_country_flag = AST_ten_pound_poms
+		}
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 100	
+		}
+	}
+	
+	AST_abolish_the_white_australia_policy = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			has_government = democratic
+			NOT = { has_war = yes }
+		}
+		
+		allowed = {
+			has_focus_tree = australian_focus
+		}
+		
+		visible = {
+			has_government = democratic
+			has_country_flag = AST_ten_pound_poms
+		}
+		
+		fire_only_once = yes
+		
+		cost = 200
+
+		complete_effect = {
+			add_stability = -0.05
+			add_ideas = AST_abolished_white_australia_policy
+		}
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 100	
+		}
+	}
+}
+
+AST_rationing_and_recycling = {
+
+	AST_rationing = {
+		
+		icon = oil
+		
+		available = {
+			has_war = yes
+			OR = {
+				if = {
+					limit = {
+						521 = { NOT = { has_state_flag = AST_queensland_oil_rationing } }
+					}
+					controls_state = 521
+				}
+				if = {
+					limit = {
+						285 = { NOT = { has_state_flag = AST_new_south_wales_oil_rationing } }
+					}
+					controls_state = 285
+				}
+				if = {
+					limit = {
+						517 = { NOT = { has_state_flag = AST_victoria_oil_rationing } }
+					}
+					controls_state = 517
+				}
+			}
+		}
+		
+		allowed = {
+			
+		}
+		
+		visible = {
+			OR = {
+				521 = {
+					NOT = { has_state_flag = AST_queensland_oil_rationing }
+				}
+				285 = {
+					NOT = { has_state_flag = AST_new_south_wales_oil_rationing }
+				}
+				517 = {
+					NOT = { has_state_flag = AST_victoria_oil_rationing }
+				}
+			}
+		}
+		
+		highlight_states = {
+			
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+		
+		days_remove = 60
+		
+		cancel_trigger = {
+			OR = {
+				if = {
+					limit = {
+						521 = { NOT = { has_state_flag = AST_queensland_oil_rationing } }
+					}
+					NOT = {
+						controls_state = 521
+					}
+				}
+				if = {
+					limit = {
+						285 = { NOT = { has_state_flag = AST_new_south_wales_oil_rationing } }
+					}
+					NOT = {
+						controls_state = 285
+					}
+				}
+				if = {
+					limit = {
+						517 = { NOT = { has_state_flag = AST_victoria_oil_rationing } }
+					}
+					NOT = {
+						controls_state = 517
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			if = {
+				limit = {
+					521 = {
+						is_controlled_by = ROOT
+						NOT = { has_state_flag = AST_queensland_oil_rationing }
+					}
+				}
+				521 = { #Queensland
+					set_state_flag = AST_queensland_oil_rationing
+					add_resource = {
+						type = oil
+						amount = 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					285 = {
+						is_controlled_by = ROOT
+						NOT = { has_state_flag = AST_new_south_wales_oil_rationing }
+					}
+				}
+				285 = { #New South Wales
+					set_state_flag = AST_new_south_wales_oil_rationing
+					add_resource = {
+						type = oil
+						amount = 8
+					}
+				}
+			}
+			if = {
+				limit = {
+					517 = {
+						is_controlled_by = ROOT
+						NOT = { has_state_flag = AST_victoria_oil_rationing }
+					}
+				}
+				517 = { #Victoria
+					set_state_flag = AST_victoria_oil_rationing
+					add_resource = {
+						type = oil
+						amount = 7
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	AST_recycling = {
+		
+		icon = aluminium
+		
+		available = {
+			has_war = yes
+			OR = {
+				if = {
+					limit = {
+						521 = { NOT = { has_state_flag = AST_queensland_aluminum_recycling } }
+					}
+					controls_state = 521
+				}
+				if = {
+					limit = {
+						285 = { NOT = { has_state_flag = AST_new_south_wales_aluminum_recycling } }
+					}
+					controls_state = 285
+				}
+				if = {
+					limit = {
+						517 = { NOT = { has_state_flag = AST_victoria_aluminum_recycling } }
+					}
+					controls_state = 517
+				}
+			}
+		}
+		
+		allowed = {
+			
+		}
+		
+		visible = {
+			OR = {
+				521 = {
+					NOT = { has_state_flag = AST_queensland_aluminum_recycling }
+				}
+				285 = {
+					NOT = { has_state_flag = AST_new_south_wales_aluminum_recycling }
+				}
+				517 = {
+					NOT = { has_state_flag = AST_victoria_aluminum_recycling }
+				}
+			}
+		}
+		
+		highlight_states = {
+			
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+		
+		days_remove = 60
+		
+		cancel_trigger = {
+			OR = {
+				if = {
+					limit = {
+						521 = { NOT = { has_state_flag = AST_queensland_aluminum_recycling } }
+					}
+					NOT = {
+						controls_state = 521
+					}
+				}
+				if = {
+					limit = {
+						285 = { NOT = { has_state_flag = AST_new_south_wales_aluminum_recycling } }
+					}
+					NOT = {
+						controls_state = 285
+					}
+				}
+				if = {
+					limit = {
+						517 = { NOT = { has_state_flag = AST_victoria_aluminum_recycling } }
+					}
+					NOT = {
+						controls_state = 517
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			
+		}
+		
+		remove_effect = {
+			if = {
+				limit = {
+					521 = {
+						is_controlled_by = ROOT
+						NOT = { has_state_flag = AST_queensland_aluminum_recycling }
+					}
+				}
+				521 = { #Queensland
+					set_state_flag = AST_queensland_aluminum_recycling
+					add_resource = {
+						type = aluminium
+						amount = 8
+					}
+				}
+			}
+			if = {
+				limit = {
+					285 = {
+						is_controlled_by = ROOT
+						NOT = { has_state_flag = AST_new_south_wales_aluminum_recycling }
+					}
+				}
+				285 = { #New South Wales
+					set_state_flag = AST_new_south_wales_aluminum_recycling
+					add_resource = {
+						type = aluminium
+						amount = 16
+					}
+				}
+			}
+			if = {
+				limit = {
+					517 = {
+						is_controlled_by = ROOT
+						NOT = { has_state_flag = AST_victoria_aluminum_recycling }
+					}
+				}
+				517 = { #Victoria
+					set_state_flag = AST_victoria_aluminum_recycling
+					add_resource = {
+						type = aluminium
+						amount = 14
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+AST_military_production_allocation = {
+
+	AST_concentrate_industry = {
+		
+		icon = ger_military_buildup
+		
+		available = {
+			OR = {
+				has_war = yes
+				threat > 0.5
+			}
+			NOT = { has_idea = AST_concentrated_industry }
+		}
+		
+		allowed = {
+			has_focus_tree = australian_focus
+		}
+		
+		visible = {
+		
+		}
+		
+		highlight_states = {
+			
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		days_remove = 200
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			add_ideas = AST_concentrated_industry
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				any_state = {
+					is_controlled_by = ROOT
+					has_damaged_buildings = yes
+				}
+			}
+		}
+	}
+	
+	AST_deconcentrate_industry = {
+		
+		icon = ger_military_buildup
+		
+		available = {
+			OR = {
+				has_war = yes
+				threat > 0.5
+			}
+			has_idea = AST_concentrated_industry
+		}
+		
+		allowed = {
+			has_focus_tree = australian_focus
+		}
+		
+		visible = {
+		
+		}
+		
+		highlight_states = {
+			
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		days_remove = 200
+		
+		remove_effect = {
+			remove_ideas = AST_concentrated_industry
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 50
+				any_state = {
+					is_controlled_by = ROOT
+					has_damaged_buildings = yes
+				}
+			}
+		}
+	}
+}
+
+AST_australian_industrial_development = {
+	
+	AST_develop_victoria = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 517
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			517 = {
+				NOT = { has_state_flag = AST_victoria_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = australian_focus }
+				}
+				controls_state = 517
+			}
+			if = {
+				limit = {
+					has_focus_tree = australian_focus
+				}
+				has_completed_focus = AST_east_coast_expansion
+			}
+		}
+		
+		highlight_states = {
+			state = 517
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 517 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			517 = {
+				set_state_flag = AST_victoria_developed
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				add_resource = {
+					type = aluminium
+					amount = 24
+				}
+				add_resource = {
+					type = chromium
+					amount = 27
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = australian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_australia_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_australia_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	AST_develop_new_south_wales = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 285
+		}
+		
+		allowed = {
+			
+		}
+		
+		visible = {
+			285 = {
+				NOT = { has_state_flag = AST_new_south_wales_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = australian_focus }
+				}
+				controls_state = 285
+			}
+			if = {
+				limit = {
+					has_focus_tree = australian_focus
+				}
+				has_completed_focus = AST_east_coast_expansion
+			}
+		}
+		
+		highlight_states = {
+			state = 285
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 285 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			285 = {
+				set_state_flag = AST_new_south_wales_developed
+				set_state_category = metropolis
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = australian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_australia_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_australia_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	AST_develop_queensland = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 521
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			521 = {
+				NOT = { has_state_flag = AST_queensland_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = australian_focus }
+				}
+				controls_state = 521
+			}
+			if = {
+				limit = {
+					has_focus_tree = australian_focus
+				}
+				has_completed_focus = AST_east_coast_expansion
+			}
+		}
+		
+		highlight_states = {
+			state = 521
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 521 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			521 = {
+				set_state_flag = AST_queensland_developed
+				set_state_category = large_city
+				add_resource = {
+					type = aluminium
+					amount = 48
+				}
+				add_resource = {
+					type = tungsten
+					amount = 10
+				}
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = australian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_australia_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_australia_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	AST_develop_northern_territory = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 520
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			520 = {
+				NOT = { has_state_flag = AST_northern_territory_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = australian_focus }
+				}
+				controls_state = 520
+			}
+			if = {
+				limit = {
+					has_focus_tree = australian_focus
+				}
+				has_completed_focus = AST_expand_the_northern_railway
+			}
+		}
+		
+		highlight_states = {
+			state = 520
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 520 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			520 = {
+				set_state_flag = AST_northern_territory_developed
+				set_state_category = rural
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+				add_resource = {
+					type = aluminium
+					amount = 34
+				}
+				add_resource = {
+					type = chromium
+					amount = 6
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = australian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_australia_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_australia_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	AST_develop_central_australia = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 674
+		}
+		
+		allowed = {
+			
+		}
+		
+		visible = {
+			674 = {
+				NOT = { has_state_flag = AST_central_australia_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = australian_focus }
+				}
+				controls_state = 674
+			}
+			if = {
+				limit = {
+					has_focus_tree = australian_focus
+				}
+				has_completed_focus = AST_industrialize_the_wastelands
+			}
+		}
+		
+		highlight_states = {
+			state = 674
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 674 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			674 = {
+				set_state_flag = AST_central_australia_developed
+				set_state_category = pastoral
+				add_resource = {
+					type = steel
+					amount = 62
+				}
+				add_resource = {
+					type = oil
+					amount = 19
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = australian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_australia_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_australia_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	AST_develop_south_australia = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 519
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			519 = {
+				NOT = { has_state_flag = AST_south_australia_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = australian_focus }
+				}
+				controls_state = 519
+			}
+			if = {
+				limit = {
+					has_focus_tree = australian_focus
+				}
+				has_completed_focus = AST_south_australian_housing_trust
+			}
+		}
+		
+		highlight_states = {
+			state = 519
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 519 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			519 = {
+				set_state_flag = AST_south_australia_developed
+				set_state_category = town
+				add_resource = {
+					type = steel
+					amount = 22
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = australian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_australia_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_australia_focus
+				factor = 0.75
+			}
+		}
+	}
+
+	AST_develop_western_australia = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 522
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			522 = {
+				NOT = { has_state_flag = AST_western_australia_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = australian_focus }
+				}
+				controls_state = 522
+			}
+			if = {
+				limit = {
+					has_focus_tree = australian_focus
+				}
+				has_completed_focus = AST_western_australian_government_railways
+			}
+		}
+		
+		highlight_states = {
+			state = 522
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 522 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			522 = {
+				set_state_flag = AST_western_australia_developed
+				set_state_category = large_town
+				add_resource = {
+					type = steel
+					amount = 32
+				}
+				add_resource = {
+					type = aluminium
+					amount = 60
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = australian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_australia_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_australia_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	AST_develop_tasmania = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 518
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			518 = {
+				NOT = { has_state_flag = AST_tasmania_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = australian_focus }
+				}
+				controls_state = 518
+			}
+			if = {
+				limit = {
+					has_focus_tree = australian_focus
+				}
+				has_completed_focus = AST_island_excavation
+			}
+		}
+		
+		highlight_states = {
+			state = 518
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 518 }
+		}
+	
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			518 = {
+				set_state_flag = AST_tasmania_developed
+				set_state_category = town
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = australian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_australia_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_australia_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	AST_develop_papua = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 523
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			523 = {
+				NOT = { has_state_flag = AST_papua_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = australian_focus }
+				}
+				controls_state = 523
+			}
+			if = {
+				limit = {
+					has_focus_tree = australian_focus
+				}
+				has_completed_focus = AST_island_excavation
+			}
+		}
+		
+		highlight_states = {
+			state = 523
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 523 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			523 = {
+				set_state_flag = AST_papua_developed
+				add_extra_state_shared_building_slots = 2
+				add_resource = {
+					type = rubber
+					amount = 19
+				}
+				add_resource = {
+					type = oil
+					amount = 6
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = australian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_australia_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_australia_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	AST_develop_bismark = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 737
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			737 = {
+				NOT = { has_state_flag = AST_bismark_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = australian_focus }
+				}
+				controls_state = 737
+			}
+			if = {
+				limit = {
+					has_focus_tree = australian_focus
+				}
+				has_completed_focus = AST_island_excavation
+			}
+		}
+		
+		highlight_states = {
+			state = 737
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 737 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			737 = {
+				set_state_flag = AST_bismark_developed
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = rubber
+					amount = 7
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = australian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_australia_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_australia_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	AST_develop_soloman_islands = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 634
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			634 = {
+				NOT = { has_state_flag = AST_soloman_islands_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = australian_focus }
+				}
+				controls_state = 634
+			}
+			if = {
+				limit = {
+					has_focus_tree = australian_focus
+				}
+				has_completed_focus = AST_island_excavation
+			}
+		}
+		
+		highlight_states = {
+			state = 634
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 634 }
+		}
+
+		complete_effect = {
+			
+		}
+		
+		remove_effect = {
+			634 = {
+				set_state_flag = AST_soloman_islands_developed
+				set_state_category = rural
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = australian_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_australia_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_australia_focus
+				factor = 0.75
+			}
+		}
+	}
+}
+
+AST_receive_ship_blueprints = {
+	
+	AST_contact_britain = {
+		
+		icon = generic_naval
+		
+		available = {
+			
+		}
+		
+		allowed = {
+			original_tag = AST
+		}
+
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+		
+		cost = 300
+		
+		days_remove = 30
+		
+		complete_effect = {
+			
+		}
+		
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+AST_challenge_britain = {
+	
+	AST_rally_the_colonies = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			has_government = fascism
+		}
+		
+		allowed = {
+			original_tag = AST
+		}
+
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+		
+		cost = 300
+		
+		days_remove = 30
+		
+		complete_effect = {
+			set_variable = {
+				var = AST_num_countries_support
+				value = 0
+			}
+			set_variable = {
+				var = AST_num_countries_for_war
+				value = 0
+			}
+			set_variable = {
+				var = AST_fire_control
+				value = 0
+			}
+			every_country = {
+				limit = {
+					is_subject_of = ENG
+					NOT = { tag = AST }
+				}
+				country_event = { id = tfv_australia.150 }
+			}
+		}
+		
+		remove_effect = {
+			set_country_flag = AST_has_rallied_support
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				NOT = { has_idea = AST_king_edward_viii }
+			}
+		}
+	}
+	
+	AST_dethrone_the_empire = {
+		
+		icon = generic_nationalism
+		
+		available = {
+			has_government = fascism
+		}
+		
+		allowed = {
+			original_tag = AST
+		}
+
+		visible = {
+			any_country = { 
+				is_subject_of = ENG
+				has_country_flag = AST_has_supported_australia 
+			}
+			has_country_flag = AST_has_rallied_support
+		}
+		
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			clr_country_flag = AST_has_rallied_support
+			set_variable = {
+				var = AST_fire_control
+				value = 1
+			}
+			every_country = {
+				limit = {
+					is_subject_of = ENG
+					has_country_flag = AST_has_supported_australia
+				}
+				country_event = { id = tfv_australia.153 }
+			}
+		}
+		
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+AST_anz_union = {
+
+	AST_send_proposal_to_new_zealand = {
+		
+		icon = generic_form_nation
+		
+		available = {
+			has_war = yes
+			is_in_faction_with = NZL
+			has_government = democratic
+			NZL = { 
+				has_government = democratic
+				has_war = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = AST
+		}
+		
+		visible = {
+			NZL = {
+				OR = {
+					NOT = {
+						has_completed_focus = NZL_constitution_amendment_act
+						has_completed_focus = NZL_statute_of_westminster 
+					}
+				}
+			}
+			NZL = { exists = yes }
+			NOT = { has_country_flag = AST_ANZ_union_formed }
+		}
+
+		highlight_states = {
+		
+		}
+		
+		fire_only_once = no
+		
+		modifier = {
+			
+		}
+		
+		cost = 75
+
+		complete_effect = {
+			NZL = {
+				country_event = { id = tfv_australia.97 }
+			}
+		}
+		
+		days_re_enable = 730
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	AST_release_new_zealand = {
+	
+		icon = generic_form_nation
+		
+		available = {
+		
+		}
+	
+		allowed = {
+			original_tag = AST
+		}
+		
+		visible = {
+			has_country_flag = AST_ANZ_union_formed
+		}
+	
+		highlight_states = {
+		
+		}
+	
+		fire_only_once = no
+	
+		modifier = {
+			
+		}
+	
+		cost = 10
+		
+		complete_effect = {
+			AST = {
+				country_event = { id = tfv_australia.100 }
+				clr_country_flag = AST_ANZ_union_formed
+			}
+		}
+		
+		days_re_enable = 730
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+AST_protect_south_east_asia = {
+
+	AST_protect_the_dutch_east_indies = {
+		
+		icon = generic_nationalism
+		
+		available = {
+			NOT = { has_war_with = HOL }
+			INS = {
+				has_war = yes
+			}
+			any_country = {
+				limit = {
+					OR = {
+						capital_scope = asia
+						capital_scope = pacific
+					}
+				}
+				has_war_with = INS
+				has_war_with = AST
+			}
+			HOL = {
+				OR = {
+					has_government = democratic
+					is_in_faction_with = ROOT
+				}		
+			}
+		}
+		
+		allowed = {
+			original_tag = AST
+		}
+		
+		visible = {
+			INS = {
+				is_subject_of = HOL
+				NOT = { is_subject_of = ROOT }
+			}
+		}
+
+		highlight_states = {
+		
+		}
+		
+		fire_only_once = no
+		
+		modifier = {
+			
+		}
+		
+		cost = 50
+
+		complete_effect = {
+			HOL = {
+				country_event = { id = tfv_australia.10 }
+			}
+		}
+		
+		days_re_enable = 365
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_historical_focus_on = yes
+					HOL = {
+						OR = {
+							has_completed_focus = HOL_curtail_colonial_autonomy
+							has_completed_focus = HOL_oranje_boven
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	AST_protect_british_malaya = {
+		
+		icon = generic_nationalism
+		
+		available = {
+			NOT = { has_war_with = ENG }
+			MAL = {
+				is_subject_of = ENG
+				has_war = yes
+			}
+			any_country = {
+				limit = {
+					OR = {
+						capital_scope = asia
+						capital_scope = pacific
+					}
+				}
+				has_war_with = MAL
+				has_war_with = AST
+			}
+			MAL = {
+				OR = {
+					has_government = democratic
+					is_in_faction_with = ROOT
+				}		
+			}
+		}
+		
+		allowed = {
+			original_tag = AST
+		}
+		
+		visible = {
+			MAL = {
+				is_subject_of = ENG
+				NOT = { is_subject_of = ROOT }
+			}
+		}
+
+		highlight_states = {
+		
+		}
+		
+		fire_only_once = no
+		
+		modifier = {
+			
+		}
+		
+		cost = 50
+
+		complete_effect = {
+			ENG = {
+				country_event = { id = tfv_australia.1 }
+			}
+		}
+		
+		days_re_enable = 365
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+AST_china_fleet = {
+
+	AST_protect_british_malaya = {
+		
+		icon = generic_nationalism
+		
+		available = {
+			NOT = { has_war_with = ENG }
+			MAL = {
+				is_subject_of = ENG
+				has_war = yes
+			}
+			any_country = {
+				limit = {
+					OR = {
+						capital_scope = asia
+						capital_scope = pacific
+					}
+				}
+				has_war_with = MAL
+				has_war_with = AST
+			}
+			MAL = {
+				OR = {
+					has_government = democratic
+					is_in_faction_with = ROOT
+				}		
+			}
+		}
+		
+		allowed = {
+			original_tag = AST
+		}
+		
+		visible = {
+			OR = {
+				has_completed_focus = AST_sever_ties_with_uk
+				has_completed_focus = AST_support_the_policy_of_appeasement
+			}
+			MAL = {
+				NOT = { is_subject_of = ROOT }
+			}
+		}
+
+		highlight_states = {
+		
+		}
+		
+		fire_only_once = no
+		
+		modifier = {
+			
+		}
+		
+		cost = 0
+
+		complete_effect = {
+			ENG = {
+				country_event = { id = tfv_australia.1 }
+			}
+		}
+		
+		days_re_enable = 365
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 75
+		}
+	}
+}
+
+AST_china_fleet = {
+
+	AST_ask_for_china_fleet = {
+		
+		icon = jap_conquer_china
+		
+		available = {
+			threat > 0.15
+		}
+		
+		allowed = {
+			original_tag = AST
+		}
+		
+		visible = {
+			NOT = { has_war_with = ENG }
+			ENG = {
+				OR = {
+					has_government = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			NOT = { has_country_flag = AST_has_demanded_china_fleet }
+		}
+
+		highlight_states = {
+			
+		}
+		
+		fire_only_once = yes
+		
+		modifier = {
+			
+		}
+		
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = AST_has_asked_for_china_fleet
+			ENG = {
+				country_event = { id = tfv_australia.130 }
+			}
+		}
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0.1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	AST_demand_china_fleet = {
+		
+		icon = jap_conquer_china
+		
+		available = {
+			has_war_with = JAP
+			ENG = {
+				has_war_with = JAP
+			}
+		}
+		
+		allowed = {
+			original_tag = AST
+		}
+		
+		visible = {
+			NOT = { has_war_with = ENG }
+			ENG = {
+				OR = {
+					NOT = {
+						has_government = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+			NOT = { has_country_flag = AST_has_asked_for_china_fleet }
+		}
+
+		highlight_states = {
+			
+		}
+		
+		fire_only_once = yes
+		
+		modifier = {
+			
+		}
+		
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = AST_has_demanded_china_fleet
+			ENG = {
+				country_event = { id = tfv_australia.133 }
+			}
+		}
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

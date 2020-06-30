@@ -1,0 +1,25 @@
+spriteTypes = {
+	
+	#Australia
+	spriteType = {
+		name = "GFX_decision_cat_ast_australian_industrial_development"
+		texturefile = "gfx/interface//decisions/decision_cat_ast_australian_industrial_development.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_ast_immigration"
+		texturefile = "gfx/interface//decisions/decision_cat_ast_immigration.dds"
+	}
+	
+	#New Zealand
+	spriteType = {
+		name = "GFX_decision_cat_nzl_new_zealand_industrial_development"
+		texturefile = "gfx/interface//decisions/decision_cat_nzl_new_zealand_industrial_development.dds"
+	}
+	
+	#Canada
+	spriteType = {
+		name = "GFX_decision_cat_can_canadian_industrial_development"
+		texturefile = "gfx/interface//decisions/decision_cat_can_canadian_industrial_development.dds"
+	}
+}

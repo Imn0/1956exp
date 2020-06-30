@@ -1,0 +1,1847 @@
+SS_foreign_volunteers = {
+	SS_recruitment_denmark = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			99 = {
+				CONTROLLER = {
+					OR = {
+						original_tag = GER
+						is_subject_of = GER
+					}
+				}
+			}
+			37 = {
+				CONTROLLER = {
+					OR = {
+						original_tag = GER
+						is_subject_of = GER
+					}
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				DEN = {
+					is_subject_of = GER
+				}
+				has_war_with = DEN
+				AND = {
+					has_war = yes
+					DEN = {
+						exists = no
+					}
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.1
+		}
+	}
+	
+	
+	SS_recruitment_norway = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			110 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			142 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			143 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			144 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				NOR = {
+					is_subject_of = GER
+				}
+				has_war_with = NOR
+				NOR = { exists = no }
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.2
+		}
+	}
+	
+	
+	SS_recruitment_netherlands = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			
+			36 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			7 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			35 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+				
+			
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				HOL = {
+					is_subject_of = GER
+				}
+				has_war_with = HOL
+				HOL = { exists = no }
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.3
+		}
+	}
+	
+	
+	SS_recruitment_belgium = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			6 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			34 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}	
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				BEL = {
+					is_subject_of = GER
+				}
+				has_war_with = BEL
+				BEL = { exists = no }
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.4
+		}
+	}
+	SS_recruitment_france = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			29 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			16 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			15 = {
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			14 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				FRA = {
+					is_subject_of = GER
+				}
+				has_war_with = FRA
+				FRA = { exists = no }
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.5
+		}
+	}
+	SS_recruitment_estonia = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			13 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			191 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				EST = {
+					is_subject_of = GER
+				}
+				has_war_with = EST
+				AND = {
+					has_war = yes
+					EST = {
+						exists = no
+					}
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.6
+		}
+	}
+	SS_recruitment_latvia = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			12 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			190 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				LAT = {
+					is_subject_of = GER
+				}
+				has_war_with = LAT
+				AND = {
+					has_war = yes
+					LAT = {
+						exists = no
+					}
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.7
+		}
+	}
+	SS_recruitment_lithuania = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			
+			11 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			189 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				LIT = {
+					is_subject_of = GER
+				}
+				has_war_with = LIT
+				AND = {
+					has_war = yes
+					LIT = {
+						exists = no
+					}
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.8
+		}
+	}
+	SS_recruitment_britain = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			126 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			127 = {
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			123 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			338 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				ENG = {
+					is_subject_of = GER
+				}
+				has_war_with = ENG
+				AND = {
+					has_war = yes
+					ENG = {
+						exists = no
+					}
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_alternate.1
+		}
+	}
+	SS_recruitment_scotland = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				AND = {
+					121 = { is_controlled_by = GER }
+					133 = { is_controlled_by = GER }
+					136 = { is_controlled_by = GER }
+					120 = { is_controlled_by = GER }
+				}
+				AND = {
+					121 = { CONTROLLER = { is_subject_of = GER } }
+					133 = { CONTROLLER = { is_subject_of = GER } }
+					136 = { CONTROLLER = { is_subject_of = GER } }
+					120 = { CONTROLLER = { is_subject_of = GER } }
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				AND = {
+					121 = { is_controlled_by = GER }
+					133 = { is_controlled_by = GER }
+					136 = { is_controlled_by = GER }
+					120 = { is_controlled_by = GER }
+				}
+				AND = {
+					121 = { CONTROLLER = { is_subject_of = GER } }
+					133 = { CONTROLLER = { is_subject_of = GER } }
+					136 = { CONTROLLER = { is_subject_of = GER } }
+					120 = { CONTROLLER = { is_subject_of = GER } }
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_alternate.2
+		}
+	}
+	SS_recruitment_sweden = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			141 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			139 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			138 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			140 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				SWE = {
+					is_subject_of = GER
+				}
+				has_war_with = SWE
+				AND = {
+					has_war = yes
+					SWE = {
+						exists = no
+					}
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_alternate.3
+		}
+	}
+	
+	
+	SS_recruitment_hungary = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			
+			43 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			
+			154 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			
+			155 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				HUN = {
+					is_subject_of = GER
+				}
+				has_war_with = HUN
+				AND = {
+					has_war = yes
+					HUN = {
+						exists = no
+					}
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.30
+		}
+	}
+	
+	SS_recruitment_croatia = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			
+			109	 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				YUG = {
+					is_subject_of = GER
+				}
+				has_war_with = YUG
+				YUG = {
+					has_war = yes
+					YUG = {
+						exists = no
+					}
+				}
+				109	 = { 
+					CONTROLLER = { 
+						OR = { 
+							original_tag = GER 
+							is_subject_of = GER 
+						} 
+					} 
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.31
+		}
+	}
+	
+	SS_recruitment_ukraine = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			
+			202 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			
+			137 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				OR = {
+					SOV = {
+						is_subject_of = GER
+					}
+					has_war_with = SOV
+					AND = {
+						has_war = yes
+						SOV = {
+							exists = no
+						}
+					}
+				}
+				OR = {
+					UKR = {
+						is_subject_of = GER
+					}
+					has_war_with = UKR
+					AND = {
+						has_war = yes
+						UKR = {
+							exists = no
+						}
+					}
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.32
+		}
+	}
+	
+	
+	SS_recruitment_russia = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			
+			195 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			
+			206 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			
+			217 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			
+			219 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				SOV = {
+					is_subject_of = GER
+				}
+				has_war_with = SOV
+				AND = {
+					has_war = yes
+					SOV = {
+					exists = no
+					}
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.33
+		}
+	}
+	
+	SS_recruitment_albania = {
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_foreign_volunteers
+			
+			44 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+			has_completed_focus = GER_foreign_volunteers
+			OR = {
+				ALB = {
+					is_subject_of = GER
+				}
+				has_war_with = ALB
+				AND = {
+					has_war = yes
+					ALB = {
+						exists = no
+					}
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.34
+		}
+	}
+}
+
+
+
+SS_demands = {
+	SS_himmler_wants_field_command = {
+
+		icon = generic_army_support
+
+		available = {
+			has_idea = heinrich_himmler
+			has_war = yes
+		}
+		visible = {
+			has_idea = heinrich_himmler
+			has_war = yes
+		}
+		cost = 25
+		fire_only_once = yes
+		complete_effect = {
+			subtract_from_variable = { var = SS_anger value = 10 }
+			add_to_variable = { var = wehrmacht_anger value = 5 } #shitty little upstart
+			create_field_marshal = {
+				name = "Heinrich Himmler"
+				picture = "Portrait_Germany_Heinrich_Himmler.dds"
+				traits = { politically_connected }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+	}
+}
+
+SS_divisions = {
+	SS_division_1= { #Leibstandarte
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_1
+			SS_set_templates = yes
+			if = {
+				limit = {
+					has_country_flag = SS_armored_division_early
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"1. SS Panzerdivision Leibstandarte Adolf Hitler\" division_template = \"SS Panzer Division\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SS_armored_division_improved
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"1. SS Panzerdivision Leibstandarte Adolf Hitler\" division_template = \"SS Panzer Division (n.A.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"1. SS Panzerdivision Leibstandarte Adolf Hitler\" division_template = \"SS Panzer Division (vollgep.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	SS_division_2= { #Das Reich
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_2
+			SS_set_templates = yes
+			if = {
+				limit = {
+					has_country_flag = SS_armored_division_early
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"2. SS Panzerdivision Das Reich\" division_template = \"SS Panzer Division\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SS_armored_division_improved
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"2. SS Panzerdivision Das Reich\" division_template = \"SS Panzer Division (n.A.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else = {
+				hidden_effect = {		
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"2. SS Panzerdivision Das Reich\" division_template = \"SS Panzer Division (vollgep.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	SS_division_3= {#Totenkopf
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_3
+			SS_set_templates = yes
+			if = {
+				limit = {
+					has_country_flag = SS_armored_division_early
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"3. SS Panzerdivision Totenkopf\" division_template = \"SS Panzer Division\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SS_armored_division_improved
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"3. SS Panzerdivision Totenkopf\" division_template = \"SS Panzer Division (n.A.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else = {
+				hidden_effect = {		
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"3. SS Panzerdivision Totenkopf\" division_template = \"SS Panzer Division (vollgep.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	SS_division_4= {#Polizei
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_4
+			SS_set_templates = yes
+					if = {
+						limit = {
+							has_country_flag = SS_mechanised_division_late
+						}
+						hidden_effect = {
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"4. SS Panzergrenadier Division Polizei\" division_template = \"SS Panzergrenadier Division (n.A.)\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							has_country_flag = SS_mechanised_division_early
+						}
+						hidden_effect = {
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"4. SS Panzergrenadier Division Polizei\" division_template = \"SS Panzergrenadier Division\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+					else = {
+						hidden_effect = {		
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"4. SS Mot. Grenadier Division Polizei\" division_template = \"SS Motorisierte Division\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+		}
+	}
+	
+	SS_division_6= {#Nord
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_6
+			hidden_effect = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 64 }
+				create_unit = {
+					division = "name = \"6. SS Mountain-Division Nord\" division_template = \"SS Waffen-Grenadier-Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5" 
+					owner = GER
+				}
+			}
+			}
+		}
+	}
+	
+	SS_division_7= { #Prinz Eugen
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_7
+			hidden_effect = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 64 }
+				create_unit = {
+					division = "name = \"7. SS Mountain-Division Prinz Eugen\" division_template = \"SS Waffen-Grenadier-Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5" 
+					owner = GER
+				}
+			}
+			}
+		}
+	}
+	
+	SS_division_8= {#Florian Geyer
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_8
+			hidden_effect = {		
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "name = \"8. SS Cavalry-Division Florian Geyer\" division_template = \"SS Motorisierte Division\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+						owner = GER
+					}
+				}
+			}
+		}
+	}
+	
+	SS_division_9= {#hohenstaufen
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_9
+			SS_set_templates = yes
+			if = {
+				limit = {
+					has_country_flag = SS_armored_division_early
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"9. SS Panzerdivision Hohenstaufen\" division_template = \"SS Panzer Division\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SS_armored_division_improved
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"9. SS Panzerdivision Hohenstaufen\" division_template = \"SS Panzer Division (n.A.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else = {
+				hidden_effect = {		
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"9. SS Panzerdivision Hohenstaufen\" division_template = \"SS Panzer Division (vollgep.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	SS_division_10= { #Frundsberg
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_10
+			SS_set_templates = yes
+			if = {
+				limit = {
+					has_country_flag = SS_armored_division_early
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"10. SS Panzerdivision Frundsberg\" division_template = \"SS Panzer Division\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SS_armored_division_improved
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"10. SS Panzerdivision Frundsberg\" division_template = \"SS Panzer Division (n.A.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else = {
+				hidden_effect = {		
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"10. SS Panzerdivision Frundsberg\" division_template = \"SS Panzer Division (vollgep.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	SS_division_12= {#Hitlerjugend
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_12
+			SS_set_templates = yes
+			if = {
+				limit = {
+					has_country_flag = SS_armored_division_early
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"12. SS Panzerdivision Hitlerjugend\" division_template = \"SS Panzer Division\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SS_armored_division_improved
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"12. SS Panzerdivision Hitlerjugend\" division_template = \"SS Panzer Division (n.A.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+			else = {
+				hidden_effect = {		
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"12. SS Panzerdivision Hitlerjugend\" division_template = \"SS Panzer Division (vollgep.)\" start_experience_factor = 1.0 start_equipment_factor = 0.5" 
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	SS_division_16= {#Reichsfueher SS
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_16
+			SS_set_templates = yes
+			if = {
+				limit = {
+					has_country_flag = SS_armored_division_early
+				}
+				hidden_effect = {
+					if = {
+						limit = {
+							has_country_flag = SS_mechanised_division_late
+						}
+						hidden_effect = {
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"16. SS Panzergrenadier Division Reichsführer-SS\" division_template = \"SS Panzergrenadier Division (n.A.)\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							has_country_flag = SS_mechanised_division_early
+						}
+						hidden_effect = {
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"16. SS Panzergrenadier Division Reichsführer-SS\" division_template = \"SS Panzergrenadier Division\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+					else = {
+						hidden_effect = {		
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"16. SS Mot. Grenadier Division Reichsführer-SS\" division_template = \"SS Motorisierte Division\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	SS_division_17= {#Gotz von Berlichingen
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_17
+			SS_set_templates = yes
+					if = {
+						limit = {
+							has_country_flag = SS_mechanised_division_late
+						}
+						hidden_effect = {
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"17. SS Panzergrenadier Division Götz von Berlichingen\" division_template = \"SS Panzergrenadier Division (n.A.)\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							has_country_flag = SS_mechanised_division_early
+						}
+						hidden_effect = {
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"17. SS Panzergrenadier Division Götz von Berlichingen\" division_template = \"SS Panzergrenadier Division\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+					else = {
+						hidden_effect = {		
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"17. SS Mot. Grenadier Division Götz von Berlichingen\" division_template = \"SS Motorisierte Division\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+		}
+	}
+	
+	SS_division_18= { #Horst Wessel
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_18
+			SS_set_templates = yes
+					if = {
+						limit = {
+							has_country_flag = SS_mechanised_division_late
+						}
+						hidden_effect = {
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"18. SS Freiwilligen Panzergrenadier Division Horst Wessel\" division_template = \"SS Panzergrenadier Division (n.A.)\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							has_country_flag = SS_mechanised_division_early
+						}
+						hidden_effect = {
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"18. SS Freiwilligen Panzergrenadier Division Horst Wessel\" division_template = \"SS Panzergrenadier Division\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+					else = {
+						hidden_effect = {	
+							random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								prioritize = { 64 }
+								create_unit = {
+									division = "name = \"17. SS Mot. Grenadier Division Horst Wessel\" division_template = \"SS Motorisierte Division\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+									owner = GER
+								}
+							}
+						}
+					}
+			}
+		}
+	
+	SS_division_24= { #Karstjager
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_24
+			hidden_effect = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 64 }
+				create_unit = {
+					division = "name = \"24. SS Mountain-Division Karstjäger\" division_template = \"SS Waffen-Grenadier-Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5" 
+					owner = GER
+				}
+			}
+			}
+		}
+	}
+	
+	SS_division_32 = { #30 Januar
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_32
+			hidden_effect = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 64 }
+				create_unit = {
+					division = "name = \"32. SS Freiwilligen Grenadier-Division 30. Januar\" division_template = \"SS Waffen-Grenadier-Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5" 
+					owner = GER
+				}
+			}
+			}
+		}
+	}
+	
+	SS_division_35= { #SS und Polizei
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_35
+			hidden_effect = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 64 }
+				create_unit = {
+					division = "name = \"35. SS und Polizei Grenadier-Division\" division_template = \"SS Waffen-Grenadier-Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5" 
+					owner = GER
+				}
+			}
+			}
+		}
+	}
+	
+	SS_division_36= { #Dirlewanger
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_36
+			hidden_effect = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 64 }
+				create_unit = {
+					division = "name = \"36. SS Waffen Grenadier-Division Dirlewanger\" division_template = \"SS Waffen-Grenadier-Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5" 
+					owner = GER
+				}
+			}
+			}
+		}
+	}
+	
+	SS_division_37= { #Lutzow
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_37
+			hidden_effect = {		
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "name = \"37. SS Volunteer Cavalry Division Lützow\" division_template = \"SS Motorisierte Division\" start_experience_factor = 0.7 start_equipment_factor = 0.01" 
+						owner = GER
+					}
+				}
+			}
+		}
+	}
+	
+	SS_division_38= { #Nibelungen
+
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = GER_SS_division_organization
+		}
+		visible = {
+			has_completed_focus = GER_SS_division_organization
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_SS_division_38
+			hidden_effect = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 64 }
+				create_unit = {
+					division = "name = \"38. SS Grenadier-Division Nibelungen\" division_template = \"SS Waffen-Grenadier-Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5" 
+					owner = GER
+				}
+			}
+			}
+		}
+	}
+}
+
+wehrmacht_demands = {
+	
+}

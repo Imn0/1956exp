@@ -1,0 +1,61 @@
+spriteTypes = {
+	#New Zealand
+	spriteType = {
+		name = "GFX_idea_nzl_bob_semple"
+		texturefile = "gfx/interface/ideas/idea_nzl_bob_semple.dds"
+	}
+	
+	#Malaya
+	spriteType = {
+		name = "GFX_idea_high_commissioner_for_malaya"
+		texturefile = "gfx/interface/ideas/idea_high_commissioner_for_malaya.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tunku_abdul_rahman"
+		texturefile = "gfx/interface/ideas/idea_tunku_abdul_rahman.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_brooke_dockyard"
+		texturefile = "gfx/interface/ideas/idea_brooke_dockyard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_boustead_co"
+		texturefile = "gfx/interface/ideas/idea_boustead_co.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mmc_corporation_berhad"
+		texturefile = "gfx/interface/ideas/idea_mmc_corporation_berhad.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_royal_malayan_armour"
+		texturefile = "gfx/interface/ideas/idea_royal_malayan_armour.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hicom_berhad"
+		texturefile = "gfx/interface/ideas/idea_hicom_berhad.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sme_ordnance"
+		texturefile = "gfx/interface/ideas/idea_sme_ordnance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ford_malaya"
+		texturefile = "gfx/interface/ideas/idea_ford_malaya.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hawker_malaya"
+		texturefile = "gfx/interface/ideas/idea_hawker_malaya.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mitsubishi_malaya"
+		texturefile = "gfx/interface/ideas/idea_mitsubishi_malaya.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_nissan_malaya"
+		texturefile = "gfx/interface/ideas/idea_nissan_malaya.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tuanku_abdul_rahman"
+		texturefile = "gfx/interface/ideas/idea_tuanku_abdul_rahman.dds"
+	}
+}

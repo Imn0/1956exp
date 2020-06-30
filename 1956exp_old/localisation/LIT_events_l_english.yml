@@ -1,0 +1,68 @@
+﻿l_english:
+ LIT_event.0.t:0 "The Country seeks a new King"
+ LIT_event.0.d:0 "With rising support for the return to monarchy, Antanas Smetona has announced the creation of a Regency Council to choose the next King for our Kingdom"
+ LIT_event.0.a:0 "Regency Council shall choose the new King."
+
+ LIT_event.1:0 "event 1"
+ LIT_event.1.t:0 "Kingdom of Lithuania offers Guarantees"
+ LIT_event.1.d:0  "With the recent, dramatic shifts in the political landscape of the Baltics, the question of our relationship with the recently restored Kingdom of Lithuania has come up repeatedly. Today, the Lithuanian ambassador has handed over an official note, formally requesting that we declare our position towards the Kingdom. The Monarchists claim that, as old crown lands and fellow Balts, the Latvian lands belong to them. \n\nHowever, [LIT.GetLeader] has indicated that he would accept a compromise solution, with himself nominally head of state of our country, but with very little real power."
+ LIT_event.1.a:0 "We shall return to the Kingdom"
+ LIT_event.1.b:0 "We shall accept the compromise"
+ LIT_event.1.c:0 "We will never give up our freedom for safety!"
+ 
+ LIT_event.2:0 "event 2"
+ LIT_event.2.t:0 "Latvians reunite with their brothers"
+ LIT_event.2.d:0 "The Kingdom of Lithuania will soon be as mighty as it once was!"
+ LIT_event.2.a:0 "The influence of the Kingdom grows stronger."
+ 
+ LIT_event.3:0 " event 3"
+ LIT_event.3.t:0 "Latvia agrees to a closer relationship"
+ LIT_event.3.d:0 "Latvians would rather be safe than free. Our influence over the Baltics expands."
+ LIT_event.3.a:0 "Acceptable."
+ 
+ LIT_event.4:0 "event 4"
+ LIT_event.4.t:0 "[LAT.GetNameDefCap] refuses advances"
+ LIT_event.4.d:0 "The Latvian government, confident in their own strengh, has refused our proposal."
+ LIT_event.4.a:0 "That is unfortunate."
+
+ LIT_event.5:0 "event 5"
+ LIT_event.5.t:0 "Mindaugas III crowned King"
+ LIT_event.5.d:0 "The last descendant of the only King of Lithuania - Mindaugas is the "
+ LIT_event.5.a:0 "Long live the King!"
+ 
+ LIT_event.6:0 "event 6"
+ LIT_event.6.t:0 "Antanas I crowned King"
+ LIT_event.6.d:0 "A beloved President for almost 20 years, Antanas Smetona has been Crowned as the King of the newly reformed Kingdom of Lithuania."
+ LIT_event.6.a:0 "Long live the King!"
+ 
+ LIT_event.7:0 "event 7"
+ LIT_event.7.t:0 "Choose your Adversary"
+ LIT_event.7.d:0 "The time has come to choose who will lead the kingdom and nurture a lasting dynasty for centuries to come."
+ LIT_event.7.a:0 "Mindaugas"
+ LIT_event.7.b:0 "Antanas"
+ 
+ LIT_event.8:0 "event 8"
+ LIT_event.8.t:0 "Germany pressures Poland"
+ LIT_event.8.d:0 "The Vilnius region was occupied by Poland during the Polish-Soviet war and has stayed in Polish control for almost 20 years. German Empire demands Poland to return it to rightful Lithuanian hands or risk war."
+ LIT_event.8.a:0 "Wilno is not worth risking a war for"
+ LIT_event.8.b:0 "We must protect Polish citizens in Wilno!"
+ 
+ LIT_event.9:0 "event 9"
+ LIT_event.9.t:0 "Poland Concedes"
+ LIT_event.9.d:0 "Vilnius region returns to Lithuanian control."
+ LIT_event.9.a:0 "It is best for everyone"
+ 
+ LIT_event.10:0 "event 10"
+ LIT_event.10.t:0 "Poland refuses"
+ LIT_event.10.d:0 "Polish governemnt refuses to surrender their Vilnius citizens."
+ LIT_event.10.a:0 "To war?"
+ 
+ #LIT_event.10:0 "event 10"
+ #LIT_event.10.t:0 " "
+ #LIT_event.10.d:0 " "
+ #LIT_event.10.a:0 " "
+ 
+ 
+
+ 
+

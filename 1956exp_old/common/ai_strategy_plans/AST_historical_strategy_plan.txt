@@ -1,0 +1,152 @@
+AST_historical = {
+	name = "Australian historical plan"
+	desc = ""
+
+	enable = {
+		original_tag = AST
+		has_dlc = "Together for Victory"
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = AST_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = AST_AI_RANDOM_DEMOCRATIC_HISTORICAL 
+			has_game_rule = {
+				rule = AST_ai_behavior
+				option = DEMOCRATIC_HISTORICAL
+			}
+			has_country_flag = britain_enforced_our_loyalty
+		}
+	}
+	abort = {
+		ENG = {
+			has_completed_focus = ENG_a_change_in_course
+		}
+	}
+
+	ai_national_focuses = {
+		#1936
+		AST_standard_gauge_railway						#30 days
+		AST_industries_assistance_corporation			#30 days
+		AST_western_australian_government_railways		#30 days
+		AST_south_australian_housing_trust				#70 days
+		AST_cockatoo_island_shipyards					#70 days
+		AST_expand_lithgow_small_arms_factory			#30 days
+		AST_department_of_supply_and_development		#70 days
+		AST_protect_overseas_commerce					#30 days
+		#1937											#360 days
+		AST_expand_the_raaf								#70 days
+		AST_additional_militia_training					#70 days
+		AST_expand_the_northern_railway					#70 days
+		AST_scrap_iron_flotilla							#30 days
+		AST_royal_australian_artillery					#30 days
+		AST_cac_boomerang								#30 days
+		AST_naval_auxiliary_patrol						#70 days
+		#1938											#370 days
+		AST_cac_woomera									#30 days
+		AST_promote_reservists							#30 days
+		AST_hmas_assault								#30 days
+		AST_pacific_area_navy							#70 days
+		AST_support_the_policy_of_appeasement			#70 days
+		AST_cruisers									#30 days
+		AST_fund_owen_gun_research						#70 days
+		AST_specialize_equipment						#30 days
+		#1939											#360 days
+		AST_daimler_dingo								#30 days
+		AST_establish_advisory_war_council				#10 days
+		AST_volunteer_defence_corps						#30 days
+		AST_adopt_westminster							#30 days
+		AST_national_security_act						#30 days
+		AST_army_inventions_directorate					#70 days
+		AST_citizen_military_forces						#30 days
+		AST_CSIR										#30 days
+		AST_gunbarrel_highway							#30 days
+		AST_civil_construction_corps					#70 days
+		#1940											#360 days
+		AST_invest_in_victory							#70 days
+		AST_industrialize_the_wastelands				#70 days
+		AST_empire_air_training_scheme					#70 days
+		AST_australia_rules_the_waves					#70 days
+		AST_east_coast_expansion						#70 days
+		AST_sentinel_tank_project						#30 days
+		AST_receive_ship_blueprints						#70 days
+		#1941											#380 days
+		AST_allied_works_council						#70 days
+		AST_strengthen_ties_with_uk						#30 days
+		AST_swpa_protector								#70 days
+		AST_squash_the_squanderbugs						#70 days
+		AST_rationing_and_recycling						#30 days
+		AST_fight_work_or_perish						#70 days
+		AST_classify_aliens								#20 days	
+		#1942											#360 days
+		AST_desert_training								#70 days
+		AST_introduce_unconventional_warfare			#30 days
+		AST_improve_dockyard_facilities					#70 days
+		AST_australian_arms_production					#70 days
+		AST_fund_australian_defense_research			#70 days
+		AST_sever_ties_with_uk							#70 days
+		#1943											#360 days
+		AST_protect_our_island							#70 days
+		AST_australian_womens_army_service				#70 days
+		AST_aborigine_conscription						#30 days
+		AST_commonwealth_aircraft_corporation			#70 days
+		AST_expand_northern_presence					#70 days
+		AST_z_special_unit								#20 days
+		#1944											#360 days
+		AST_australian_army_catering_corps				#70 days
+		AST_supply_pacific_naval_efforts				#70 days
+		AST_research_collaboration						#70 days
+		AST_volunteer_air_observers_corps				#30 days
+		AST_island_excavation							#70 days
+		AST_royal_australian_submarine_service			#30 days
+		AST_naval_bombers								#30 days
+		#1945											#360 days
+		AST_uranium_mining								#70 days
+		AST_womens_auxilliary_australian_air_force		#70 days
+		AST_dominate_the_skies							#30 days
+		AST_airborne_defence							#30 days
+		AST_convert_existing_factories					#70 days
+		AST_death_from_down_under						#30 days
+		#1946											#370 days
+		AST_woo_usa										#20 days
+		AST_m_special_unit								#20 days
+		AST_the_south_west_pacific_initiative			#70 days
+		AST_research_cooporation						#70 days
+														#170 days
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

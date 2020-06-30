@@ -1,0 +1,206 @@
+CAN_democratic_alternate = {
+	name = "Canada goes at it alone"
+	desc = "They are very sorry about that"
+
+	enable = {
+		original_tag = CAN
+		has_dlc = "Together for Victory"
+		OR = {
+			has_country_flag = CAN_AI_RANDOM_DEMOCRATIC_ALTERNATE 
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = DEMOCRATIC_ALTERNATE
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#1936
+		CAN_rowell_sirois_commission				#30 days
+		CAN_crown_corporations						#30 days	
+		CAN_national_housing_act					#70 days
+		CAN_dollar_a_year_men						#30 days
+		CAN_canada_pacific_railway					#30 days
+		CAN_army_modernization						#30 days
+		CAN_canadian_infantry_corps					#30 days
+		CAN_rcaf_station_borden						#70 days
+		CAN_maritime_colonial_railway				#30 days
+		#1937										#350 days
+		CAN_patriation								#70 days
+		CAN_wartime_prices_and_trade_board			#70 days
+		CAN_canada_wheat_board						#20 days
+		CAN_canadian_car_and_foundry				#70 days
+		CAN_permanent_joint_defense_board			#70 days
+		CAN_british_north_american_act				#20 days
+		CAN_halifax_shipyards						#70 days
+		#1938										#390 days
+		CAN_defence_of_canada_regulations			#20 days	
+		CAN_national_resources_mobilization_act		#70 days
+		CAN_mine_the_shield							#70 days
+		CAN_alberta_coal_towns						#30 days
+		CAN_national_steel_car						#70 days
+		CAN_north_american_alliance					#70 days
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+CAN_fascist = {
+	name = "Canada goes fascist"
+	desc = "They are very sorry about that"
+
+	enable = {
+		original_tag = CAN
+		has_dlc = "Together for Victory"
+		OR = {
+			has_country_flag = CAN_AI_RANDOM_FASCIST 
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = FASCIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#1936
+		CAN_patriation								#70 days				
+		CAN_swastika_clubs							#70 days
+		CAN_rowell_sirois_commission				#30 days
+		CAN_crown_corporations						#30 days
+		CAN_national_housing_act					#70 days
+		CAN_support_the_blue_shirts					#20 days
+		CAN_rcaf_station_borden						#70 days					
+		#1937										#360 days
+		CAN_canadian_car_and_foundry				#70 days
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+CAN_fascist = {
+	name = "Canada goes communist"
+	desc = "They are very sorry about that"
+
+	enable = {
+		original_tag = CAN
+		has_dlc = "Together for Victory"
+		OR = {
+			has_country_flag = CAN_AI_RANDOM_COMMUNIST 
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = COMMUNIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#1936
+		CAN_patriation								#70 days				
+		CAN_burn_the_royal_portraits				#70 days
+		CAN_rowell_sirois_commission				#30 days
+		CAN_crown_corporations						#30 days
+		CAN_national_housing_act					#70 days
+		CAN_communist_labor_total_war_committee		#20 days
+		CAN_rcaf_station_borden						#70 days					
+		#1937										#360 days
+		CAN_canadian_car_and_foundry				#70 days
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

@@ -1,0 +1,65 @@
+##########
+##Canada##
+##########
+CAN_immigration = {
+	icon = generic_democracy
+	
+	picture = GFX_decision_cat_can_immigration
+
+	allowed = {
+		original_tag = CAN
+	}
+	
+	visible = {
+		OR = {
+			has_completed_focus = CAN_strengthen_the_commonwealth_ties
+			has_completed_focus = CAN_permanent_joint_defense_board
+		}
+	}
+}
+
+CAN_defence_of_canadian_sovereignty = {
+	icon = border_conflicts
+
+	allowed = {
+		original_tag = CAN
+	}
+	
+	visible = {
+		has_completed_focus = CAN_defence_of_canadian_sovereignty
+	}
+}
+
+CAN_support_america = {
+	icon = generic_economy
+
+	allowed = {
+		original_tag = CAN
+	}
+}
+
+CAN_loan_payments = {
+	icon = generic_economy
+
+	allowed = {
+		original_tag = CAN
+	}
+}
+
+CAN_canadian_industrial_development = {
+	icon = generic_industry
+	
+	picture = GFX_decision_cat_can_canadian_industrial_development
+
+	allowed = {
+	
+	}
+}
+
+CAN_resource_extraction = {
+	icon = generic_prospect_for_resources
+
+	allowed = {
+	
+	}
+}

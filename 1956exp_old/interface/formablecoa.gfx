@@ -1,0 +1,365 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_PLC_UNIFIED_democratic"
+		texturefile = "gfx/interface/PLC_UNIFIED_democratic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PLC_UNIFIED_communism"
+		texturefile = "gfx/interface/PLC_UNIFIED_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PLC_UNIFIED_fascism"
+		texturefile = "gfx/interface/PLC_UNIFIED_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PLC_UNIFIED_neutrality"
+		texturefile = "gfx/interface/PLC_UNIFIED_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_background_dip_1"
+		texturefile = "gfx/interface/background_dip_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_background_pol_1"
+		texturefile = "gfx/interface/background_pol_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ARA_UNIFIED_democratic"
+		texturefile = "gfx/interface/ARA_UNIFIED_democratic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ARA_UNIFIED_communism"
+		texturefile = "gfx/interface/ARA_UNIFIED_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ARA_UNIFIED_fascism"
+		texturefile = "gfx/interface/ARA_UNIFIED_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ARA_UNIFIED_neutrality"
+		texturefile = "gfx/interface/ARA_UNIFIED_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BAL_UNIFIED_democratic"
+		texturefile = "gfx/interface/BAL_UNIFIED_democratic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BAL_UNIFIED_communism"
+		texturefile = "gfx/interface/BAL_UNIFIED_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BAL_UNIFIED_fascism"
+		texturefile = "gfx/interface/BAL_UNIFIED_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BAL_UNIFIED_neutrality"
+		texturefile = "gfx/interface/BAL_UNIFIED_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BEL_GER_fascism"
+		texturefile = "gfx/interface/BEL_GER_fascism.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_BLR_GER_fascism"
+		texturefile = "gfx/interface/BLR_GER_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOL_GER_fascism"
+		texturefile = "gfx/interface/HOL_GER_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOR_GER_fascism"
+		texturefile = "gfx/interface/NOR_GER_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_UKR_GER_fascism"
+		texturefile = "gfx/interface/UKR_GER_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BYZ_UNIFIED_democratic"
+		texturefile = "gfx/interface/BYZ_UNIFIED_democratic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BYZ_UNIFIED_communism"
+		texturefile = "gfx/interface/BYZ_UNIFIED_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BYZ_UNIFIED_fascism"
+		texturefile = "gfx/interface/BYZ_UNIFIED_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BYZ_UNIFIED_neutrality"
+		texturefile = "gfx/interface/BYZ_UNIFIED_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_CHI_ROC"
+		texturefile = "gfx/interface/CHI_ROC.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ENG_england"
+		texturefile = "gfx/interface/ENG_england.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ENG_imperial_federation_india_unified"
+		texturefile = "gfx/interface/ENG_imperial_federation_india_unified.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ENG_imperial_federation_unified"
+		texturefile = "gfx/interface/ENG_imperial_federation_unified.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EUR_UNIFIED_democratic"
+		texturefile = "gfx/interface/EUR_UNIFIED_democratic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EUR_UNIFIED_communism"
+		texturefile = "gfx/interface/EUR_UNIFIED_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EUR_UNIFIED_fascism"
+		texturefile = "gfx/interface/EUR_UNIFIED_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EUR_UNIFIED_neutrality"
+		texturefile = "gfx/interface/EUR_UNIFIED_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_FRA_UK"
+		texturefile = "gfx/interface/FRA_UK.dds"
+	}
+
+	spriteType = {
+		name = "GFX_FRA_VIC_reformed_fascism"
+		texturefile = "gfx/interface/FRA_VIC_reformed_fascism.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_HOL_benelux_democratic"
+		texturefile = "gfx/interface/HOL_benelux_democratic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOL_benelux_communism"
+		texturefile = "gfx/interface/HOL_benelux_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOL_benelux_fascism"
+		texturefile = "gfx/interface/HOL_benelux_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOL_benelux_neutrality"
+		texturefile = "gfx/interface/HOL_benelux_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_UNL_UNIFIED_democratic"
+		texturefile = "gfx/interface/UNL_UNIFIED_democratic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_UNL_UNIFIED_communism"
+		texturefile = "gfx/interface/UNL_UNIFIED_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_UNL_UNIFIED_fascism"
+		texturefile = "gfx/interface/UNL_UNIFIED_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_UNL_UNIFIED_neutrality"
+		texturefile = "gfx/interface/UNL_UNIFIED_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HRE_UNIFIED"
+		texturefile = "gfx/interface/HRE_UNIFIED.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HUN_EMPIRE"
+		texturefile = "gfx/interface/HUN_EMPIRE.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HUN_GREATER"
+		texturefile = "gfx/interface/HUN_GREATER.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ITA_RSI"
+		texturefile = "gfx/interface/ITA_RSI.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MAJ_UNIFIED"
+		texturefile = "gfx/interface/MAJ_UNIFIED.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MAN_restored"
+		texturefile = "gfx/interface/MAN_restored.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MEX_cristero"
+		texturefile = "gfx/interface/MEX_cristero.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MUT_UNIFIED"
+		texturefile = "gfx/interface/MUT_UNIFIED.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NDC_UNIFIED_neutrality"
+		texturefile = "gfx/interface/NDC_UNIFIED_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NDC_UNIFIED_democratic"
+		texturefile = "gfx/interface/NDC_UNIFIED_democratic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NDC_UNIFIED_communism"
+		texturefile = "gfx/interface/NDC_UNIFIED_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NDC_UNIFIED_fascism"
+		texturefile = "gfx/interface/NDC_UNIFIED_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SCA_UNIFIED_neutrality"
+		texturefile = "gfx/interface/SCA_UNIFIED_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SCA_UNIFIED_democratic"
+		texturefile = "gfx/interface/SCA_UNIFIED_democratic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SCA_UNIFIED_communism"
+		texturefile = "gfx/interface/SCA_UNIFIED_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SCA_UNIFIED_fascism"
+		texturefile = "gfx/interface/SCA_UNIFIED_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_OTT_UNIFIED"
+		texturefile = "gfx/interface/OTT_UNIFIED.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PER_UNIFIED"
+		texturefile = "gfx/interface/PER_UNIFIED.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PRC_proclaimed_communism"
+		texturefile = "gfx/interface/PRC_proclaimed_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PRC_reformed_ROC_communism"
+		texturefile = "gfx/interface/PRC_reformed_ROC_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PRC_soviet_communism"
+		texturefile = "gfx/interface/PRC_soviet_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_RAT_UNIFIED"
+		texturefile = "gfx/interface/RAT_UNIFIED.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_russia_communism"
+		texturefile = "gfx/interface/SOV_russia_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SPQR_UNIFIED"
+		texturefile = "gfx/interface/SPQR_UNIFIED.dds"
+	}
+
+	spriteType = {
+		name = "GFX_USA_CSA"
+		texturefile = "gfx/interface/USA_CSA.dds"
+	}
+
+	spriteType = {
+		name = "GFX_USA_CSA_communism"
+		texturefile = "gfx/interface/USA_CSA_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_USC_UNIFIED"
+		texturefile = "gfx/interface/USC_UNIFIED.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GCO_UNIFIED_democratic"
+		texturefile = "gfx/interface/GCO_UNIFIED_democratic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GCO_UNIFIED_communism"
+		texturefile = "gfx/interface/GCO_UNIFIED_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GCO_UNIFIED_fascism"
+		texturefile = "gfx/interface/GCO_UNIFIED_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GCO_UNIFIED_neutrality"
+		texturefile = "gfx/interface/GCO_UNIFIED_neutrality.dds"
+	}
+
+
+}

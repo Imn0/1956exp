@@ -1,0 +1,232 @@
+﻿division_template = {
+	name = "Jalaväediviisi"				# Infantry Division	
+	division_names_group = EST_INF_01
+	# Note: Divisions were nowhere near full strength until mobilized
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Ratsaväebrigaad"				# Cavalry Regiments and tanks put together
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+	}
+	support = {
+		support_armor = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Kaitseliidu Malevad"				# Defense League
+	priority = 0
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	######## LAND OOB ########
+	##### Eesti Ülemjuhatus #####
+	division = { # "I Jalaväediviisi"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3152
+		division_template = "Jalaväediviisi"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division = { # "II Jalaväediviisi"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 4640
+		division_template = "Jalaväediviisi"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division = { # "III Jalaväediviisi"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 6099
+		division_template = "Jalaväediviisi"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		name = "I Ratsaväebrigaad"
+		location = 3152
+		division_template = "Ratsaväebrigaad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	
+	## Defense League Forces
+	
+	division = {
+		name = "Kaitseliidu Harju malev"
+		location = 567
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "Kaitseliidu Järva malev"
+		location = 9079
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Kaitseliidu Lääne malev"
+		location = 83
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Kaitseliidu Narva malevkond"
+		location = 4640
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Kaitseliidu Pärnumaa malev"
+		location = 11291
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Kaitseliidu Rapla malev"
+		location = 3074
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Kaitseliidu Sakala malev"  ### Based in Viljandi county
+		location = 308
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Kaitseliidu Tallinna malev"
+		location = 3152
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Kaitseliidu Tartu malev"
+		location = 9221
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Kaitseliidu Valgamaa malev"
+		location = 6408
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Kaitseliidu Viru malev"
+		location = 11443
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Kaitseliidu Võrumaa malev"
+		location = 592
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Kaitseliidu Petseri malev" ### City location now in Russia
+		location = 592
+		division_template = "Kaitseliidu Malevad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EST" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+
+	##### No Naval OOB -- 2 SSs in 1937 #####
+}
+
+air_wings = {
+	### Eesti Ohuvägi
+	13 = {
+		# Hävitajate Grupp -- Bristol Bulldogs, GL 22.B3s
+		fighter_equipment_0 =  {
+			owner = "EST" 
+			amount = 18
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "EST"
+		}
+		requested_factories = 1
+		progress = 0.88
+		efficiency = 100
+	}
+}

@@ -1,0 +1,36 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_decision_cat_generic_ggr"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_ggr.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_roc"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_roc.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_united_germany"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_united_germany.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_generic_formable_yugoslavia"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_formable_yugoslavia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_generic_formable_soviet_union"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_formable_soviet_union.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_generic_formable_greater_hungary"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_formable_greater_hungary.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_generic_vichy_to_france"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_vichy_to_france.dds"
+	}
+
+
+}

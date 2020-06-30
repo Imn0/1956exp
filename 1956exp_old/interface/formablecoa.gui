@@ -1,0 +1,2822 @@
+guiTypes = {
+	containerWindowType = {
+		name = "plc_unified_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PLC_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "plc_unified_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PLC_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "plc_unified_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PLC_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "plc_unified_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PLC_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "plc_unified_democratic_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PLC_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "plc_unified_democratic_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PLC_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "plc_unified_neutrality_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PLC_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "plc_unified_neutrality_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PLC_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+
+	containerWindowType = {
+		name = "ara_unified_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ARA_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ara_unified_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ARA_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "ara_unified_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ARA_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ara_unified_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ARA_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "ara_unified_democratic_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ARA_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ara_unified_democratic_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ARA_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "ara_unified_neutrality_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ARA_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ara_unified_neutrality_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ARA_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+
+	containerWindowType = {
+		name = "bal_unified_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BAL_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "bal_unified_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BAL_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "bal_unified_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BAL_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "bal_unified_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BAL_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "bal_unified_democratic_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BAL_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "bal_unified_democratic_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BAL_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "bal_unified_neutrality_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BAL_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "bal_unified_neutrality_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BAL_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "byz_unified_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BYZ_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "byz_unified_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BYZ_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "byz_unified_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BYZ_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "byz_unified_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BYZ_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "byz_unified_democratic_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BYZ_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "byz_unified_democratic_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BYZ_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "byz_unified_neutrality_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BYZ_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "byz_unified_neutrality_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BYZ_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "eur_unified_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_EUR_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "eur_unified_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_EUR_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "eur_unified_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_EUR_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "eur_unified_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_EUR_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "eur_unified_democratic_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_EUR_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "eur_unified_democratic_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_EUR_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "eur_unified_neutrality_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_EUR_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "eur_unified_neutrality_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_EUR_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "ndc_unified_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_NDC_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ndc_unified_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_NDC_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "ndc_unified_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_NDC_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ndc_unified_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_NDC_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "ndc_unified_democratic_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_NDC_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ndc_unified_democratic_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_NDC_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "ndc_unified_neutrality_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_NDC_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ndc_unified_neutrality_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_NDC_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+
+
+
+	containerWindowType = {
+		name = "sca_unified_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SCA_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "sca_unified_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SCA_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "sca_unified_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SCA_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "sca_unified_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SCA_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "sca_unified_democratic_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SCA_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "sca_unified_democratic_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SCA_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "sca_unified_neutrality_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SCA_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "sca_unified_neutrality_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SCA_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+
+
+	containerWindowType = {
+		name = "unl_unified_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_UNL_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "unl_unified_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_UNL_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "unl_unified_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_UNL_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "unl_unified_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_UNL_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "unl_unified_democratic_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_UNL_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "unl_unified_democratic_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_UNL_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "unl_unified_neutrality_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_UNL_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "unl_unified_neutrality_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_UNL_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+
+
+	containerWindowType = {
+		name = "USA_CSA_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_USA_CSA_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_CSA_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_USA_CSA_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "USA_CSA_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_USA_CSA"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_CSA_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_USA_CSA"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "USC_UNIFIED_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_USC_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "USC_UNIFIED_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_USC_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "SPQR_UNIFIED_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SPQR_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "SPQR_UNIFIED_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SPQR_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "SOV_russia_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SOV_russia_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "SOV_russia_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_SOV_russia_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "RAT_UNIFIED_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_RAT_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "RAT_UNIFIED_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_RAT_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+	containerWindowType = {
+		name = "PRC_proclaimed_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PRC_proclaimed_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "PRC_proclaimed_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PRC_proclaimed_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "PRC_reformed_ROC_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PRC_reformed_ROC_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "PRC_reformed_ROC_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PRC_reformed_ROC_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "PRC_soviet_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PRC_soviet_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "PRC_soviet_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PRC_soviet_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	containerWindowType = {
+		name = "OTT_UNIFIED_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_OTT_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "OTT_UNIFIED_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_OTT_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+
+
+
+
+
+
+	containerWindowType = {
+		name = "PER_UNIFIED_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PER_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "PER_UNIFIED_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_PER_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "MUT_UNIFIED_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_MUT_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "MUT_UNIFIED_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_MUT_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "MEX_cristero_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_MEX_cristero"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "MEX_cristero_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_MEX_cristero"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "MAN_restored_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_MAN_restored"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "MAN_restored_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_MAN_restored"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "MAJ_UNIFIED_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_MAJ_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "MAJ_UNIFIED_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_MAJ_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "ITA_RSI_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ITA_RSI"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ITA_RSI_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ITA_RSI"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "HUN_EMPIRE_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HUN_EMPIRE"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "HUN_EMPIRE_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HUN_EMPIRE"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "HUN_GREATER_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HUN_GREATER"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "HUN_GREATER_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HUN_GREATER"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+	containerWindowType = {
+		name = "HRE_UNIFIED_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HRE_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "HRE_UNIFIED_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HRE_UNIFIED"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+
+
+	containerWindowType = {
+		name = "HOL_benelux_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HOL_benelux_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "HOL_benelux_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HOL_benelux_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "HOL_benelux_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HOL_benelux_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "HOL_benelux_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HOL_benelux_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "HOL_benelux_democratic_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HOL_benelux_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "HOL_benelux_democratic_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HOL_benelux_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "HOL_benelux_neutrality_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HOL_benelux_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "HOL_benelux_neutrality_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HOL_benelux_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "FRA_UK_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_FRA_UK"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "FRA_UK_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_FRA_UK"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "FRA_VIC_reformed_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_FRA_VIC_reformed_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "FRA_VIC_reformed_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_FRA_VIC_reformed_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "ENG_imperial_federation_india_unified_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ENG_imperial_federation_india_unified"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ENG_imperial_federation_india_unified_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ENG_imperial_federation_india_unified"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "ENG_imperial_federation_unified_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ENG_imperial_federation_unified"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ENG_imperial_federation_unified_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ENG_imperial_federation_unified"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+
+	containerWindowType = {
+		name = "ENG_england_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ENG_england"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "ENG_england_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ENG_england"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+	containerWindowType = {
+		name = "CHI_ROC_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_CHI_ROC"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "CHI_ROC_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_CHI_ROC"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "BEL_GER_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BEL_GER_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "BEL_GER_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BEL_GER_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "BLR_GER_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BLR_GER_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "BLR_GER_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_BLR_GER_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "UKR_GER_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_UKR_GER_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "UKR_GER_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_UKR_GER_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "HOL_GER_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HOL_GER_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "HOL_GER_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_HOL_GER_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "NOR_GER_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_NOR_GER_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "NOR_GER_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_NOR_GER_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "gco_unified_communism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_GCO_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "gco_unified_communism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_GCO_UNIFIED_communism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "gco_unified_fascism_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_GCO_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "gco_unified_fascism_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_GCO_UNIFIED_fascism"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "gco_unified_democratic_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_GCO_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "gco_unified_democratic_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_GCO_UNIFIED_democratic"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "gco_unified_neutrality_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_GCO_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "gco_unified_neutrality_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_GCO_UNIFIED_neutrality"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##################CIVIL WAR HOTFIX#############
+
+
+
+
+
+	containerWindowType = {
+		name = "FRA_civil_war_vichy_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ideology_FRA_fascism_group"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "FRA_civil_war_vichy_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ideology_FRA_fascism_group"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "SPR_civil_war_vichy_pol_ui_window"
+		position = { x = 19 y = 305 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "Politics Background"
+			spriteType = "GFX_background_pol_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ideology_SPR_fascism_group"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "SPR_civil_war_vichy_dip_ui_window"
+		position = { x = 158 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		background = {
+			name = "DiploBackground"
+			spriteType = "GFX_background_dip_1"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "observer_flag_overlay"
+			spriteType = "GFX_ideology_SPR_fascism_group"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+}

@@ -1,0 +1,80 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_regency_council_news"
+		texturefile = "gfx/event_pictures/regency_council_news.dds"
+	}
+	spriteType = {
+		name = "GFX_mindaugas_wonned_news"
+		texturefile = "gfx/event_pictures/mindaugas_wonned_news.dds"
+	}
+	spriteType = {
+		name = "GFX_antanas_wonned_news"
+		texturefile = "gfx/event_pictures/antanas_wonned_news.dds"
+	}
+	spriteType = {
+		name = "GFX_radvila_speaks_news"
+		texturefile = "gfx/event_pictures/radvila_speaks_news.dds"
+	}
+	spriteType = {
+		name = "GFX_regency_council2_news"
+		texturefile = "gfx/event_pictures/regency_council2_news.dds"
+	}
+	spriteType = {
+		name = "GFX_smetona_army_news"
+		texturefile = "gfx/event_pictures/smetona_army_news.dds"
+	}
+	spriteType = {
+		name = "GFX_smetona_army2_news"
+		texturefile = "gfx/event_pictures/smetona_army2_news.dds"
+	}
+	spriteType = {
+		name = "GFX_smetona_retires_news"
+		texturefile = "gfx/event_pictures/smetona_retires_news.dds"
+	}
+	spriteType = {
+		name = "GFX_lietuva_vilniuj_news"
+		texturefile = "gfx/event_pictures/lietuva_vilniuj_news.dds"
+	}
+	spriteType = {
+		name = "GFX_kareivis_news"
+		texturefile = "gfx/event_pictures/kareivis_news.dds"
+	}
+	
+	#################################################################### Country
+	spriteType = {
+		name = "GFX_regency_council_country"
+		texturefile = "gfx/event_pictures/regency_council_country.dds"
+	}
+	spriteType = {
+		name = "GFX_mindaugas_wonned_country"
+		texturefile = "gfx/event_pictures/mindaugas_wonned_country.dds"
+	}
+	spriteType = {
+		name = "GFX_antanas_wonned_country"
+		texturefile = "gfx/event_pictures/antanas_wonned_country.dds"
+	}
+	spriteType = {
+		name = "GFX_regency_council2_country"
+		texturefile = "gfx/event_pictures/regency_council2_country.dds"
+	}
+	spriteType = {
+		name = "GFX_smetona_army_country"
+		texturefile = "gfx/event_pictures/smetona_army_country.dds"
+	}
+	spriteType = {
+		name = "GFX_smetona_army2_country"
+		texturefile = "gfx/event_pictures/smetona_army2_country.dds"
+	}
+	spriteType = {
+		name = "GFX_smetona_retires_country"
+		texturefile = "gfx/event_pictures/smetona_retires_country.dds"
+	}
+	spriteType = {
+		name = "GFX_lietuva_vilniuj_country"
+		texturefile = "gfx/event_pictures/lietuva_vilniuj_country.dds"
+	}
+}
+	
+	
+	

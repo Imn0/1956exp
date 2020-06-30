@@ -1,0 +1,687 @@
+ideas = {
+	# MILITARY
+
+	country = {
+
+		SAF_ossewabrandwag = { 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag
+
+			modifier = {
+				fascism_drift = 0.01
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}		
+
+		SAF_ossewabrandwag_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+
+		
+		
+		#Segregation Ideas
+		SAF_segregation = { 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation_2
+
+			modifier = {
+				conscription_factor = -0.8
+			}
+
+		}
+
+		SAF_segregation_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation_2
+
+			modifier = {
+				conscription_factor = -0.65
+			}
+
+		}
+		
+		SAF_segregation_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation_2
+
+			modifier = {
+				conscription_factor = -0.5
+			}
+
+		}
+
+		#Democratic
+		SAF_desegregation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation
+
+			modifier = {
+				conscription_factor = -0.6
+			}
+
+		}
+		
+		SAF_desegregation_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation
+
+			modifier = {
+				conscription_factor = -0.3
+			}
+
+		}
+		
+		SAF_desegregation_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation
+
+			modifier = {
+				stability_weekly = 0.005
+				conscription_factor = -0.3
+			}
+
+		}
+		
+		SAF_cape_corps = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+
+			modifier = {
+				conscription = 0.03
+			}
+
+		}
+		
+		SAF_cape_corps_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+
+			modifier = {
+				conscription = 0.05
+			}
+
+		}
+		
+		
+		SAF_war_measures_act = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = can_wartime_prices_and_trade_board
+
+			modifier = {
+				min_export = -0.1
+				global_building_slots_factor = 0.15
+			}
+
+		}
+
+	
+		
+		SAF_african_railroad_workers = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+			}
+
+		}			
+		SAF_work_for_all_poor = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support3
+
+			modifier = {
+				local_resources_factor = 0.1
+			}
+
+		}		
+	}
+
+	political_advisor = {
+
+		SAF_sir_patrick_duncan = {
+			
+			allowed = {
+				original_tag = SAF
+				
+			}
+
+			available = {
+				if = {
+					limit = { has_dlc = "Together for Victory"}
+					has_completed_focus = SAF_support_the_policy_of_appeasement
+				}
+			}
+			
+			picture = generic_democratic_reformer_western_european_2d
+			
+			traits = { democratic_reformer }
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+
+		SAF_abram_fischer = {
+
+			allowed = {
+				original_tag = SAF
+			}
+
+			available = {
+			if = {
+					limit = { has_dlc = "Together for Victory"}
+					has_completed_focus = SAF_empower_the_workers
+				}
+			}
+
+			picture = generic_communist_revolutionary_western_european_2d
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+
+		}
+
+		SAF_j_f_van_rensburg_fascist = {
+			
+			allowed = {
+				original_tag = SAF
+				
+			}
+
+			available = {
+				if = {
+					limit = { has_dlc = "Together for Victory"}
+					has_completed_focus = SAF_support_the_afrikaner_broederbond
+				}
+			}
+
+			picture = generic_political_advisor_europe_4
+			
+			traits = { fascist_demagogue }
+		
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		SAF_nicolaas_havenga = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		SAF_d_f_malan = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { backroom_backstabber }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		SAF_e_g_jansen = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { silent_workhorse }
+		}
+	}
+
+	army_chief = {
+	
+		SAF_christiaan_joubert = {
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SAF_james_mitchell_baker = {
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = SAF
+			}
+						
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SAF_leonard_beyers = {
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	air_chief = {
+
+		SAF_adolf_malan = {
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SAF_pierre_van_ryneveld = {
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		SAF_pierre_oliver_knoll = {
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SAF_eugene_de_la_rey = {
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = SAF
+				has_dlc = "Together for Victory"
+			}
+			
+			cost = 100
+			
+			available = {
+				has_completed_focus = SAF_protect_the_trade
+			}
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SAF_cornelis_van_zuigenbrogge = {
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = SAF
+				has_dlc = "Together for Victory"
+			}
+			
+			cost = 100
+			
+			available = {
+				has_completed_focus = SAF_disrupt_the_trade
+			}
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SAF_piet_theron = {
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = SAF
+				has_dlc = "Together for Victory"
+			}
+			
+			available = {
+				has_completed_focus = SAF_anti_submarine_tactics
+			}
+			
+			traits = { navy_anti_submarine_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		SAF_robert_palmer = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SAF_rudolf_retief = {
+			
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = SAF
+				has_dlc = "Together for Victory"
+			}
+			
+			cost = 100
+			
+			available = {
+				has_completed_focus = SAF_desert_equipment
+			}
+
+			traits = { army_logistics_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SAF_c_de_weenburg_du_toit = {
+
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SAF_marinus_van_osterkamp = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { air_naval_strike_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SAF_jeannot_de_la_tourier = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		SAF_j_f_van_rensburg = {
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = SAF
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		SAF_s_p_le_roux = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+
+	tank_manufacturer = {
+		iscor = {
+			
+			picture = generic_tank_manufacturer_3
+
+			allowed = {
+				original_TAG = SAF
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+
+}

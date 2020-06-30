@@ -1,0 +1,1731 @@
+###########################
+# Turkey Events
+###########################
+
+add_namespace = turkey
+
+
+
+# President dies
+country_event = {
+	id = turkey.1
+	title = turkey.1.t
+	desc = turkey.1.d
+	picture = GFX_report_event_generic_funeral
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUR
+		has_government = neutrality
+		date > 1938.11.1
+		has_start_date < 1936.01.02
+		has_idea = TUR_kemalism
+	}	
+
+	mean_time_to_happen = {
+		days = 30
+		modifier = {
+			factor = 0.5
+			date > 1938.12.1
+		}
+		modifier = {
+			factor = 0.2
+			date > 1939.1.1
+		}
+	}
+
+	option = {
+		name = turkey.1.a
+		kill_country_leader = yes
+	}
+}
+
+
+#Soviet Treaty	
+country_event = {
+	id = turkey.2
+	title = turkey.2.t
+	desc = turkey.2.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.2.a
+		TUR = {
+			country_event = { days = 1 id = turkey.3 }
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.5
+			uses = 2
+			category = armor
+		}
+	}
+	
+	option = {
+		name = turkey.2.b
+		add_timed_idea = { idea = SOV_scientist_defect days = 365 }
+		ai_chance = { factor = 0 }
+		add_political_power = -10 
+		TUR = {
+			country_event = { days = 1 id = turkey.4 }
+		}
+	}
+}
+
+# Soviets Accept German-Soviet Treaty
+country_event = {
+	id = turkey.3
+	title = turkey.3.t
+	desc = turkey.3.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.3.a
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = armor
+		}
+	}
+}
+
+# Soviets Reject German-Soviet Treaty
+country_event = {
+	id = turkey.4
+	title = turkey.4.t
+	desc = turkey.4.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.4.a
+	}
+}
+
+country_event = {
+	id = turkey.5
+	title = turkey.5.t
+	desc = turkey.5.d
+	picture = GFX_report_event_jewscientistmektup
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.5.a
+		add_ideas = TUR_jew_scientists
+		GER = {
+			add_opinion_modifier = { target = TUR modifier = turkey_agree_to_jewish_scientists }
+		}
+	}
+	
+	option = {
+		name = turkey.5.b
+	}
+}
+
+# American Accept
+country_event = {
+	id = turkey.7
+	title = turkey.7.t
+	desc = turkey.7.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.7.a
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.5
+			uses = 1
+			category = industry
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = light_fighter
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
+		USA = {
+			add_opinion_modifier = { target = TUR modifier = usa_tur_treaty }
+		}
+	}
+}
+
+# American Reject
+country_event = {
+	id = turkey.8
+	title = turkey.8.t
+	desc = turkey.8.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.8.a
+	}
+}
+
+# Turkish-German Friendship Treaty
+country_event = {
+	id = turkey.100
+	title = turkey.100.t
+	desc = turkey.100.d
+	picture = GFX_report_event_german_turkish_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.100.a
+		TUR = {
+			country_event = { days = 1 id = turkey.10 }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = ger_tur_pact
+			}
+		}
+		diplomatic_relation = {
+			country = TUR
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+	
+	option = {
+		name = turkey.100.b
+		ai_chance = { factor = 0 }
+		add_political_power = -250
+		TUR = {
+			country_event = { days = 1 id = turkey.11 }
+		}
+	}
+}
+
+# Germany Accept
+country_event = {
+	id = turkey.10
+	title = turkey.10.t
+	desc = turkey.10.d
+	picture = GFX_report_event_german_turkish_pact
+
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.10.a
+		GER = {
+			add_opinion_modifier = { target = TUR modifier = ger_tur_pact }
+		}
+	}
+}
+
+# Germany Reject
+country_event = {
+	id = turkey.11
+	title = turkey.11.t
+	desc = turkey.11.d
+	picture = GFX_report_event_german_turkish_pact
+
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.11.a
+	}
+}
+
+# Support Second French Revelation
+country_event = {
+	id = turkey.12
+	title = turkey.12.t
+	desc = turkey.12.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.12.a
+		FRA = {
+			country_event = generic.1
+			add_ideas = TUR_support_second_french_revolution
+		}
+		add_political_power = -50
+	}
+}
+
+# Balkan Entente to GREECE
+country_event = {
+	id = turkey.13
+	title = turkey.13.t
+	desc = turkey.13.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.13.a
+		TUR = {
+			country_event = { days = 1 id = turkey.16 }
+		}
+		TUR = { add_to_faction = GRE }
+		add_ideas = TUR_entente_balkanique
+	}
+	
+	option = {
+		name = turkey.13.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Balkan Entente to ROM
+country_event = {
+	id = turkey.14
+	title = turkey.14.t
+	desc = turkey.14.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.14.a
+		TUR = {
+			country_event = { days = 1 id = turkey.17 }
+		}
+		TUR = { add_to_faction = ROM }
+		add_ideas = TUR_entente_balkanique
+	}
+	
+	option = {
+		name = turkey.14.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Balkan Entente to YUG
+country_event = {
+	id = turkey.15
+	title = turkey.15.t
+	desc = turkey.15.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.15.a
+		TUR = {
+			country_event = { days = 1 id = turkey.18 }
+		}
+		TUR = { add_to_faction = YUG }
+		add_ideas = TUR_entente_balkanique
+	}
+	
+	option = {
+		name = turkey.15.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# GRE Accept
+country_event = {
+	id = turkey.16
+	title = turkey.16.t
+	desc = turkey.16.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.16.a
+	}
+}
+
+# ROM Accept
+country_event = {
+	id = turkey.17
+	title = turkey.17.t
+	desc = turkey.17.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.17.a
+	}
+}
+
+# YUG Accept
+country_event = {
+	id = turkey.18
+	title = turkey.18.t
+	desc = turkey.18.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.18.a
+	}
+}
+
+# Turkey wants to Batumi
+country_event = {
+	id = turkey.19
+	title = turkey.19.t
+	desc = turkey.19.d
+	picture = GFX_report_event_crimea
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.19.a
+		TUR = {
+			country_event = { days = 1 id = turkey.20 }
+		}
+		TUR = { transfer_state  = 231 }
+	}
+	
+	option = {
+		name = turkey.19.b
+		TUR = {
+			country_event = { days = 1 id = turkey.21 }
+		}
+	}
+}
+
+# Soviet Accept
+country_event = {
+	id = turkey.20
+	title = turkey.20.t
+	desc = turkey.20.d
+	picture = GFX_report_event_crimea
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.20.a
+		TUR = {
+			transfer_state = 801
+		}
+	}
+}
+
+# Soviet Reject
+country_event = {
+	id = turkey.21
+	title = turkey.21.t
+	desc = turkey.21.d
+	picture = GFX_report_event_crimea
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.21.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+	}
+}
+
+# Turkey wants to Hatay
+country_event = {
+	id = turkey.22
+	title = turkey.22.t
+	desc = turkey.22.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.22.a
+		ai_chance = { factor = 5 }
+		TUR = {
+			country_event = { days = 1 id = turkey.23 }
+		}
+		TUR = { transfer_state  = 800 }
+	}
+	
+	option = {
+		name = turkey.22.b
+		ai_chance = { factor = 5 }
+		TUR = {
+			country_event = { days = 1 id = turkey.24 }
+			add_opinion_modifier = { target = FRA modifier = france_reject_our_offer }	
+		}
+	}
+}
+
+# France Accept
+country_event = {
+	id = turkey.23
+	title = turkey.23.t
+	desc = turkey.23.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.23.a
+		TUR = {
+			transfer_state = 800
+		}
+	}
+}
+
+# France Reject
+country_event = {
+	id = turkey.24
+	title = turkey.24.t
+	desc = turkey.24.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.24.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FRA
+			}
+		FRA = {
+			add_opinion_modifier = { target = TUR modifier = france_reject_our_offer }	
+		}
+	}
+}
+
+# Plovdiv
+country_event = {
+	id = turkey.25
+	title = turkey.25.t
+	desc = turkey.25.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.25.a
+		TUR = {
+			country_event = { days = 1 id = turkey.26 }
+		}
+		TUR = { transfer_state  = 212 }
+	}
+	
+	option = {
+		name = turkey.25.b
+		TUR = {
+			country_event = { days = 1 id = turkey.27 }
+			add_opinion_modifier = { target = BUL modifier = bulgaria_reject_our_offer }	
+		}
+	}
+}
+
+# Bulgaria Accept
+country_event = {
+	id = turkey.26
+	title = turkey.26.t
+	desc = turkey.26.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.26.a
+		TUR = {
+			transfer_state = 212
+		}
+	}
+}
+
+# Bulgaria Reject
+country_event = {
+	id = turkey.27
+	title = turkey.27.t
+	desc = turkey.27.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.27.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = BUL
+			}
+		BUL = {
+			add_opinion_modifier = { target = TUR modifier = bulgaria_reject_our_offer }	
+		}
+	}
+}
+
+# Marshall Plan
+country_event = {
+	id = turkey.28
+	title = turkey.28.t
+	desc = turkey.28.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.28.a
+	}
+}
+
+# Go with England
+country_event = {
+	id = turkey.29
+	title = turkey.29.t
+	desc = turkey.29.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.29.a
+		ENG = { add_to_faction = TUR }
+		TUR = {
+			country_event = { days = 1 id = turkey.30 }	
+		}
+	}
+	
+	option = {
+		name = turkey.29.b
+		ai_chance = { factor = 0 }
+		TUR = {
+			country_event = { days = 1 id = turkey.31 }
+		}
+	}
+}
+
+# England Accept
+country_event = {
+	id = turkey.30
+	title = turkey.30.t
+	desc = turkey.30.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.30.a
+	}
+}
+
+# England Reject
+country_event = {
+	id = turkey.31
+	title = turkey.31.t
+	desc = turkey.31.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.31.a
+	}
+}
+
+
+# Non-Aggression Pact to England
+country_event = {
+	id = turkey.32
+	title = turkey.32.t
+	desc = turkey.32.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.32.a
+		diplomatic_relation = {
+			country = TUR
+			relation = non_aggression_pact
+			active = yes
+		}
+		TUR = {
+			country_event = { days = 1 id = turkey.33 }	
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = naval_doctrine
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = cl_tech
+		}
+	}
+	
+	option = {
+		name = turkey.32.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# England Accept Non-Aggression Pact
+country_event = {
+	id = turkey.33
+	title = turkey.33.t
+	desc = turkey.33.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.33.a
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = naval_doctrine
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = cl_tech
+		}
+	}
+}
+
+# Non-Aggression Pact to France
+country_event = {
+	id = turkey.34
+	title = turkey.34.t
+	desc = turkey.34.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.34.a
+		diplomatic_relation = {
+			country = TUR
+			relation = non_aggression_pact
+			active = yes
+		}
+		TUR = {
+			country_event = { days = 1 id = turkey.35 }	
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = naval_doctrine
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = cl_tech
+		}
+	}
+	
+	option = {
+		name = turkey.34.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# France Accept Non-Aggression Pact
+country_event = {
+	id = turkey.35
+	title = turkey.35.t
+	desc = turkey.35.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.35.a
+	}
+}
+
+# Non-Aggression Pact to Italy
+country_event = {
+	id = turkey.36
+	title = turkey.36.t
+	desc = turkey.36.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.36.a
+		diplomatic_relation = {
+			country = TUR
+			relation = non_aggression_pact
+			active = yes
+		}
+		TUR = {
+			country_event = { days = 1 id = turkey.37 }	
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = naval_doctrine
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = cl_tech
+		}
+	}
+	
+	option = {
+		name = turkey.36.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Italy Accept Non-Aggression Pact
+country_event = {
+	id = turkey.37
+	title = turkey.37.t
+	desc = turkey.37.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.37.a
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = naval_doctrine
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = cl_tech
+		}
+	}
+}
+
+# Non-Aggression Pact to Iraq
+country_event = {
+	id = turkey.38
+	title = turkey.38.t
+	desc = turkey.38.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.38.a
+		diplomatic_relation = {
+			country = TUR
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = AFG
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = PER
+			relation = non_aggression_pact
+			active = yes
+		}
+		TUR = {
+			country_event = { days = 1 id = turkey.39 }	
+		}
+	}
+	
+	option = {
+		name = turkey.38.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Iraq Accept Non-Aggression Pact
+country_event = {
+	id = turkey.39
+	title = turkey.39.t
+	desc = turkey.39.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.39.a
+	}
+}
+
+# Non-Aggression Pact to Iran
+country_event = {
+	id = turkey.40
+	title = turkey.40.t
+	desc = turkey.40.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.40.a
+		diplomatic_relation = {
+			country = TUR
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = IRQ
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = AFG
+			relation = non_aggression_pact
+			active = yes
+		}
+		TUR = {
+			country_event = { days = 1 id = turkey.41 }	
+		}
+	}
+	
+	option = {
+		name = turkey.40.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Iran Accept Non-Aggression Pact
+country_event = {
+	id = turkey.41
+	title = turkey.41.t
+	desc = turkey.41.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.41.a
+	}
+}
+
+# Non-Aggression Pact to Afghanistan
+country_event = {
+	id = turkey.42
+	title = turkey.42.t
+	desc = turkey.42.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.42.a
+		diplomatic_relation = {
+			country = TUR
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = IRQ
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = PER
+			relation = non_aggression_pact
+			active = yes
+		}
+		TUR = {
+			country_event = { days = 1 id = turkey.43 }	
+		}
+	}
+	
+	option = {
+		name = turkey.42.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Afghanistan Accept Non-Aggression Pact
+country_event = {
+	id = turkey.43
+	title = turkey.43.t
+	desc = turkey.43.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.43.a
+	}
+}
+
+#Turkish-American Technology Treaty
+country_event = {
+	id = turkey.44
+	title = turkey.44.t
+	desc = turkey.44.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.44.a
+		TUR = {
+			country_event = { days = 1 id = turkey.7 }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = usa_tur_treaty
+			}
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.5
+			uses = 1
+			category = industry
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = light_fighter
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
+	}
+	
+	option = {
+		name = turkey.44.b
+		ai_chance = { factor = 0 }
+		add_political_power = -250
+		TUR = {
+			country_event = { days = 1 id = turkey.8 }
+		}
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+# Mosul
+country_event = {
+	id = turkey.45
+	title = turkey.45.t
+	desc = turkey.45.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.45.a
+		TUR = {
+			country_event = { days = 1 id = turkey.46 }
+		}
+		TUR = { transfer_state  = 676 }
+	}
+	
+	option = {
+		name = turkey.45.b
+		TUR = {
+			country_event = { days = 1 id = turkey.47 }	
+		}
+	}
+}
+
+# Iraq Accept
+country_event = {
+	id = turkey.46
+	title = turkey.46.t
+	desc = turkey.46.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.46.a
+		TUR = {
+			transfer_state = 676
+		}
+	}
+}
+
+# Iraq Reject
+country_event = {
+	id = turkey.47
+	title = turkey.47.t
+	desc = turkey.47.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.47.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = IRQ
+			}
+		}
+	}
+	
+	
+# Turkey wants to Syria
+country_event = {
+	id = turkey.48
+	title = turkey.48.t
+	desc = turkey.48.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.48.a
+		TUR = {
+			country_event = { days = 1 id = turkey.49 }
+		}
+		TUR = { 
+			transfer_state = 677
+			transfer_state = 680
+			transfer_state = 553
+			transfer_state = 554
+			transfer_state = 800
+		}
+	}
+	
+	option = {
+		name = turkey.48.b
+		ai_chance = { factor = 0 }
+		TUR = {
+			country_event = { days = 1 id = turkey.50 }
+		}
+	}
+}
+
+# France Accept
+country_event = {
+	id = turkey.49
+	title = turkey.49.t
+	desc = turkey.49.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.49.a
+		TUR = {
+			transfer_state = 677
+			transfer_state = 680
+			transfer_state = 553
+			transfer_state = 554
+			transfer_state = 800
+		}
+	}
+}
+
+# France Reject
+country_event = {
+	id = turkey.50
+	title = turkey.50.t
+	desc = turkey.50.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.50.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FRA
+			}
+		}
+	}
+	
+	
+	
+# Treaty of Jerusalem
+country_event = {
+	id = turkey.51
+	title = turkey.51.t
+	desc = turkey.51.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.51.a
+		TUR = {
+			country_event = { days = 1 id = turkey.52 }
+		}
+		TUR = { 
+			transfer_state = 455
+			transfer_state = 454
+			transfer_state = 453
+			transfer_state = 656
+		}
+		add_resource = {
+			type = oil
+			amount = 20
+			state = 126
+		}
+	}
+	
+	option = {
+		name = turkey.51.b
+		ai_chance = { factor = 0 }
+		TUR = {
+			country_event = { days = 1 id = turkey.53 }
+		}
+	}
+}
+
+# England Accept
+country_event = {
+	id = turkey.52
+	title = turkey.52.t
+	desc = turkey.52.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.52.a
+		TUR = {
+			transfer_state = 455
+			transfer_state = 454
+			transfer_state = 453
+			transfer_state = 656
+		}
+		add_resource = {
+			type = oil
+			amount = -20
+			state = 455
+		}
+	}
+}
+
+# England Reject
+country_event = {
+	id = turkey.53
+	title = turkey.53.t
+	desc = turkey.53.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.53.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ENG
+			}
+		}
+	}
+	
+	
+	
+# Ultimatom to Iraq
+country_event = {
+	id = turkey.54
+	title = turkey.54.t
+	desc = turkey.54.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.54.a
+		TUR = {
+			country_event = { days = 1 id = turkey.55 }
+		}
+		TUR = { 
+			transfer_state = 676
+			transfer_state = 675
+			transfer_state = 291
+		}
+	}
+	
+	option = {
+		name = turkey.54.b
+		ai_chance = { factor = 0 }
+		TUR = {
+			country_event = { days = 1 id = turkey.56 }
+		}
+	}
+}
+
+# Iraq Accept
+country_event = {
+	id = turkey.55
+	title = turkey.55.t
+	desc = turkey.55.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.55.a
+		TUR = {
+			transfer_state = 676
+			transfer_state = 675
+			transfer_state = 291
+		}
+	}
+}
+
+# Iraq Reject
+country_event = {
+	id = turkey.56
+	title = turkey.56.t
+	desc = turkey.56.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.56.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = IRQ
+			}
+		}
+	}
+	
+	
+	
+# Ultimatom to Saudi Arabia
+country_event = {
+	id = turkey.57
+	title = turkey.57.t
+	desc = turkey.57.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.57.a
+		TUR = {
+			country_event = { days = 1 id = turkey.58 }
+		}
+		TUR = { 
+			transfer_state = 292
+			transfer_state = 679
+			transfer_state = 678
+		}
+	}
+	
+	option = {
+		name = turkey.57.b
+		ai_chance = { factor = 0 }
+		TUR = {
+			country_event = { days = 1 id = turkey.59 }
+		}
+	}
+}
+
+# Saudi Accept
+country_event = {
+	id = turkey.58
+	title = turkey.58.t
+	desc = turkey.58.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.58.a
+		TUR = {
+			transfer_state = 292
+			transfer_state = 679
+			transfer_state = 678
+		}
+	}
+}
+
+# Saudi Reject
+country_event = {
+	id = turkey.59
+	title = turkey.59.t
+	desc = turkey.59.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.59.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SAU
+			}
+		}
+	}
+	
+	
+	
+# Ultimatom to Yemen
+country_event = {
+	id = turkey.60
+	title = turkey.60.t
+	desc = turkey.60.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.60.a
+		TUR = {
+			country_event = { days = 1 id = turkey.61 }
+		}
+		TUR = { 
+			transfer_state = 293
+		}
+	}
+	
+	option = {
+		name = turkey.60.b
+		ai_chance = { factor = 0 }
+		TUR = {
+			country_event = { days = 1 id = turkey.62 }
+		}
+	}
+}
+
+# Yemen Accept
+country_event = {
+	id = turkey.61
+	title = turkey.61.t
+	desc = turkey.61.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.61.a
+		TUR = {
+			transfer_state = 293
+		}
+	}
+}
+
+# Yemen Reject
+country_event = {
+	id = turkey.62
+	title = turkey.62.t
+	desc = turkey.62.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.62.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = YEM
+			}
+		}
+	}
+	
+	
+# Ultimatom to Oman
+country_event = {
+	id = turkey.63
+	title = turkey.63.t
+	desc = turkey.63.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.63.a
+		TUR = {
+			country_event = { days = 1 id = turkey.64 }
+		}
+		TUR = { 
+			transfer_state = 294
+		}
+	}
+	
+	option = {
+		name = turkey.63.b
+		ai_chance = { factor = 0 }
+		TUR = {
+			country_event = { days = 1 id = turkey.65 }
+		}
+	}
+}
+
+# Oman Accept
+country_event = {
+	id = turkey.64
+	title = turkey.64.t
+	desc = turkey.64.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.64.a
+		TUR = {
+			transfer_state = 294
+		}
+	}
+}
+
+# Oman Reject
+country_event = {
+	id = turkey.65
+	title = turkey.65.t
+	desc = turkey.65.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.65.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = OMA
+			}
+		}
+	}
+	
+	
+# Assassinate Atatürk
+country_event = {
+	id = turkey.66
+	title = turkey.66.t
+	desc = turkey.66.d
+	picture = GFX_report_event_ataturk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.66.a
+		create_country_leader = {
+			name = "Ismet Inönü"
+			desc = "POLITICS_ISMET_INONU_DESC"
+			picture = Portrait_Turkey_Ismet_Inonu.dds				
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				
+			}
+		}
+	}
+}
+
+# Abdulmecid II's Coup
+country_event = {
+	id = turkey.67
+	title = turkey.67.t
+	desc = turkey.67.d
+	picture = GFX_report_event_ataturk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.67.a
+		create_country_leader = {
+			name = "Abdulmecid II"
+				desc = "POLITICS_ABDULMECID_DESC"
+				picture = "gfx/leaders/TUR/Portrait_Turkey_Abdulmecid.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					caliph_of_islam
+				}
+			}
+		set_cosmetic_tag = TUR_ott
+	}
+}
+
+
+# Dersim Rebellion
+
+country_event = {
+	id = turkey.68
+	title = turkey.68.t
+	desc = turkey.68.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUR
+		date > 1937.3.3
+		date < 1938.3.3
+	}
+	
+	option = {
+		name = turkey.68.a
+		add_stability = -0.05
+		army_experience = 25
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Threce & Selanik
+country_event = {
+	id = turkey.69
+	title = turkey.69.t
+	desc = turkey.69.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.69.a
+		TUR = {
+			country_event = { days = 1 id = turkey.70 }
+		}
+		TUR = { 
+			transfer_state  = 184 
+			transfer_state  = 731
+		}
+	}
+	
+	option = {
+		name = turkey.69.b
+		TUR = {
+			country_event = { days = 1 id = turkey.71 }	
+		}
+	}
+}
+
+# Greece Accept
+country_event = {
+	id = turkey.70
+	title = turkey.70.t
+	desc = turkey.70.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.70.a
+		TUR = { 
+			transfer_state  = 184 
+			transfer_state  = 731
+		}
+	}
+}
+
+# Greece Reject
+country_event = {
+	id = turkey.71
+	title = turkey.71.t
+	desc = turkey.71.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.71.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GRE
+			}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+# Cyprus
+country_event = {
+	id = turkey.72
+	title = turkey.72.t
+	desc = turkey.72.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.72.a
+		TUR = {
+			country_event = { days = 1 id = turkey.73 }
+		}
+		TUR = { transfer_state  = 183 }
+	}
+	
+	option = {
+		name = turkey.72.b
+		TUR = {
+			country_event = { days = 1 id = turkey.74 }
+		}
+	}
+}
+
+# England Accept
+country_event = {
+	id = turkey.73
+	title = turkey.73.t
+	desc = turkey.73.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.73.a
+		TUR = {
+			transfer_state = 183
+		}
+	}
+}
+
+# England Reject
+country_event = {
+	id = turkey.74
+	title = turkey.74.t
+	desc = turkey.74.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.74.a
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ENG
+			}
+	}
+}

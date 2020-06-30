@@ -1,0 +1,322 @@
+
+SAF_south_african_industrial_development = {
+	
+	SAF_develop_transvaal = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 275
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			275 = {
+				NOT = { has_state_flag = SAF_transvaal_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = south_african_focus }
+				}
+				controls_state = 275
+			}
+			if = {
+				limit = {
+					has_focus_tree = south_african_focus
+				}
+				has_completed_focus = SAF_construct_the_vaal_dam
+			}
+		}
+		
+		highlight_states = {
+			state = 275
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 275 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			275 = {
+				set_state_flag = SAF_transvaal_developed
+				set_state_category = large_city
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = south_african_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_south_africa_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_south_africa_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	SAF_develop_natal = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 719
+		}
+		
+		allowed = {
+			
+		}
+		
+		visible = {
+			719 = {
+				NOT = { has_state_flag = SAF_natal_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = south_african_focus }
+				}
+				controls_state = 719
+			}
+			if = {
+				limit = {
+					has_focus_tree = south_african_focus
+				}
+				has_completed_focus = SAF_expand_the_colenso_power_station
+			}
+		}
+		
+		highlight_states = {
+			state = 719
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 719 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			719 = {
+				set_state_flag = SAF_natal_developed
+				set_state_category = large_city
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = south_african_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_south_africa_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_south_africa_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	SAF_develop_cape = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 681
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			681 = {
+				NOT = { has_state_flag = SAF_cape_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = south_african_focus }
+				}
+				controls_state = 681
+			}
+			if = {
+				limit = {
+					has_focus_tree = south_african_focus
+				}
+				has_completed_focus = SAF_expand_the_simons_town_base
+			}
+		}
+		
+		highlight_states = {
+			state = 681
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 681 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			681 = {
+				set_state_flag = SAF_cape_developed
+				set_state_category = city
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = south_african_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_south_africa_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_south_africa_focus
+				factor = 0.75
+			}
+		}
+	}
+	
+	SAF_develop_south_west_africa = {
+		
+		icon = generic_construction
+		
+		available = {
+			controls_state = 541
+		}
+		
+		allowed = {
+		
+		}
+		
+		visible = {
+			541 = {
+				NOT = { has_state_flag = SAF_south_west_africa_developed }
+			}
+			if = {
+				limit = {
+					NOT = { has_focus_tree = south_african_focus }
+				}
+				controls_state = 541
+			}
+			if = {
+				limit = {
+					has_focus_tree = south_african_focus
+				}
+				OR = {
+					has_completed_focus = SAF_suppress_the_stormjaers
+					has_completed_focus = SAF_support_ossewabrandwag
+				}
+			}
+		}
+		
+		highlight_states = {
+			state = 541
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		
+		days_remove = 70
+		
+		cancel_trigger = {
+			NOT = { controls_state = 541 }
+		}
+
+		complete_effect = {
+		
+		}
+		
+		remove_effect = {
+			541 = {
+				set_state_flag = SAF_south_west_africa_developed
+				set_state_category = town
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				OR = {
+					NOT = {
+						has_focus_tree = south_african_focus
+						has_focus_tree = british_focus
+					}
+				}
+				factor = 0.25
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				NOT = { has_completed_focus = uk_south_africa_focus }
+				factor = 0.5
+			}
+			modifier = {
+				has_focus_tree = british_focus
+				has_completed_focus = uk_south_africa_focus
+				factor = 0.75
+			}
+		}
+	}
+}

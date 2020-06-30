@@ -1,0 +1,23 @@
+################
+##South Africa##
+################
+SAF_immigration = {
+	icon = generic_democracy
+	
+	#picture = GFX_decision_cat_ast_immigration
+
+	allowed = {
+		original_tag = SAF
+	}
+}
+
+
+SAF_south_african_industrial_development = {
+	icon = generic_industry
+	
+	#picture = GFX_decision_cat_ast_australian_industrial_development
+
+	allowed = {
+	
+	}
+}

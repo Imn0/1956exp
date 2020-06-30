@@ -1,0 +1,166 @@
+spriteTypes = {
+
+	### TURKEY
+
+	SpriteType = {
+		name = "GFX_TUR_CAS1_medium"
+		texturefile = "gfx/interface/technologies/TUR_CAS1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_CAS2_medium"
+		texturefile = "gfx/interface/technologies/TUR_CAS2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_CAS3_medium"
+		texturefile = "gfx/interface/technologies/TUR_CAS3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/TUR_early_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/TUR_early_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_fighter1_medium"
+		texturefile = "gfx/interface/technologies/TUR_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_fighter2_medium"
+		texturefile = "gfx/interface/technologies/TUR_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_fighter3_medium"
+		texturefile = "gfx/interface/technologies/TUR_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/TUR_heavy_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/TUR_heavy_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/TUR_heavy_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/TUR_naval_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/TUR_naval_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/TUR_naval_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/TUR_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/TUR_strategic_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/TUR_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/TUR_tactical_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/TUR_tactical_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/TUR_tactical_bomber3.dds"
+	}
+
+	### TUR tanks ###
+
+	SpriteType = {
+		name = "GFX_TUR_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/TUR_basic_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/TUR_imp_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/TUR_adv_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/TUR_basic_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/TUR_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/TUR_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/TUR_main_battle_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/TUR_basic_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/TUR_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/TUR_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/TUR_superheavy_tank.dds"
+	}
+	
+	
+	
+	
+	
+	

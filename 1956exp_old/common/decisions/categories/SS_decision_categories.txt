@@ -1,0 +1,41 @@
+SS_demands = {
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_idea = heinrich_himmler
+	}
+}
+SS_foreign_volunteers = {
+	allowed = {
+		original_tag = GER
+	}
+
+	available = {
+		has_government = fascism
+	}
+
+	visible = {
+		has_completed_focus = GER_foreign_volunteers
+	}
+}
+
+SS_divisions = {
+	allowed = {
+		original_tag = GER
+	}
+	
+	available = {
+		has_government = fascism
+	}
+	
+	visible = {
+		has_completed_focus = GER_SS_division_organization
+	}
+}
+wehrmacht_demands = {
+	allowed = {
+		original_tag = GER
+	}
+}

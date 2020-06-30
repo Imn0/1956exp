@@ -1,0 +1,2195 @@
+scripted_gui = {
+	plc_unified_communism_pol_ui = {
+		context_type = player_context
+		window_name = "plc_unified_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = PLC_UNIFIED
+			}
+		}
+	}
+	
+	plc_unified_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "plc_unified_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = PLC_UNIFIED
+			}
+		}
+	}
+
+	plc_unified_democratic_pol_ui = {
+		context_type = player_context
+		window_name = "plc_unified_democratic_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = PLC_UNIFIED
+			}
+		}
+	}
+	
+	plc_unified_democratic_dip_ui = {
+		context_type = selected_country_context
+		window_name = "plc_unified_democratic_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = PLC_UNIFIED
+			}
+		}
+	}
+
+	plc_unified_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "plc_unified_fascism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = PLC_UNIFIED
+			}
+		}
+	}
+	
+	plc_unified_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "plc_unified_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = PLC_UNIFIED
+			}
+		}
+	}
+
+	plc_unified_neutrality_pol_ui = {
+		context_type = player_context
+		window_name = "plc_unified_neutrality_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = PLC_UNIFIED
+			}
+		}
+	}
+	
+	plc_unified_neutrality_dip_ui = {
+		context_type = selected_country_context
+		window_name = "plc_unified_neutrality_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = PLC_UNIFIED
+			}
+		}
+	}
+
+	ara_unified_communism_pol_ui = {
+		context_type = player_context
+		window_name = "ara_unified_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = ARA_UNIFIED
+			}
+		}
+	}
+	
+	ara_unified_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "ara_unified_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = ARA_UNIFIED
+			}
+		}
+	}
+
+	ara_unified_democratic_pol_ui = {
+		context_type = player_context
+		window_name = "ara_unified_democratic_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = ARA_UNIFIED
+			}
+		}
+	}
+	
+	ara_unified_democratic_dip_ui = {
+		context_type = selected_country_context
+		window_name = "ara_unified_democratic_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = ARA_UNIFIED
+			}
+		}
+	}
+
+	ara_unified_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "ara_unified_fascism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = ARA_UNIFIED
+			}
+		}
+	}
+	
+	ara_unified_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "ara_unified_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = ARA_UNIFIED
+			}
+		}
+	}
+
+	ara_unified_neutrality_pol_ui = {
+		context_type = player_context
+		window_name = "ara_unified_neutrality_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = ARA_UNIFIED
+			}
+		}
+	}
+	
+	ara_unified_neutrality_dip_ui = {
+		context_type = selected_country_context
+		window_name = "ara_unified_neutrality_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = ARA_UNIFIED
+			}
+		}
+	}
+
+
+	gco_unified_communism_pol_ui = {
+		context_type = player_context
+		window_name = "GCO_unified_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = GCO_UNIFIED
+			}
+		}
+	}
+	
+	gco_unified_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "GCO_unified_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = GCO_UNIFIED
+			}
+		}
+	}
+
+	gco_unified_democratic_pol_ui = {
+		context_type = player_context
+		window_name = "GCO_unified_democratic_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = GCO_UNIFIED
+			}
+		}
+	}
+	
+	gco_unified_democratic_dip_ui = {
+		context_type = selected_country_context
+		window_name = "GCO_unified_democratic_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = GCO_UNIFIED
+			}
+		}
+	}
+
+	gco_unified_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "plc_unified_fascism_GCO_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = GCO_UNIFIED
+			}
+		}
+	}
+	
+	gco_unified_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "GCO_unified_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = GCO_UNIFIED
+			}
+		}
+	}
+
+	gco_unified_neutrality_pol_ui = {
+		context_type = player_context
+		window_name = "GCO_unified_neutrality_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = GCO_UNIFIED
+			}
+		}
+	}
+	
+	gco_unified_neutrality_dip_ui = {
+		context_type = selected_country_context
+		window_name = "GCO_unified_neutrality_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = GCO_UNIFIED
+			}
+		}
+	}
+
+	bal_unified_communism_pol_ui = {
+		context_type = player_context
+		window_name = "BAL_unified_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = BAL_UNIFIED
+			}
+		}
+	}
+	
+	bal_unified_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "BAL_unified_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = BAL_UNIFIED
+			}
+		}
+	}
+
+	bal_unified_democratic_pol_ui = {
+		context_type = player_context
+		window_name = "BAL_unified_democratic_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = BAL_UNIFIED
+			}
+		}
+	}
+	
+	bal_unified_democratic_dip_ui = {
+		context_type = selected_country_context
+		window_name = "BAL_unified_democratic_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = BAL_UNIFIED
+			}
+		}
+	}
+
+	bal_unified_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "plc_unified_fascism_BAL_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = BAL_UNIFIED
+			}
+		}
+	}
+	
+	bal_unified_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "BAL_unified_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = BAL_UNIFIED
+			}
+		}
+	}
+
+	bal_unified_neutrality_pol_ui = {
+		context_type = player_context
+		window_name = "BAL_unified_neutrality_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = BAL_UNIFIED
+			}
+		}
+	}
+	
+	bal_unified_neutrality_dip_ui = {
+		context_type = selected_country_context
+		window_name = "BAL_unified_neutrality_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = BAL_UNIFIED
+			}
+		}
+	}
+
+	byz_unified_communism_pol_ui = {
+		context_type = player_context
+		window_name = "BYZ_unified_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = BYZ_UNIFIED
+			}
+		}
+	}
+	
+	byz_unified_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "BYZ_unified_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = BYZ_UNIFIED
+			}
+		}
+	}
+
+	byz_unified_democratic_pol_ui = {
+		context_type = player_context
+		window_name = "BYZ_unified_democratic_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = BYZ_UNIFIED
+			}
+		}
+	}
+	
+	byz_unified_democratic_dip_ui = {
+		context_type = selected_country_context
+		window_name = "BYZ_unified_democratic_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = BYZ_UNIFIED
+			}
+		}
+	}
+
+	byz_unified_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "plc_unified_fascism_BYZ_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = BYZ_UNIFIED
+			}
+		}
+	}
+	
+	byz_unified_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "BYZ_unified_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = BYZ_UNIFIED
+			}
+		}
+	}
+
+	byz_unified_neutrality_pol_ui = {
+		context_type = player_context
+		window_name = "BYZ_unified_neutrality_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = BYZ_UNIFIED
+			}
+		}
+	}
+	
+	byz_unified_neutrality_dip_ui = {
+		context_type = selected_country_context
+		window_name = "BYZ_unified_neutrality_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = BYZ_UNIFIED
+			}
+		}
+	}
+
+	eur_unified_communism_pol_ui = {
+		context_type = player_context
+		window_name = "EUR_unified_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = EUR_UNIFIED
+			}
+		}
+	}
+	
+	eur_unified_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "EUR_unified_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = EUR_UNIFIED
+			}
+		}
+	}
+
+	eur_unified_democratic_pol_ui = {
+		context_type = player_context
+		window_name = "EUR_unified_democratic_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = EUR_UNIFIED
+			}
+		}
+	}
+	
+	eur_unified_democratic_dip_ui = {
+		context_type = selected_country_context
+		window_name = "EUR_unified_democratic_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = EUR_UNIFIED
+			}
+		}
+	}
+
+	eur_unified_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "plc_unified_fascism_EUR_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = EUR_UNIFIED
+			}
+		}
+	}
+	
+	eur_unified_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "EUR_unified_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = EUR_UNIFIED
+			}
+		}
+	}
+
+	eur_unified_neutrality_pol_ui = {
+		context_type = player_context
+		window_name = "EUR_unified_neutrality_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = EUR_UNIFIED
+			}
+		}
+	}
+	
+	eur_unified_neutrality_dip_ui = {
+		context_type = selected_country_context
+		window_name = "EUR_unified_neutrality_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = EUR_UNIFIED
+			}
+		}
+	}
+
+	ndc_unified_communism_pol_ui = {
+		context_type = player_context
+		window_name = "NDC_unified_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = NDC_UNIFIED
+			}
+		}
+	}
+	
+	ndc_unified_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "NDC_unified_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = NDC_UNIFIED
+			}
+		}
+	}
+
+	ndc_unified_democratic_pol_ui = {
+		context_type = player_context
+		window_name = "NDC_unified_democratic_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = NDC_UNIFIED
+			}
+		}
+	}
+	
+	ndc_unified_democratic_dip_ui = {
+		context_type = selected_country_context
+		window_name = "NDC_unified_democratic_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = NDC_UNIFIED
+			}
+		}
+	}
+
+	ndc_unified_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "plc_unified_fascism_NDC_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = NDC_UNIFIED
+			}
+		}
+	}
+	
+	ndc_unified_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "NDC_unified_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = NDC_UNIFIED
+			}
+		}
+	}
+
+	ndc_unified_neutrality_pol_ui = {
+		context_type = player_context
+		window_name = "NDC_unified_neutrality_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = NDC_UNIFIED
+			}
+		}
+	}
+	
+	ndc_unified_neutrality_dip_ui = {
+		context_type = selected_country_context
+		window_name = "NDC_unified_neutrality_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = NDC_UNIFIED
+			}
+		}
+	}
+
+	sca_unified_communism_pol_ui = {
+		context_type = player_context
+		window_name = "SCA_unified_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = SCA_UNIFIED
+			}
+		}
+	}
+	
+	sca_unified_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "SCA_unified_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = SCA_UNIFIED
+			}
+		}
+	}
+
+	sca_unified_democratic_pol_ui = {
+		context_type = player_context
+		window_name = "SCA_unified_democratic_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = SCA_UNIFIED
+			}
+		}
+	}
+	
+	sca_unified_democratic_dip_ui = {
+		context_type = selected_country_context
+		window_name = "SCA_unified_democratic_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = SCA_UNIFIED
+			}
+		}
+	}
+
+	sca_unified_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "plc_unified_fascism_SCA_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = SCA_UNIFIED
+			}
+		}
+	}
+	
+	sca_unified_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "SCA_unified_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = SCA_UNIFIED
+			}
+		}
+	}
+
+	sca_unified_neutrality_pol_ui = {
+		context_type = player_context
+		window_name = "SCA_unified_neutrality_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = SCA_UNIFIED
+			}
+		}
+	}
+	
+	sca_unified_neutrality_dip_ui = {
+		context_type = selected_country_context
+		window_name = "SCA_unified_neutrality_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = SCA_UNIFIED
+			}
+		}
+	}
+
+
+	unl_unified_communism_pol_ui = {
+		context_type = player_context
+		window_name = "UNL_unified_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = UNL_UNIFIED
+			}
+		}
+	}
+	
+	unl_unified_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "UNL_unified_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = UNL_UNIFIED
+			}
+		}
+	}
+
+	unl_unified_democratic_pol_ui = {
+		context_type = player_context
+		window_name = "UNL_unified_democratic_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = UNL_UNIFIED
+			}
+		}
+	}
+	
+	unl_unified_democratic_dip_ui = {
+		context_type = selected_country_context
+		window_name = "UNL_unified_democratic_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = UNL_UNIFIED
+			}
+		}
+	}
+
+	unl_unified_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "UNL_unified_fascism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = UNL_UNIFIED
+			}
+		}
+	}
+	
+	unl_unified_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "UNL_unified_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = UNL_UNIFIED
+			}
+		}
+	}
+
+	unl_unified_neutrality_pol_ui = {
+		context_type = player_context
+		window_name = "UNL_unified_neutrality_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = UNL_UNIFIED
+			}
+		}
+	}
+	
+	unl_unified_neutrality_dip_ui = {
+		context_type = selected_country_context
+		window_name = "UNL_unified_neutrality_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = UNL_UNIFIED
+			}
+		}
+	}
+
+
+######################
+
+	USA_CSA_communism_pol_ui = {
+		context_type = player_context
+		window_name = "USA_CSA_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = USA
+				has_government = communism
+				has_cosmetic_tag = USA_CSA
+			}
+		}
+	}
+	
+	USA_CSA_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "USA_CSA_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = USA
+				has_government = communism
+				has_cosmetic_tag = USA_CSA
+			}
+		}
+	}
+
+	USA_CSA_pol_ui = {
+		context_type = player_context
+		window_name = "USA_CSA_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = USA_CSA
+			}
+		}
+	}
+	
+	USA_CSA_dip_ui = {
+		context_type = selected_country_context
+		window_name = "USA_CSA_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = USA_CSA
+			}
+		}
+	}
+
+	USC_UNIFIED_pol_ui = {
+		context_type = player_context
+		window_name = "USC_UNIFIED_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = USC_UNIFIED
+			}
+		}
+	}
+	
+	USC_UNIFIED_dip_ui = {
+		context_type = selected_country_context
+		window_name = "USC_UNIFIED_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = USC_UNIFIED
+			}
+		}
+	}
+
+	SPQR_UNIFIED_pol_ui = {
+		context_type = player_context
+		window_name = "SPQR_UNIFIED_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = SPQR_UNIFIED
+			}
+		}
+	}
+	
+	SPQR_UNIFIED_dip_ui = {
+		context_type = selected_country_context
+		window_name = "SPQR_UNIFIED_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = SPQR_UNIFIED
+			}
+		}
+	}
+
+	SOV_russia_communism_pol_ui = {
+		context_type = player_context
+		window_name = "SOV_russia_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = SOV
+				has_government = communism
+				has_cosmetic_tag = SOV_russia
+			}
+		}
+	}
+	
+	SOV_russia_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "SOV_russia_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = SOV
+				has_government = communism
+				has_cosmetic_tag = SOV_russia
+			}
+		}
+	}
+
+	RAT_UNIFIED_pol_ui = {
+		context_type = player_context
+		window_name = "RAT_UNIFIED_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				#NOT = { has_government = communism }
+				has_cosmetic_tag = RAT_UNIFIED
+			}
+		}
+	}
+	
+	RAT_UNIFIED_dip_ui = {
+		context_type = selected_country_context
+		window_name = "RAT_UNIFIED_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				#NOT = { has_government = communism }
+				has_cosmetic_tag = RAT_UNIFIED
+			}
+		}
+	}
+
+
+	PRC_proclaimed_communism_pol_ui = {
+		context_type = player_context
+		window_name = "PRC_proclaimed_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = PRC #warlords also need this
+				has_government = communism
+				has_cosmetic_tag = PRC_proclaimed
+			}
+		}
+	}
+	
+	PRC_proclaimed_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "PRC_proclaimed_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = PRC #warlords also need this
+				has_government = communism
+				has_cosmetic_tag = PRC_proclaimed
+			}
+		}
+	}
+
+	PRC_reformed_ROC_communism_pol_ui = {
+		context_type = player_context
+		window_name = "PRC_reformed_ROC_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = PRC #warlords also need this
+				has_government = communism
+				has_cosmetic_tag = PRC_reformed_ROC
+			}
+		}
+	}
+	
+	PRC_reformed_ROC_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "PRC_reformed_ROC_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = PRC #warlords also need this
+				has_government = communism
+				has_cosmetic_tag = PRC_reformed_ROC
+			}
+		}
+	}
+
+
+	PRC_soviet_communism_pol_ui = {
+		context_type = player_context
+		window_name = "PRC_soviet_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = PRC #warlords also need this
+				has_government = communism
+				has_cosmetic_tag = PRC_soviet
+			}
+		}
+	}
+	
+	PRC_soviet_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "PRC_soviet_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = PRC #warlords also need this
+				has_government = communism
+				has_cosmetic_tag = PRC_soviet
+			}
+		}
+	}
+
+
+
+	OTT_UNIFIED_pol_ui = {
+		context_type = player_context
+		window_name = "OTT_UNIFIED_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = OTT_UNIFIED
+			}
+		}
+	}
+	
+	OTT_UNIFIED_dip_ui = {
+		context_type = selected_country_context
+		window_name = "OTT_UNIFIED_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = OTT_UNIFIED
+			}
+		}
+	}
+
+	PER_UNIFIED_pol_ui = {
+		context_type = player_context
+		window_name = "PER_UNIFIED_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = PER_UNIFIED
+			}
+		}
+	}
+	
+	PER_UNIFIED_dip_ui = {
+		context_type = selected_country_context
+		window_name = "PER_UNIFIED_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = PER_UNIFIED
+			}
+		}
+	}
+
+	MUT_UNIFIED_pol_ui = {
+		context_type = player_context
+		window_name = "MUT_UNIFIED_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = MUT_UNIFIED
+			}
+		}
+	}
+	
+	MUT_UNIFIED_dip_ui = {
+		context_type = selected_country_context
+		window_name = "MUT_UNIFIED_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = MUT_UNIFIED
+			}
+		}
+	}
+
+	MEX_cristero_pol_ui = {
+		context_type = player_context
+		window_name = "MEX_cristero_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = MEX
+				NOT = { has_government = communism }
+				has_cosmetic_tag = MEX_cristero
+			}
+		}
+	}
+	
+	MEX_cristero_dip_ui = {
+		context_type = selected_country_context
+		window_name = "MEX_cristero_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = MEX
+				NOT = { has_government = communism }
+				has_cosmetic_tag = MEX_cristero
+			}
+		}
+	}
+
+
+	MAN_restored_pol_ui = {
+		context_type = player_context
+		window_name = "MAN_restored_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = MAN
+				NOT = { has_government = communism }
+				has_cosmetic_tag = MAN_restored
+			}
+		}
+	}
+	
+	MAN_restored_dip_ui = {
+		context_type = selected_country_context
+		window_name = "MAN_restored_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = MAN
+				NOT = { has_government = communism }
+				has_cosmetic_tag = MAN_restored
+			}
+		}
+	}
+
+	MAJ_UNIFIED_pol_ui = {
+		context_type = player_context
+		window_name = "MAJ_UNIFIED_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				#NOT = { has_government = communism }
+				has_cosmetic_tag = MAJ_UNIFIED
+			}
+		}
+	}
+
+	MAJ_UNIFIED_dip_ui = {
+		context_type = selected_country_context
+		window_name = "MAJ_UNIFIED_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				#NOT = { has_government = communism }
+				has_cosmetic_tag = MAJ_UNIFIED
+			}
+		}
+	}
+
+	ITA_RSI_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "ITA_RSI_fascism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = ITA
+				has_government = fascism
+				has_cosmetic_tag = ITA_RSI
+			}
+		}
+	}
+	
+	ITA_RSI_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "ITA_RSI_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = ITA
+				has_government = fascism
+				has_cosmetic_tag = ITA_RSI
+			}
+		}
+	}
+
+	HUN_EMPIRE_pol_ui = {
+		context_type = player_context
+		window_name = "HUN_EMPIRE_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = HUN_EMPIRE
+			}
+		}
+	}
+
+	HUN_EMPIRE_dip_ui = {
+		context_type = selected_country_context
+		window_name = "HUN_EMPIRE_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = HUN_EMPIRE
+			}
+		}
+	}
+
+	HUN_GREATER_pol_ui = {
+		context_type = player_context
+		window_name = "HUN_GREATER_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = HUN
+				NOT = { has_government = communism }
+				has_cosmetic_tag = HUN_GREATER
+			}
+		}
+	}
+
+	HUN_GREATER_dip_ui = {
+		context_type = selected_country_context
+		window_name = "HUN_GREATER_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = HUN
+				NOT = { has_government = communism }
+				has_cosmetic_tag = HUN_GREATER
+			}
+		}
+	}
+
+
+	HRE_UNIFIED_pol_ui = {
+		context_type = player_context
+		window_name = "HRE_UNIFIED_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = HRE_UNIFIED
+			}
+		}
+	}
+
+	HRE_UNIFIED_dip_ui = {
+		context_type = selected_country_context
+		window_name = "HRE_UNIFIED_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = HRE_UNIFIED
+			}
+		}
+	}
+
+
+
+
+
+	hol_benelux_communism_pol_ui = {
+		context_type = player_context
+		window_name = "hol_benelux_communism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = HOL_BENELUX
+			}
+		}
+	}
+	
+	hol_benelux_communism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "hol_benelux_communism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = communism
+				has_cosmetic_tag = HOL_BENELUX
+			}
+		}
+	}
+
+	hol_benelux_democratic_pol_ui = {
+		context_type = player_context
+		window_name = "hol_benelux_democratic_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = HOL_BENELUX
+			}
+		}
+	}
+	
+	hol_benelux_democratic_dip_ui = {
+		context_type = selected_country_context
+		window_name = "hol_benelux_democratic_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = democratic
+				has_cosmetic_tag = HOL_BENELUX
+			}
+		}
+	}
+
+	hol_benelux_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "hol_benelux_fascism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = HOL_BENELUX
+			}
+		}
+	}
+	
+	hol_benelux_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "hol_benelux_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = HOL_BENELUX
+			}
+		}
+	}
+
+	hol_benelux_neutrality_pol_ui = {
+		context_type = player_context
+		window_name = "hol_benelux_neutrality_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = HOL_BENELUX
+			}
+		}
+	}
+	
+	hol_benelux_neutrality_dip_ui = {
+		context_type = selected_country_context
+		window_name = "hol_benelux_neutrality_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = neutrality
+				has_cosmetic_tag = HOL_BENELUX
+			}
+		}
+	}
+
+
+	FRA_UK_pol_ui = {
+		context_type = player_context
+		window_name = "FRA_UK_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = FRA_UK
+			}
+		}
+	}
+
+	FRA_UK_dip_ui = {
+		context_type = selected_country_context
+		window_name = "FRA_UK_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = USA
+				NOT = { has_government = communism }
+				has_cosmetic_tag = FRA_UK
+			}
+		}
+	}
+
+	FRA_VIC_reformed_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "FRA_VIC_reformed_fascism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = FRA_VIC_reformed
+			}
+		}
+	}
+	
+	FRA_VIC_reformed_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "FRA_VIC_reformed_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = POL
+				has_government = fascism
+				has_cosmetic_tag = FRA_VIC_reformed
+		}
+	}
+
+	ENG_imperial_federation_india_unified_pol_ui = {
+		context_type = player_context
+		window_name = "ENG_imperial_federation_india_unified_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = ENG
+				NOT = { has_government = communism }
+				has_cosmetic_tag = ENG_imperial_federation_india_unified
+			}
+		}
+	}
+
+	ENG_imperial_federation_india_unified_dip_ui = {
+		context_type = selected_country_context
+		window_name = "ENG_imperial_federation_india_unified_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = ENG
+				NOT = { has_government = communism }
+				has_cosmetic_tag = ENG_imperial_federation_india_unified
+			}
+		}
+	}
+
+	ENG_imperial_federation_unified_pol_ui = {
+		context_type = player_context
+		window_name = "ENG_imperial_federation_unified_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = ENG
+				NOT = { has_government = communism }
+				has_cosmetic_tag = ENG_imperial_federation_unified
+			}
+		}
+	}
+
+	ENG_imperial_federation_unified_dip_ui = {
+		context_type = selected_country_context
+		window_name = "ENG_imperial_federation_unified_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = ENG
+				NOT = { has_government = communism }
+				has_cosmetic_tag = ENG_imperial_federation_unified
+			}
+		}
+	}
+
+	ENG_england_pol_ui = {
+		context_type = player_context
+		window_name = "ENG_england_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = ENG
+				NOT = { has_government = communism }
+				has_cosmetic_tag = ENG_england
+			}
+		}
+	}
+
+	ENG_england_dip_ui = {
+		context_type = selected_country_context
+		window_name = "ENG_england_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = ENG
+				NOT = { has_government = communism }
+				has_cosmetic_tag = ENG_england
+			}
+		}
+	}
+
+	CHI_ROC_pol_ui = {
+		context_type = player_context
+		window_name = "CHI_ROC_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = ENG
+				NOT = { has_government = communism }
+				has_cosmetic_tag = CHI_ROC
+			}
+		}
+	}
+
+	CHI_ROC_dip_ui = {
+		context_type = selected_country_context
+		window_name = "CHI_ROC_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = ENG
+				NOT = { has_government = communism }
+				has_cosmetic_tag = CHI_ROC
+			}
+		}
+	}
+
+
+	BEL_GER_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "BEL_GER_fascism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = BEL
+				has_government = fascism
+				is_subject_of = GER
+			}
+		}
+	}
+	
+	BEL_GER_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "BEL_GER_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = BEL
+				has_government = fascism
+				is_subject_of = GER
+			}
+		}
+	}
+
+	BEL_GER_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "BEL_GER_fascism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = BLR
+				has_government = fascism
+				is_subject_of = GER
+			}
+		}
+	}
+	
+	BEL_GER_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "BEL_GER_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = BLR
+				has_government = fascism
+				is_subject_of = GER
+			}
+		}
+	}
+
+	UKR_GER_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "UKR_GER_fascism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = UKR
+				has_government = fascism
+				is_subject_of = GER
+			}
+		}
+	}
+	
+	UKR_GER_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "UKR_GER_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = UKR
+				has_government = fascism
+				is_subject_of = GER
+			}
+		}
+	}
+
+
+	HOL_GER_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "HOL_GER_fascism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = HOL
+				has_government = fascism
+				is_subject_of = GER
+			}
+		}
+	}
+	
+	HOL_GER_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "HOL_GER_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = HOL
+				has_government = fascism
+				is_subject_of = GER
+			}
+		}
+	}
+
+
+	NOR_GER_fascism_pol_ui = {
+		context_type = player_context
+		window_name = "NOR_GER_fascism_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				TAG = NOR
+				has_government = fascism
+				is_subject_of = GER
+			}
+		}
+	}
+	
+	NOR_GER_fascism_dip_ui = {
+		context_type = selected_country_context
+		window_name = "NOR_GER_fascism_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				TAG = NOR
+				has_government = fascism
+				is_subject_of = GER
+			}
+		}
+	}
+
+##################CIVIL WAR HOTFIX#############
+
+	FRA_civil_war_vichy_pol_ui = {
+		context_type = player_context
+		window_name = "FRA_civil_war_vichy_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = NOR
+				has_government = fascism
+				26 = { is_core_of = ROOT }
+				OR = {
+					26 = { is_capital = yes }
+					16 = { is_capital = yes }
+				}
+				#has_cosmetic_tag = NOR_reichskommissariat
+			}
+		}
+	}
+	
+	FRA_civil_war_vichy_dip_ui = {
+		context_type = selected_country_context
+		window_name = "FRA_civil_war_vichy_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = NOR
+				has_government = fascism
+				26 = { is_core_of = ROOT }
+				OR = {
+					26 = { is_capital = yes }
+					16 = { is_capital = yes }
+				}
+				#has_cosmetic_tag = NOR_reichskommissariat
+			}
+		}
+	}
+
+	SPR_civil_war_vichy_pol_ui = {
+		context_type = player_context
+		window_name = "SPR_civil_war_vichy_pol_ui_window"
+
+		parent_window_token = politics_tab
+		
+		visible = {
+			AND = {
+				#TAG = NOR
+				has_government = fascism
+				41 = { is_core_of = ROOT }
+				41 = { is_capital = yes }
+				#has_cosmetic_tag = NOR_reichskommissariat
+			}
+		}
+	}
+	
+	SPR_civil_war_vichy_dip_ui = {
+		context_type = selected_country_context
+		window_name = "SPR_civil_war_vichy_dip_ui_window"
+		
+		parent_window_token = selected_country_view
+		
+		visible = {
+			AND = {
+				#TAG = NOR
+				has_government = fascism
+				41 = { is_core_of = ROOT }
+				41 = { is_capital = yes }
+				#has_cosmetic_tag = NOR_reichskommissariat
+			}
+		}
+	}
+}

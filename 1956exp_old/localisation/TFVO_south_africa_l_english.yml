@@ -1,0 +1,172 @@
+﻿l_english:
+ ################
+ ##South Africa##
+ ################
+ 
+ #Focus
+ SAF_urban_migration:0 "Urban Migration"
+ SAF_urban_migration_desc:0 ""
+ SAF_improve_african_logistics:0 "Improve African Logistics"
+ SAF_improve_african_logistics_desc:0 ""
+ SAF_secure_south_african_autonomy:0 "Secure South African Autonomy"
+ SAF_secure_south_african_autonomy_desc:0 ""
+ SAF_end_british_influence:0 "End British Influence"
+ SAF_end_british_influence_desc:0 ""
+ SAF_kwazulu_bantustan:0 "Kwazulu Bantustan"
+ SAF_kwazulu_bantustan_desc:0 ""
+ SAF_apartheid:0 "Apartheid"
+ SAF_apartheid_desc:0 ""
+ SAF_joint_african_trade_administration:0 "Joint African Trade Administration"
+ SAF_joint_african_trade_administration_desc:0 ""
+ SAF_maintain_western_rule_in_africa:0 "Maintain Western Rule in Africa"
+ SAF_maintain_western_rule_in_africa_desc:0 ""
+ SAF_westernization_of_africa:0 "Westernization of Africa"
+ SAF_westernization_of_africa_desc:0 ""
+ SAF_advocate_for_limited_african_autonomy:0 "Advocate for Limited African Autonomy"
+ SAF_advocate_for_limited_african_autonomy_desc:0 ""
+ SAF_amend_the_south_africa_act:0 "Amend the South Africa Act"
+ SAF_amend_the_south_africa_act_desc:0 ""
+ SAF_repeal_native_land_restriction_acts:0 "Repeal Native Land Restriction Acts"
+ SAF_repeal_native_land_restriction_acts_desc:0 ""
+ SAF_repeal_the_general_pass_regulations_act:0 "Repeal the General Pass Regulation Act"
+ SAF_repeal_the_general_pass_regulations_act_desc:0 ""
+ SAF_support_the_atlantic_charter:0 "Support the Atlantic Charter"
+ SAF_support_the_atlantic_charter_desc:0 ""
+ SAF_propose_an_extension_to_the_atlantic_charter:0 "Propose an Extension to the Atlantic Charter"
+ SAF_propose_an_extension_to_the_atlantic_charter_desc:0 ""
+ SAF_5th_pan_african_congress:0 "5th Pan-African Congress"
+ SAF_5th_pan_african_congress_desc:0 ""
+ SAF_decolonization_of_africa:0 "Decolonization of Africa"
+ SAF_decolonization_of_africa_desc:0 ""
+ SAF_spread_democracy_throughout_africa:0 "Spread Democracy Throughout Africa"
+ SAF_spread_democracy_throughout_africa_desc:0 ""
+ SAF_establish_the_african_union:0 "Establish the African Union"
+ SAF_establish_the_african_union_desc:0 ""
+ SAF_revise_consolidation_of_power:0 "Revise Consolidation of Power"
+ SAF_revise_consolidation_of_power_desc:0 ""
+ #Industry
+ SAF_sa_railways_and_harbours_administration:0 "SA Railways & Harbours Administration"
+ SAF_sa_railways_and_harbours_administration_desc:0 ""
+ SAF_secure_mining_rights_for_ammosal:0 "Secure Mining Rights for AMMOSAL"
+ SAF_secure_mining_rights_for_ammosal_desc:0 ""
+ SAF_open_the_black_rock_mine:0 "Open the Black Rock Mine"
+ SAF_open_the_black_rock_mine_desc:0 ""
+ SAF_open_the_thabazimbi_iscor_iron_ore_mine:0 "Open the Thabazimbi Iscor Iron Ore Mine"
+ SAF_open_the_thabazimbi_iscor_iron_ore_mine_desc:0 ""
+ SAF_expand_the_refinery_industry:0 "Expand the Refinery Industry"
+ SAF_expand_the_refinery_industry_desc:0 ""
+ SAF_establish_the_african_metals_corporation:0 "Establish the African Metals Corporation"
+ SAF_establish_the_african_metals_corporation_desc:0 "The situation of the terrain along the Vaal River west of Vereeniging makes it ideal for development. There is sufficient slope for drainage towards the river and the area is downstream from the Rand Water Board's pumping station intake. The heavy industries could be suitably sited on relatively high ground in a position where the prevailing winds would minimize the dangers of pollution."
+ SAF_establish_iscor_limited:0 "Establish Iscor Limited"
+ SAF_establish_iscor_limited_desc:0 ""
+ SAF_expand_pretoria_works:0 "Expand Pretoria Works"
+ SAF_expand_pretoria_works_desc:0 ""
+ SAF_commission_vanderbijlpark_works:0 "Commission Vanderbijlpark Works"
+ SAF_commission_vanderbijlpark_works_desc:0 ""
+ SAF_commission_newcastle_works:0 "Commission Newcastle Works"
+ SAF_commission_newcastle_works_desc:0 ""
+ SAF_expand_the_colenso_power_station:0 "Expand the Colenso Power Station"
+ SAF_expand_the_colenso_power_station_desc:0 ""
+ SAF_construct_the_vaal_dam:0 "Construct the Vaal Dam"
+ SAF_construct_the_vaal_dam_desc:0 ""
+
+ 
+ #Ideas
+ SAF_african_railroad_workers:0 "African Railroad Workers"
+ SAF_african_railroad_workers_desc:0 ""
+ SAF_segregation:0 "Segregation"
+ SAF_segregation_desc:0 ""
+ SAF_segregation_2:0 "Segregation"
+ SAF_segregation_2_desc:0 ""
+ SAF_segregation_3:0 "Segregation"
+ SAF_segregation_3_desc:0 ""
+ SAF_desegregation:0 "Desegregation"
+ SAF_desegregation_desc:0 ""
+ SAF_desegregation_2:0 "Desegregation"
+ SAF_desegregation_2_desc:0 ""
+ SAF_desegregation_3:0 "Desegregation"
+ SAF_desegregation_3_desc:0 ""
+ SAF_cape_corps:0 "Cape Corps"
+ SAF_cape_corps_desc:0 ""
+ SAF_cape_corps_2:0 "Cape Corps"
+ SAF_cape_corps_2_desc:0 ""
+ SAF_cheap_labor:0 "Cheap Labor"
+ SAF_cheap_labor_desc:0 ""
+ SAF_christiaan_joubert:0 "Christiaan Joubert"
+ SAF_eugene_de_la_rey:0 "Eugene de la Rey"
+ SAF_piet_theron:0 "Piet Theron"
+ SAF_rudolf_retief:0 "Rudolf Retief"
+ 
+ 
+ #Tooltips
+  SAF_improve_african_logistics_tt:0 "Controls any §YAfrican§! state below the §YSahara§!"
+  SAF_secure_south_african_autonomy_tt:0 "Does not control any §YAfrican§! states below the §YSahara§!"
+  SAF_history_of_segregation_removal_tt:0 "Modify §YDesegregation§! by\nWeekly Stability: §G+0.50%§! for §Y420§! days."
+  #Cape Corps Dynamic Focus Tooltips
+  SAF_native_laws_amendment_act_tt:0 "Effect from focus §RNative Laws Amendment Act§!:\n"
+  SAF_end_british_influence_tt:0 "\nEffect from focus §MEnd British Influence§!:\n"
+# AST_ANZ_union_deformation_tt:0 "Release §YNew Zealand§!\n"
+# AST_swpa_protector_singapore_tt:0 "§YSingapore:§!\n-§R5 Land Forts§! will be added, in a line, along the Northern and Southern Fallback Lines\n\n-§M4 Coastal Forts§! will be added along the coast lines\n\n-§M2 Coastal Fort§! will be added to each port\n\n-§Y3 Anti-Air§! buildings will be built\n\n-§Y2 Air Bases§! will be built\n\n"
+# AST_swpa_protector_north_borneo_tt:0 "§YNorth Borneo:§!\n-§M4 Coastal Forts§! will be added along the coast lines\n\n-§M2 Coastal Fort§! will be added to each port\n\n-§Y1 Anti-Air§! building will be built"
+# AST_island_defense_tt:0 "Adds §M3 Coastal Forts§! along the §GAustralian Coast§!, and adds an extra §M2 Coastal Forts§! on §YPorts§!."
+# AST_a_king_for_our_people_trigger_tt:0 "King Edward has been exiled"
+# AST_australian_empire_tt:0 "§GAustralia§! will be known as the §GAustralian Empire§!\n"
+# AST_preemptive_defence_tt:0 "On states which §RMalaya§!, §LIndonesia§!, or §GAustralia§! have full control of the following will occur:\n\n-§M2 Coastal Forts§! will be added along the coast lines\n\n-§M1 Coastal Fort§! will be added to each port\n\n-§YAnti-Air§! buildings will be added to various states leveling by development\n\n-§YAir Bases§! will be added to strategic positions\n\n"
+# AST_preemptive_defence_singapore_fallback_tt:0 "§YSingapore:§!\n-§R5 Land Forts§! will be added, in a line, along the Northern and Southern Fallback Lines"
+# AST_claims_on_western_powers_tt:0 "\nUnlocks territorial demands for the §RBritish§!, §MFrench§!, and §GPortuguese§! states that reside in the Pacific."
+# AST_supports_australia:0 "§GSupports Australia§!\n"
+# AST_guarantee_all_helped_subjects:0 "We will Guarantee all of the British Subjects who we have helped to gain their Independence\n"
+# AST_wargoals_against_all_former_subjects:0 "We will receive puppet war goals against all freed subjects\n"
+ 
+ 
+    #British State Control Tooltips
+#    AST_controls_fiji_tt:0 "Controls §GFiji§!\n"
+#    AST_controls_gilbert_islands_tt:0 "Controls §GGilbert Islands§!\n"
+#    AST_controls_ellice_islands_tt:0 "Controls §GEllice Islands§!\n"
+#    AST_controls_christmas_island_tt:0 "Controls §GChristmas Island§!\n"
+#    AST_controls_cocos_islands_tt:0 "Controls §GCocos Islands§!\n"
+#    AST_controls_nauru_tt:0 "Controls §GNauru§!\n\n"
+#    AST_demand_british_swpa_islands_tt:0 "We will send an ultimatum to the country or countries who own the original §YBritish SWPA Islands§!.\n§RThe receiving country being at war with a major or having capitulated increases the chances of them accepting.§!\n\n"
+    
+    #French State Control Tooltips
+#    AST_controls_new_caledonia_tt:0 "Controls §GNew Caledonia§!\n"
+#    AST_controls_tahiti_tt:0 "Controls §GTahiti§!\n"
+#    AST_controls_kerguelen_tt:0 "Controls §GKerguelen§!\n"
+#    AST_controls_nendo_tt:0 "Controls §GNendo§!\n\n"
+#    AST_demand_french_swpa_islands_tt:0 "We will send an ultimatum to the country or countries who own the original §YFrench SWPA Islands§!.\n§RThe receiving country being at war with a major or having capitulated increases the chances of them accepting.§!\n\n"
+    
+    #Portuguese Timor Control Tooltip
+#    AST_controls_portuguese_timot_tt:0 "Controls §GPortuguese Timor§!\n\n"
+#    AST_demand_portuguese_timor_tt:0 "We will send an ultimatum to the country who owns §YProtuguese Timor§!.\n§RThe receiving country being at war with a major or having capitulated increases the chances of them accepting.§!\n\n"
+
+ #Events
+ 
+ #Decisions
+ #Immigration
+ SAF_immigration:0 "Immigration"
+ SAF_immigration_desc:0 ""
+ #Rationing and Recycling decision
+ 
+ #Military Production Allocation
+ 
+ #Industrial Development
+ SAF_south_african_industrial_development:0 "South African Industrial Development"
+ SAF_south_african_industrial_development_desc:0 ""
+    SAF_develop_transvaal:0 "Develop Transvaal"
+    SAF_develop_transvaal_desc:0 ""
+    SAF_develop_natal:0 "Develop Natal"
+    SAF_develop_natal_desc:0 ""
+    SAF_develop_cape:0 "Develop Cape"
+    SAF_develop_cape_desc:0 ""
+    SAF_develop_south_west_africa:0 "Develop South West Africa"
+    SAF_develop_south_west_africa_desc:0 ""
+    
+ #Tech Sharing
+ 
+ #Cosmetic Tags
+ #AST_australian_empire_fascism:0 "Australian Empire"
+ #AST_australian_empire_fascism_DEF:0 "the Australian Empire"
+ #AST_australian_empire_fascism_ADJ:0 "Australian"
+ 
+ #Opinion Modifiers
+ #AST_accepted_indonesian_migrants:0 "Accepted Indonesian Migrants"

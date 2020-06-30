@@ -1,0 +1,86 @@
+MEX_context = {
+	allowed = {
+	not = { has_country_flag = mtg_mex }
+		original_tag = MEX
+	}
+}
+MEX_PEMEX_Situation = {
+	icon = generic_crisis
+	allowed = {
+	not = { has_country_flag = mtg_mex }
+		original_tag = MEX
+	}
+}
+MEX_DGIPS = {
+	icon = infiltration
+	allowed = {
+	not = { has_country_flag = mtg_mex }
+		original_tag = MEX
+	}
+}
+MEX_GEO = {
+	icon = infiltration
+	allowed = {
+	not = { has_country_flag = mtg_mex }
+		original_tag = MEX
+	}
+}
+MEX_Fact = {
+	icon = infiltration
+	allowed = {
+	not = { has_country_flag = mtg_mex }
+		OR = {
+			is_in_faction_with = MEX
+			has_country_flag = monroe_doctrine
+		}
+	}
+}
+
+
+MEX_category_military_issues = {
+
+	icon = border_conflicts
+
+	priority = 95
+
+	allowed = {
+		#has_country_flag = mtg_mex 
+		has_dlc = "Man the Guns"
+	}
+}
+
+MEX_category_territorial_integration = {
+
+	icon = border_war
+
+	priority = 90
+
+	allowed = {
+		#has_country_flag = mtg_mex 
+		has_dlc = "Man the Guns"
+	}
+}
+
+MEX_category_church_power = {
+
+	icon = power_struggle
+
+	priority = 80
+
+	allowed = {
+		#has_country_flag = mtg_mex 
+		has_dlc = "Man the Guns"
+	}
+}
+
+MEX_category_hispanic_solidarity = {
+
+	icon = generic_political_actions
+
+	priority = 90
+
+	allowed = {
+		#has_country_flag = mtg_mex 
+		has_dlc = "Man the Guns"
+	}
+}

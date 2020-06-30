@@ -1,0 +1,54 @@
+spriteTypes = {	
+
+	SpriteType = { 
+		name = "GFX_LIT_focus_vilnius"
+		texturefile = "gfx/interface/goals/LIT_focus_vilnius.dds"
+	}
+	SpriteType = { 
+		name = "GFX_LIT_focus_smetona"
+		texturefile = "gfx/interface/goals/LIT_focus_smetona.dds"
+	}	
+	SpriteType = { 
+		name = "GFX_LIT_focus_king_smetona"
+		texturefile = "gfx/interface/goals/LIT_focus_king_smetona.dds"
+	}	
+	SpriteType = { 
+		name = "GFX_LIT_focus_vytis"
+		texturefile = "gfx/interface/goals/LIT_focus_vytis.dds"
+	}	
+	SpriteType = { 
+		name = "GFX_LIT_focus_stulpai"
+		texturefile = "gfx/interface/goals/LIT_focus_stulpai.dds"
+	}
+	SpriteType = { 
+		name = "GFX_LIT_focus_vytautas"
+		texturefile = "gfx/interface/goals/LIT_focus_vytautas.dds"
+	}
+	SpriteType = { 
+		name = "GFX_LIT_focus_sparnai"
+		texturefile = "gfx/interface/goals/LIT_focus_sparnai2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_LIT_focus_PLC"
+		texturefile = "gfx/interface/goals/LIT_focus_PLC.dds"
+	}
+	SpriteType = { 
+		name = "GFX_LIT_alone_smetona"
+		texturefile = "gfx/interface/goals/LIT_alone_smetona.dds"
+	}
+	SpriteType = { 
+		name = "GFX_LIT_doublies"
+		texturefile = "gfx/interface/goals/LIT_doublies.dds"		
+	}
+	SpriteType = { 
+		name = "GFX_LIT_focus_hungary"
+		texturefile = "gfx/interface/goals/LIT_focus_hungary.dds"
+	}
+	SpriteType = { 
+		name = "GFX_LIT_focus_puppet"
+		texturefile = "gfx/interface/goals/LIT_focus_puppet.dds"	
+	}
+	
+	
+
+}

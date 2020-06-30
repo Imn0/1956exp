@@ -1,0 +1,87 @@
+﻿l_english:
+ DOD_hungary.171.t:0 "Austro-Hungarian Ultimatum"
+ DOD_hungary.171.d:0 "The Austro-Hungarian government has demanded our full surrender claiming their armies could crush us without a worry"
+ DOD_hungary.171.a:0 "Better than Italy"
+ DOD_hungary.171.b:0 "Preposterous!"
+
+ DOD_hungary.172.t:0 "Victory in the Balkans"
+ DOD_hungary.172.d:0 "Yugoslavia has agreed to our demands, making this 1 step closer to our prewar borders"
+ DOD_hungary.172.a:0 "Huzzah for the Empire"
+
+ DOD_hungary.173.t:0 "Then it's war"
+ DOD_hungary.173.d:0 "Yugolavia has decided they'd rather die than bend the knee, then so shall it be"
+ DOD_hungary.173.a:0 "To War!"
+
+ DOD_hungary.174.t:0 "Austria-Hungary Demands Old Territory"
+ DOD_hungary.174.d:0 "The Austro-Hungarian Government has demanded their old port of Zara how shall we respond."
+ DOD_hungary.174.a:0 "It's only a port"
+ DOD_hungary.174.b:0 "they can't get through the mountains"
+ 
+ DOD_hungary.175.t:0 "Italy has agreed to cede Zara"
+ DOD_hungary.175.d:0 "Italy has chosen wisely, as it is just a port"
+ DOD_hungary.175.a:0 "Hurrah"
+
+ DOD_hungary.176.t:0 "Italy has denied our demand for Zara!"
+ DOD_hungary.176.d:0 "How important is zara anyway?"
+ DOD_hungary.176.a:0 "Probably not that much"
+
+ DOD_hungary.177.t:0 "Austria-Hungary Demands Istria, Veneto, and South Tyrol"
+ DOD_hungary.177.desc:0 "Austria-Hungary has demanded their old territory lost after WW1 how should we reply?."
+ DOD_hungary.177.a:0 "South Tyrol Should be fine"
+ DOD_hungary.177.b:0 "South Tyrol and Istria will stop their demands"
+ DOD_hungary.177.c:0 "Give them all of it"
+ DOD_hungary.177.d:0 "They've pushed too far this time"
+
+ DOD_hungary.178.t:0 "Italy has ceded South Tyrol" #only south tyrol
+ DOD_hungary.178.desc:0 "Is this a joke to them! Italy has only ceded South Tyrol to us, this is below what we hoped for now we must decide wether Istria and Veneto are worth it."
+ DOD_hungary.178.a:0 "For the Empire?"
+
+ DOD_hungary.179.t:0 "Italy has bent the knee" #south tyrol and istria 
+ DOD_hungary.179.desc:0 "Looks like we've gotten more than we can hope for Italy has ceded South Tyrol and Istria to us."
+ DOD_hungary.179.a:0 "For the Empire!"
+
+ DOD_hungary.180.t:0 "Victory for the empire!" #south tyrol istria and veneto
+ DOD_hungary.180.desc:0 "Fantastic news Sir Italy has ceded all provinces we asked for this is a great day for Austria-Hungary"
+ DOD_hungary.180.a:0 "Gott Mit Uns"
+
+ DOD_hungary.181.t:0 "Italy has denied all our demands!" #nothing
+ DOD_hungary.181.desc:0 "Italy has chosen death before dishonour"
+ DOD_hungary.181.a:0 "And so we go to war"
+
+ DOD_hungary.182.t:0 "Austria-Hungary Demands Return of old Territory"
+ DOD_hungary.182.desc:0 "The Austro-Hungarian Government has formally demanded we return Krakow, Stanislawow, and Lwow to them how do we respond?"
+ DOD_hungary.182.a:0 "We cant afford a war with them now"
+ DOD_hungary.182.b:0 "Stanislawow will be fine"
+ DOD_hungary.182.c:0 "We will hold them in the mountains and hills!"
+ 
+ DOD_hungary.183.t:0 "Poland has ceded everything!"
+ DOD_hungary.183.desc:0 "Three hurrahs for the empire Poland has agreed to hand over everything"
+ DOD_hungary.183.a:0 "Hurrah, Hurrah, Hurrah"
+
+ DOD_hungary.184.t:0 "Poland has ceded only Stanislawow"
+ DOD_hungary.184.desc:0 "Poland has informed us that they will cede Stanislawow and that anymore demands will be met with hostility to put it bluntly"
+ DOD_hungary.184.a:0 "Better than nothing"
+ 
+ DOD_hungary.185.t:0 "No Deal!"
+ DOD_hungary.185.desc:0 "Poland has shot down our demand for our old states"
+ DOD_hungary.185.a:0 "War it is"
+
+ DOD_hungary.186.t:0 "Austria-Hungary demands Bucovina"
+ DOD_hungary.186.desc:0 "Austia-Hungary has formally demanded their old territory of Bucovina."
+ DOD_hungary.186.a:0 "It's not worth it"
+ DOD_hungary.186.b:0 "We will fight them on the mountains"
+
+ DOD_hungary.187.t:0 "Romania has ceded Bucovina"
+ DOD_hungary.187.desc:0 "Romania has seen sense and has ceded Bucovina to us."
+ DOD_hungary.187.a:0 "But was it worth it"
+
+ DOD_hungary.188.t:0 "Romania has denied our demand for Bucovina"
+ DOD_hungary.188.desc:0 "Romania has flatly denied our demand for bucovina and heightened its security a"
+ DOD_hungary.188.a:0 "Is it worth it?"
+
+
+
+
+
+
+

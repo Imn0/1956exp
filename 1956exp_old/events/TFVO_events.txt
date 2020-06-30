@@ -1,0 +1,82 @@
+###############
+##TFVO Events##
+###############
+
+add_namespace = tfvo_event
+
+#Atlantic-Pacific Pact
+country_event = {
+	id = tfvo_event.1
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AST = {
+			is_in_faction_with = USA
+		}
+		CAN = {
+			is_in_faction_with = USA
+		}
+		OR = {
+			CAN = { is_faction_leader = yes }
+			AST = { is_faction_leader = yes }
+			USA = { is_faction_leader = yes }
+		}
+	}
+	
+	immediate = {
+		USA = {
+			country_event = { id = tfvo_event.2 }
+		}
+	}
+	
+	option = {
+		name = tfvo_event.1.a
+	}
+}
+
+country_event = {
+	id = tfvo_event.2
+	title = tfvo_event.2.t	# USA, AST, and CAN create a faction.
+	desc = tfvo_event.2.d	#
+	picture = GFX_report_event_canada_patriation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tfvo_event.2.a # yes
+		
+		ai_chance = {
+			base = 100
+		}
+		
+		every_country = {
+			limit = {
+				is_in_faction_with = USA
+			}
+			set_country_flag = TFV_is_in_faction_with_USA
+		}
+		
+		create_faction = "atlantic_pacific_pact"
+		
+		every_country = {
+			limit = {
+				has_country_flag = TFV_is_in_faction_with_USA
+			}
+			USA = {
+				add_to_faction = PREV
+			}
+			clr_country_flag = TFV_is_in_faction_with_USA
+		}
+	}
+	
+	option = {
+		name = tfvo_event.2.b # no
+	
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

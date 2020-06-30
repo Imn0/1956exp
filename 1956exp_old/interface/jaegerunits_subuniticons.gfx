@@ -1,0 +1,14 @@
+spriteTypes = {		
+
+	spriteType = { name = "GFX_unit_GNR_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_GNR_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_GRP_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_GRP_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_FEC_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_FEC_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_OCL_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_OCL_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_OFP_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_OFP_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_GNR_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_GNR_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_GRP_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_GRP_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_FEC_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_FEC_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_OCL_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_OCL_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_OFP_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_OFP_icon.dds" noOfFrames = 2}
+}

@@ -1,0 +1,48 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_LIT_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/LIT_Vickers.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LIT_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/LIT_LT35.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LIT_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/LIT_LLT.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LIT_medium_tank_equipment_1"
+		texturefile = "gfx/interface/technologies/LIT_PIII.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LIT_medium_tank_equipment_2"
+		texturefile = "gfx/interface/technologies/LIT_PIV.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LIT_medium_tank_equipment_3"
+		texturefile = "gfx/interface/technologies/LIT_PV.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LIT_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/LIT_T35.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LIT_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/LIT_KV1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LIT_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/LIT_JD.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LIT_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/LIT_JD7.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LIT_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/LIT_M46.dds"
+	}	
+	
+}

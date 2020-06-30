@@ -1,0 +1,106 @@
+spriteTypes = {	
+
+	#Canada
+	SpriteType = {
+		name = "GFX_CAN_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CAN_infantry_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CAN_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CAN_infantry_equipment_3.dds"
+	}
+	
+	#Malaya
+	SpriteType = {
+		name = "GFX_MAL_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAL_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_MAL_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MAL_gwtank_medium"
+		texturefile = "gfx/interface/technologies/tfv_shared_gwtank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_MAL_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/tfv_shared1_mechanized_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAL_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/tfv_shared2_mechanized_equipment_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MAL_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/tfv_shared2_mechanized_equipment_1.dds"
+	}		
+
+	### tanks ###	
+
+	SpriteType = {
+		name = "GFX_MAL_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/RAJ_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MAL_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/RAJ_imp_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MAL_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/RAJ_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MAL_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/RAJ_basic_main_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MAL_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/RAJ_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAL_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/RAJ_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAL_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/RAJ_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_MAL_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/RAJ_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MAL_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/RAJ_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAL_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/RAJ_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAL_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/RAJ_superheavy_tank.dds"
+	}
+	
+}

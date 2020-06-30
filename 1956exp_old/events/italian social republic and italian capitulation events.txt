@@ -1,0 +1,148 @@
+#RSI will form as a German puppet when Italy capitulates while being in the same faction as Germany
+
+add_namespace = italiansraddon
+
+country_event = {
+	id = italiansraddon.1
+	title = italiansraddon.1.t
+	desc = italiansraddon.1.d
+	picture = GFX_report_event_german_italian_pact
+	
+	trigger = {
+		tag = ITA
+		has_government = fascism
+		has_capitulated = yes
+		NOT = { has_global_flag = form_european_union_flag }
+		NOT = { has_global_flag = form_roman_empire_flag }
+		is_in_faction_with = GER
+		OR = {
+			AND = {
+				has_war_with = ENG
+				GER = { has_war_with = ENG }
+			}
+
+			AND = {
+				has_war_with = FRA
+				GER = { has_war_with = FRA }
+			}
+
+			AND = {
+				has_war_with = USA
+				GER = { has_war_with = USA }
+			}
+
+			AND = {
+				has_war_with = SOV
+				GER = { has_war_with = SOV }
+			}			
+		}
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = { # surrender to allies
+		name = italiansraddon.1.a #Only the Germans can now save us
+		GER = {
+			country_event = { id = italiansraddon.3 }
+		}
+		
+	}
+}
+
+country_event = {
+	id = italiansraddon.3
+	title = italiansraddon.3.t
+	desc = italiansraddon.3.d
+	picture = GFX_report_event_german_italian_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italiansraddon.3.a
+		ITA = { remove_ideas = victor_emmanuel }
+		ITA = { drop_cosmetic_tag = yes }
+		ITA = { set_cosmetic_tag = ITA_RSI }
+		ITA = {
+			set_party_name = { 
+				ideology = fascism 
+    				long_name = partito_fascista_repubblicano_long 
+    				name = partito_fascista_repubblicano 
+			}
+		}
+		GER = { puppet = ITA }
+		GER = {
+			if = {
+				limit = { ITA = { owns_state = 160 } }
+				transfer_state = 160
+			}
+			if = {
+				limit = { ITA = { owns_state = 39 } }
+				transfer_state = 39
+			}
+			if = {
+				limit = {
+					AND = {
+						country_exists = YUG
+					}
+				}
+				YUG = {
+					if = {
+						limit = { ITA = { owns_state = 163 } }
+						transfer_state = 163
+					}
+					if = {
+						limit = { ITA = { owns_state = 736 } }
+						transfer_state = 736
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						NOT = { country_exists = YUG }
+					}
+				}
+				GER = {
+					if = {
+						limit = { ITA = { owns_state = 163 } }
+						transfer_state = 163
+					}
+					if = {
+						limit = { ITA = { owns_state = 736 } }
+						transfer_state = 736
+					}
+				}
+			}
+		}
+		set_global_flag = RSI_formed_by_Germany
+	}
+}
+
+#RSI clear up event (after the war is won by the allies and Italy stops being fascist RSI tag will simply vanish from the game)
+
+country_event = {
+	id = italiansraddon.5
+	title = italiansraddon.5.t
+	desc = italiansraddon.5.d
+	
+	trigger = {
+		tag = ITA
+		has_global_flag = RSI_formed_by_Germany
+		NOT = { has_government = fascism }
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		drop_cosmetic_tag = yes
+		clr_global_flag = RSI_formed_by_Germany
+	}
+}	
